@@ -15,6 +15,7 @@ A WordPress implementation of the stellar Slimbox2 script by Christophe Beyls (a
 Almost, if not all, options are configurable from the administration panel. For more on the settings and what they do check out the <a href="http://www.digitalia.be/software/slimbox2/" title="Slimbox 2, the ultimate lightweight Lightbox clone for jQuery">Slimbox2</a> page.
 
 Planned Features:
+
 1. Option to change the overlay color.
 2. Option to automatically apply to all images on a page.
 3. Option to control which pages to load the script on.
