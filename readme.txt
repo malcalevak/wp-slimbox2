@@ -17,7 +17,7 @@ Almost, if not all, options are configurable from the administration panel. For 
 Planned Features:
 Option to change the overlay color.
 Option to automatically apply to all images on a page.
-Option to control which pages to load the script on. 
+Option to control which pages to load the script on.
 Option for Flickr and picasaweb integration.
 Easier to use settings management.
 
@@ -28,7 +28,7 @@ After you've downloaded and extracted the files:
 1. Upload the complete `WP-Slimbox2` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Visit the "WP-Slimbox2" page in your WordPress options menu to configure any advanced settings.
-5. Manually (or in the future choose to automatically) add the 'rel=”lightbox”' attribute to any link tag to activate the lightbox or 'rel=”lightbox[imagesetname]"' for an image set, using the title attribute to store a caption.
+5. Manually (or in the future choose to automatically) add the `rel="lightbox"` attribute to any link tag to activate the lightbox or `rel="lightbox[imagesetname]"` for an image set, using the title attribute to store a caption.
 
 == Frequently Asked Questions ==
 
