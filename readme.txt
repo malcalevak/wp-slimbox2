@@ -15,11 +15,15 @@ A WordPress implementation of the stellar Slimbox2 script by Christophe Beyls wh
 Almost, if not all, options are configurable from the administration panel. For more on the settings and what they do check out the <a href="http://www.digitalia.be/software/slimbox2/" title="Slimbox 2, the ultimate lightweight Lightbox clone for jQuery">Slimbox2</a> page.
 
 Planned Features:
-Option to change the overlay color.
-Option to automatically apply to all images on a page.
-Option to control which pages to load the script on.
-Option for Flickr and picasaweb integration.
-Easier to use settings management.
+1. Option to change the overlay color.
+
+2. Option to automatically apply to all images on a page.
+
+3. Option to control which pages to load the script on.
+
+4. Option for Flickr and picasaweb integration.
+
+5. Easier to use settings management.
 
 == Installation ==
 
@@ -28,7 +32,7 @@ After you've downloaded and extracted the files:
 1. Upload the complete `WP-Slimbox2` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Visit the "WP-Slimbox2" page in your WordPress options menu to configure any advanced settings.
-5. Manually (or in the future choose to automatically) add the `rel="lightbox"` attribute to any link tag to activate the lightbox or `rel="lightbox[imagesetname]"` for an image set, using the title attribute to store a caption.
+5. Manually (or in the future choose to automatically) add the `rel="lightbox"` attribute to any link tag to activate the lightbox or `rel="lightbox-imagesetname"` for an image set, using the title attribute to store a caption.
 
 == Frequently Asked Questions ==
 
