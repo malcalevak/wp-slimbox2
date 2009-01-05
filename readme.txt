@@ -14,38 +14,36 @@ A WordPress implementation of the stellar Slimbox2 script by Christophe Beyls (a
 
 Almost, if not all, options are configurable from the administration panel. For more on the settings and what they do check out the <a href="http://www.digitalia.be/software/slimbox2/" title="Slimbox 2, the ultimate lightweight Lightbox clone for jQuery">Slimbox2</a> page.
 
-Planned Features:
-
-1. Option to change the overlay color.
-2. Option to automatically apply to all images on a page.
-3. Option to control which pages to load the script on.
-4. Option for Flickr and picasaweb integration.
-5. Easier to use settings management.
+Planned Features:<br />
+1. Option to change the overlay color.<br />
+2. Option to automatically apply to all images on a page.<br />
+3. Option to control which pages to load the script on.<br />
+4. Option for Flickr and picasaweb integration.<br />
+5. Easier to use settings management.<br />
 
 == Installation ==
 
 After you've downloaded and extracted the files:
 
-1. Upload the complete `WP-Slimbox2` folder to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Visit the "WP-Slimbox2" page in your WordPress options menu to configure any advanced settings.
-5. Manually (or in the future choose to automatically) add the `rel="lightbox"` attribute to any link tag to activate the lightbox or `rel="lightbox-imagesetname"` for an image set, using the title attribute to store a caption.
+1. Upload the complete `WP-Slimbox2` folder to the `/wp-content/plugins/` directory<br />
+2. Activate the plugin through the 'Plugins' menu in WordPress<br />
+3. Visit the "WP-Slimbox2" page in your WordPress options menu to configure any advanced settings.<br />
+5. Manually (or in the future choose to automatically) add the `rel="lightbox"` attribute to any link tag to activate the lightbox or `rel="lightbox-imagesetname"` for an image set, using the title attribute to store a caption.<br />
 
 == Frequently Asked Questions ==
 
 = Why do I need WordPress 2.5+? =
 
-The Javascript requires jQuery 1.2+ which wasn't included in WordPress until 2.5. If you're using something to override the included jQuery with a newer version (a feature I may add at a later date) it should be compatible from 2.1+ since I believe that was when wp_enqueue_script() was implemented.
+The Javascript requires jQuery 1.2+ which wasn't included in WordPress until 2.5. If you're using something to override the included jQuery with a newer version (a feature I may add at a later date) it should be compatible from 2.1+ since I believe that was when wp_enqueue_script() was implemented.<br />
 
 = Why can't the plugin do X, Y or Z? =
 
-Either the Javascript doesn't support it, or I haven't gotten around to adding it.
+Either the Javascript doesn't support it, or I haven't gotten around to adding it.<br />
 
 = Why should I use this plugin? =
 
-You want Lightbox or Slimbox effects using the jQuery library, and don't want any sort of "ad".
-
-You want complete control over all the javascript settings from the admin page.
+You want Lightbox or Slimbox effects using the jQuery library, and don't want any sort of "ad".<br />
+You want complete control over all the javascript settings from the admin page.<br />
 
 == Screenshots ==
 
