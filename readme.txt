@@ -12,7 +12,7 @@ An WordPress implementation of the Slimbox2 javascript.
 
 A WordPress implementation of the stellar Slimbox2 script by Christophe Beyls which utilizes the jQuery library to create an impressive image overlay with slide-out effects.
 
-Almost, if not all, options are configurable from the administration panel. For more on the settings and what they do check out the Slimbox2 page.
+Almost, if not all, options are configurable from the administration panel. For more on the settings and what they do check out the <a href="http://www.digitalia.be/software/slimbox2/" title="Slimbox 2, the ultimate lightweight Lightbox clone for jQuery">Slimbox2</a> page.
 
 Planned Features:
 Option to change the overlay color.
