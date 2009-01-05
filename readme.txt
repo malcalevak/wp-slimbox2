@@ -1,7 +1,7 @@
 === WP-Slimbox2 Plugin ===
 Contributors: malcalevak
 Donate link: 
-Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image
+Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.5
 Tested up to: 2.7
 Stable tag: 0.9 Beta
@@ -15,14 +15,11 @@ A WordPress implementation of the stellar Slimbox2 script by Christophe Beyls (a
 Almost, if not all, options are configurable from the administration panel. For more on the settings and what they do check out the <a href="http://www.digitalia.be/software/slimbox2/" title="Slimbox 2, the ultimate lightweight Lightbox clone for jQuery">Slimbox2</a> page.
 
 Planned Features:
+
 1. Option to change the overlay color.
-
 2. Option to automatically apply to all images on a page.
-
 3. Option to control which pages to load the script on.
-
 4. Option for Flickr and picasaweb integration.
-
 5. Easier to use settings management.
 
 == Installation ==
