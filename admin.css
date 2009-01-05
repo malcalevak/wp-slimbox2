@@ -1,0 +1,6 @@
+/* CSS code for admin page */
+
+tfoot tr th {font-weight:normal}
+#options input { float: left; }
+#options p { clear: both; }
+.widefat {margin-top:20px}
