@@ -53,7 +53,7 @@ You want complete control over all the javascript settings from the admin page.
 
 == History ==
 
-Version 0.95 Beta: Intial release.<br />
+Version 0.9 Beta: Intial release.<br />
 
 
 = Credits =
