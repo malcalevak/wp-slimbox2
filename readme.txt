@@ -46,6 +46,11 @@ You want Lightbox or Slimbox effects using the jQuery library, and don't want an
 
 You want complete control over all the javascript settings from the admin page.
 
+== Screenshots ==
+
+1. Administration interface in WordPress 2.7
+2. Overlay effect.
+
 == History ==
 
 Version 0.95 Beta: Intial release.<br />
