@@ -4,7 +4,7 @@ Plugin Name: WP-Slimbox2
 Plugin URI: http://transientmonkey.com/?page_id=257
 Description: A Wordpress implementation of the Slimbox2 javascript, utilizing jQuery, originally written by Christophe Beyls. Requires WP 2.5+
 Author: Greg Yingling (malcalevak)
-Version: 0.9 Beta
+Version: 0.9.1
 Author URI: http://transientmonkey.com/
 
 Planned features include an assisted menu for selecting key codes, ability to change overlay color, automatic scripting on all image links, and implementation of the flickr and picasaweb javascripts.
