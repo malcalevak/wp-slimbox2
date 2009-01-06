@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WP-Slimbox2
-Plugin URI: http://transientmonkey.com/?page_id=257
+Plugin URI: http://transientmonkey.com/wp-slimbox2
 Description: A Wordpress implementation of the Slimbox2 javascript, utilizing jQuery, originally written by Christophe Beyls. Requires WP 2.5+
 Author: Greg Yingling (malcalevak)
 Version: 0.9.1
