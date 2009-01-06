@@ -1,10 +1,10 @@
 === WP-Slimbox2 Plugin ===
 Contributors: malcalevak
-Donate link: 
+Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.5
 Tested up to: 2.7
-Stable tag: 0.9 Beta
+Stable tag: 0.9.1
 
 An WordPress implementation of the Slimbox2 javascript.
 
@@ -16,10 +16,12 @@ Almost, if not all, options are configurable from the administration panel. For 
 
 Planned Features:<br />
 1. Option to change the overlay color.<br />
-2. Option to automatically apply to all images on a page.<br />
-3. Option to control which pages to load the script on.<br />
-4. Option for Flickr and picasaweb integration.<br />
-5. Easier to use settings management.<br />
+2. Option to control which pages to load the script on.<br />
+3. Option for Flickr and picasaweb integration.<br />
+4. Easier to use settings management.<br />
+
+Recently Added Features:<br />
+1. Option to automatically apply to all images on a page.<br />
 
 == Installation ==
 
@@ -52,7 +54,8 @@ You want complete control over all the javascript settings from the admin page.<
 
 == History ==
 
-Version 0.9 Beta: Intial release.<br />
+Version 0.9 Beta: Intial release - Jan-05-2008<br />
+Version 0.9.1 Beta: Addition of option to enable automatically applying to all image links (png,jpg,gif) - Jan-06-2008<br />
 
 
 = Credits =

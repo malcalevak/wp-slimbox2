@@ -1,5 +1,6 @@
 <?php
 if (!defined('ABSPATH') && !defined('WP_UNINSTALL_PLUGIN')) {exit();}
+delete_option('wp_slimbox_autoload');
 delete_option('wp_slimbox_loop');
 delete_option('wp_slimbox_overlayOpacity');
 delete_option('wp_slimbox_overlayFadeDuration');

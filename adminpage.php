@@ -25,6 +25,16 @@
 			<tbody class="plugins">
 
 			<tr class='inactive'>
+				<td class='name'>Autoload?</td>
+				<th scope='row' class='check-column'>
+					<input type="checkbox" name="wp_slimbox_autoload"<?php if (get_option('wp_slimbox_autoload') == 'on') echo ' checked="yes"';?> />
+				</th>
+				<td class='desc'><p>This option allows the user to automatically activate Slimbox on all links pointing to ".jpg" or ".png" or
+				".gif". All image links contained in the same block or paragraph (having the same parent element) will automatically be grouped
+				together in a gallery. If this isn't activated you will need to manually add 'rel="lightbox"' for individual images or
+				'rel="lightbox-imagesetname"' for groups on all links you wish to use Slimbox.</p></td>
+			</tr>
+			<tr class='inactive'>
 				<td class='name'>Loop?</td>
 				<th scope='row' class='check-column'>
 					<input type="checkbox" name="wp_slimbox_loop"<?php if (get_option('wp_slimbox_loop') == 'on') echo ' checked="yes"';?> />
@@ -215,7 +225,7 @@
 		</tbody>
 		</table>
 		<input type="hidden" name="action" value="update" />
-		<input type="hidden" name="page_options" value="wp_slimbox_loop,wp_slimbox_overlayOpacity,wp_slimbox_overlayFadeDuration,wp_slimbox_resizeDuration,wp_slimbox_resizeEasing,wp_slimbox_initialWidth,wp_slimbox_initialHeight,wp_slimbox_imageFadeDuration,wp_slimbox_captionAnimationDuration,wp_slimbox_counterText,wp_slimbox_closeKeys,wp_slimbox_previousKeys,wp_slimbox_nextKeys" />
+		<input type="hidden" name="page_options" value="wp_slimbox_autoload,wp_slimbox_loop,wp_slimbox_overlayOpacity,wp_slimbox_overlayFadeDuration,wp_slimbox_resizeDuration,wp_slimbox_resizeEasing,wp_slimbox_initialWidth,wp_slimbox_initialHeight,wp_slimbox_imageFadeDuration,wp_slimbox_captionAnimationDuration,wp_slimbox_counterText,wp_slimbox_closeKeys,wp_slimbox_previousKeys,wp_slimbox_nextKeys" />
 		<div style="clear:both;padding-top:20px;"></div>
 		<p class="submit"><input type="submit" name="Submit" value="<?php _e('Update Options') ?>" /></p>
 		<div style="clear:both;padding-top:20px;"></div>
