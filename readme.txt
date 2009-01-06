@@ -27,7 +27,7 @@ Recently Added Features:<br />
 
 After you've downloaded and extracted the files:
 
-1. Upload the complete `WP-Slimbox2` folder to the `/wp-content/plugins/` directory<br />
+1. Upload the complete `wp-slimbox2` folder to your plugins directory (typically `/wp-content/plugins/`)<br />
 2. Activate the plugin through the 'Plugins' menu in WordPress<br />
 3. Visit the "WP-Slimbox2" page in your WordPress options menu to configure any advanced settings.<br />
 5. Manually (or in the future choose to automatically) add the `rel="lightbox"` attribute to any link tag to activate the lightbox or `rel="lightbox-imagesetname"` for an image set, using the title attribute to store a caption.<br />
