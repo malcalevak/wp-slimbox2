@@ -30,7 +30,7 @@ else
 $autoLoad = '$("a[rel^=\'lightbox\']").slimbox('.$options.', null, function(el) {
 		return (this == el) || ((this.rel.length > 8) && (this.rel == el.rel));
 	});
-	});';
+';
 echo '
 jQuery(function($) {
 $("#lbOverlay").css("background-color","'.get_option('wp_slimbox_overlayColor').'");
