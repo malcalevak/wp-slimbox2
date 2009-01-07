@@ -4,7 +4,7 @@ Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.5
 Tested up to: 2.7
-Stable Tag: 0.9.2
+Stable Tag: 0.9.2.1
 
 An WordPress implementation of the Slimbox2 javascript.
 
@@ -20,8 +20,9 @@ Planned Features:<br />
 3. Easier to use settings management.<br />
 
 Recently Added Features:<br />
-1. Option to automatically apply to all images on a page.<br />
-2. Option to change the overlay color.<br />
+1. Option to automatically apply to all images on a page. - v0.9.1<br />
+2. Option to change the overlay color. - v0.9.2<br />
+3. Emergency bug fix - v0.9.2.1
 
 == Installation ==
 
