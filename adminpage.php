@@ -1,5 +1,5 @@
 <?php
-	$options=array('opacity'=>get_option('wp_slimbox_overlayOpacity'),'overlayFadeDuration'=>get_option('wp_slimbox_overlayFadeDuration'),'resizeDuration'=>get_option('wp_slimbox_resizeDuration'),'resizeEasing'=>get_option('wp_slimbox_resizeEasing'),'initialWidth'=>get_option('wp_slimbox_initialWidth'),'initialHeight'=>get_option('wp_slimbox_initialHeight'),'imageFadeDuration'=>get_option('wp_slimbox_imageFadeDuration'),'captionAnimationDuration'=>get_option('wp_slimbox_captionAnimationDuration'),'counterText'=>get_option('wp_slimbox_counterText'),'closeKeys'=>get_option('wp_slimbox_closeKeys'),'previousKeys'=>get_option('wp_slimbox_previousKeys'),'nextKeys'=>get_option('wp_slimbox_nextKeys'));
+	$options=array('opacity'=>get_option('wp_slimbox_overlayOpacity'),'opacity'=>get_option('wp_slimbox_overlayColor'),'overlayFadeDuration'=>get_option('wp_slimbox_overlayFadeDuration'),'resizeDuration'=>get_option('wp_slimbox_resizeDuration'),'resizeEasing'=>get_option('wp_slimbox_resizeEasing'),'initialWidth'=>get_option('wp_slimbox_initialWidth'),'initialHeight'=>get_option('wp_slimbox_initialHeight'),'imageFadeDuration'=>get_option('wp_slimbox_imageFadeDuration'),'captionAnimationDuration'=>get_option('wp_slimbox_captionAnimationDuration'),'counterText'=>get_option('wp_slimbox_counterText'),'closeKeys'=>get_option('wp_slimbox_closeKeys'),'previousKeys'=>get_option('wp_slimbox_previousKeys'),'nextKeys'=>get_option('wp_slimbox_nextKeys'));
 	$easingArray = array(swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce);
 	$overlayOpacity = array(0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1);
 	$msArray = array(1,100,200,300,400,500,600,700,800,900,1000);
@@ -57,6 +57,17 @@
 				<td class='desc'>
 					<p>
 						This option allows the user to adjust the opacity of the background overlay. 1 is opaque, 0 is completely transparent.
+					</p>
+				</td>
+			</tr>
+			<tr class='inactive'>
+				<td class='name'>Overlay Color</td>
+				<th scope='row' class='check-column'>
+					<input type="text" name="wp_slimbox_overlayColor" value="<?php echo get_option('wp_slimbox_overlayColor'); ?>" size="7" maxlength="7"/>
+				</th>
+				<td class='desc'>
+					<p>
+						This option allows the user to set the color of the overlay using a valid HTML color code. Default is #000000.
 					</p>
 				</td>
 			</tr>
@@ -225,7 +236,7 @@
 		</tbody>
 		</table>
 		<input type="hidden" name="action" value="update" />
-		<input type="hidden" name="page_options" value="wp_slimbox_autoload,wp_slimbox_loop,wp_slimbox_overlayOpacity,wp_slimbox_overlayFadeDuration,wp_slimbox_resizeDuration,wp_slimbox_resizeEasing,wp_slimbox_initialWidth,wp_slimbox_initialHeight,wp_slimbox_imageFadeDuration,wp_slimbox_captionAnimationDuration,wp_slimbox_counterText,wp_slimbox_closeKeys,wp_slimbox_previousKeys,wp_slimbox_nextKeys" />
+		<input type="hidden" name="page_options" value="wp_slimbox_autoload,wp_slimbox_loop,wp_slimbox_overlayOpacity,wp_slimbox_overlayColor,wp_slimbox_overlayFadeDuration,wp_slimbox_resizeDuration,wp_slimbox_resizeEasing,wp_slimbox_initialWidth,wp_slimbox_initialHeight,wp_slimbox_imageFadeDuration,wp_slimbox_captionAnimationDuration,wp_slimbox_counterText,wp_slimbox_closeKeys,wp_slimbox_previousKeys,wp_slimbox_nextKeys" />
 		<div style="clear:both;padding-top:20px;"></div>
 		<p class="submit"><input type="submit" name="Submit" value="<?php _e('Update Options') ?>" /></p>
 		<div style="clear:both;padding-top:20px;"></div>

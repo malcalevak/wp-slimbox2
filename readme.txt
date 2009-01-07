@@ -4,7 +4,7 @@ Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.5
 Tested up to: 2.7
-Stable Tag: 0.9.1
+Stable Tag: 0.9.2
 
 An WordPress implementation of the Slimbox2 javascript.
 
@@ -15,19 +15,19 @@ A WordPress implementation of the stellar Slimbox2 script by Christophe Beyls (a
 Almost, if not all, options are configurable from the administration panel. For more on the settings and what they do check out the <a href="http://www.digitalia.be/software/slimbox2/" title="Slimbox 2, the ultimate lightweight Lightbox clone for jQuery">Slimbox2</a> page.
 
 Planned Features:<br />
-1. Option to change the overlay color.<br />
-2. Option to control which pages to load the script on.<br />
-3. Option for Flickr and picasaweb integration.<br />
-4. Easier to use settings management.<br />
+1. Option to control which pages to load the script on.<br />
+2. Option for Flickr and picasaweb integration.<br />
+3. Easier to use settings management.<br />
 
 Recently Added Features:<br />
 1. Option to automatically apply to all images on a page.<br />
+2. Option to change the overlay color.<br />
 
 == Installation ==
 
 After you've downloaded and extracted the files:
 
-1. Upload the complete `wp-slimbox2` folder to your plugins directory (typically `/wp-content/plugins/`)<br />
+1. Upload the complete `WP-Slimbox2` folder to the `/wp-content/plugins/` directory<br />
 2. Activate the plugin through the 'Plugins' menu in WordPress<br />
 3. Visit the "WP-Slimbox2" page in your WordPress options menu to configure any advanced settings.<br />
 5. Manually (or in the future choose to automatically) add the `rel="lightbox"` attribute to any link tag to activate the lightbox or `rel="lightbox-imagesetname"` for an image set, using the title attribute to store a caption.<br />
@@ -56,6 +56,7 @@ You want complete control over all the javascript settings from the admin page.<
 
 Version 0.9 Beta: Intial release - Jan-05-2008<br />
 Version 0.9.1 Beta: Addition of option to enable automatically applying to all image links (png,jpg,gif) - Jan-06-2008<br />
+Version 0.9.2 Beta: Addition of option to change the overlay color - Jan-07-2008<br />
 
 
 = Credits =

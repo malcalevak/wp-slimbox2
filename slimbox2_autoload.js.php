@@ -20,19 +20,20 @@ $options = '{
 			nextKeys: ['.get_option('wp_slimbox_nextKeys').']
 		}';
 
-if (get_option('wp_slimbox_autoload') == 'on') echo '
-jQuery(function($) {
-	$("a[href]").filter(function() {
+if (get_option('wp_slimbox_autoload') == 'on') 
+$autoLoad = '$("a[href]").filter(function() {
 		return /\.(jpg|png|gif)$/i.test(this.href);
 	}).slimbox({}, null, function(el) {
 		return (this == el) || (this.parentNode && (this.parentNode == el.parentNode));
-	});
-});';
-else echo '
-jQuery(function($) {
-	$("a[rel^=\'lightbox\']").slimbox('.$options.', null, function(el) {
+	});';
+else
+$autoLoad = '$("a[rel^=\'lightbox\']").slimbox('.$options.', null, function(el) {
 		return (this == el) || ((this.rel.length > 8) && (this.rel == el.rel));
 	});
-});
-';
+	});';
+echo '
+jQuery(function($) {
+$("#lbOverlay").css("background-color","'.get_option('wp_slimbox_overlayColor').'");
+'.$autoLoad.'
+});';
 ?>

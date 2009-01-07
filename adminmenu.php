@@ -4,6 +4,7 @@ add_action( "admin_print_scripts-$page", 'slimbox_adminhead' );
 add_option('wp_slimbox_autoload', 'false');
 add_option('wp_slimbox_loop', 'false');
 add_option('wp_slimbox_overlayOpacity', '0.8');
+add_option('wp_slimbox_overlayColor', '#000000');
 add_option('wp_slimbox_overlayFadeDuration', '400');
 add_option('wp_slimbox_resizeDuration', '400');
 add_option('wp_slimbox_resizeEasing', 'swing');
