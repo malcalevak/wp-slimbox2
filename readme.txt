@@ -22,8 +22,8 @@ Planned Features:<br />
 Recently Added Features:<br />
 1. Option to automatically apply to all images on a page.<br />
 2. Option to change the overlay color.<br />
-3. Emergency bug fix - v0.9.2.1
-4. Emergency Overlay Opacity fix - v0.9.2.2
+3. Emergency bug fix - v0.9.2.1<br />
+4. Emergency Overlay Opacity fix - v0.9.2.2<br />
 
 == Installation ==
 
