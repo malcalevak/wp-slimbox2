@@ -23,7 +23,7 @@ $options = '{
 if (get_option('wp_slimbox_autoload') == 'on') 
 $autoLoad = '$("a[href]").filter(function() {
 		return /\.(jpg|png|gif)$/i.test(this.href);
-	}).slimbox({}, null, function(el) {
+	}).slimbox('.$options.', null, function(el) {
 		return (this == el) || (this.parentNode && (this.parentNode == el.parentNode));
 	});';
 else
