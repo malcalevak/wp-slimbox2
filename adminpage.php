@@ -32,7 +32,7 @@
 				<td class='desc'>
 					<p>
 						This option allows the user to automatically activate Slimbox on all links pointing to ".jpg" or ".png" or
-						".gif". All image links contained in the same block or paragraph (having the same parent element) will automatically be grouped
+						".gif". All image links contained in the same post or page will automatically be grouped
 						together in a gallery. If this isn't activated you will need to manually add 'rel="lightbox"' for individual images or
 						'rel="lightbox-imagesetname"' for groups on all links you wish to use Slimbox.
 					</p>
