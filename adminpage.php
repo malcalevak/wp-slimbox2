@@ -29,17 +29,49 @@
 				<th scope='row' class='check-column'>
 					<input type="checkbox" name="wp_slimbox_autoload"<?php if (get_option('wp_slimbox_autoload') == 'on') echo ' checked="yes"';?> />
 				</th>
-				<td class='desc'><p>This option allows the user to automatically activate Slimbox on all links pointing to ".jpg" or ".png" or
-				".gif". All image links contained in the same block or paragraph (having the same parent element) will automatically be grouped
-				together in a gallery. If this isn't activated you will need to manually add 'rel="lightbox"' for individual images or
-				'rel="lightbox-imagesetname"' for groups on all links you wish to use Slimbox.</p></td>
+				<td class='desc'>
+					<p>
+						This option allows the user to automatically activate Slimbox on all links pointing to ".jpg" or ".png" or
+						".gif". All image links contained in the same block or paragraph (having the same parent element) will automatically be grouped
+						together in a gallery. If this isn't activated you will need to manually add 'rel="lightbox"' for individual images or
+						'rel="lightbox-imagesetname"' for groups on all links you wish to use Slimbox.
+					</p>
+				</td>
+			</tr>
+			<tr class='inactive'>
+				<td class='name'>Enable Picasweb Integration?</td>
+				<th scope='row' class='check-column'>
+					<input type="checkbox" name="wp_slimbox_picasaweb"<?php if (get_option('wp_slimbox_picasaweb') == 'on') echo ' checked="yes"';?> />
+				</th>
+				<td class='desc'>
+					<p>
+						This option allows the user to automatically add the lightbox effect to picasaweb links when provided an
+						appropriate thumbnail (this seperate from the autoload script which only functions on image links).
+					</p>
+				</td>
+			</tr>
+			<tr class='inactive'>
+				<td class='name'>Enable Flickr Integration?</td>
+				<th scope='row' class='check-column'>
+					<input type="checkbox" name="wp_slimbox_flickr"<?php if (get_option('wp_slimbox_flickr') == 'on') echo ' checked="yes"';?> />
+				</th>
+				<td class='desc'>
+					<p>
+						This option allows the user to automatically add the lightbox effect to picasaweb links when provided an
+						appropriate thumbnail (this seperate from the autoload script which only functions on image links).
+					</p>
+				</td>
 			</tr>
 			<tr class='inactive'>
 				<td class='name'>Loop?</td>
 				<th scope='row' class='check-column'>
 					<input type="checkbox" name="wp_slimbox_loop"<?php if (get_option('wp_slimbox_loop') == 'on') echo ' checked="yes"';?> />
 				</th>
-				<td class='desc'><p>This option allows the user to navigate between the first and last images of a Slimbox gallery, when there is more than one image to display.</p></td>
+				<td class='desc'>
+					<p>
+						This option allows the user to navigate between the first and last images of a Slimbox gallery, when there is more than one image to display.
+					</p>
+				</td>
 			</tr>
 			<tr class='inactive'>
 				<td class='name'>Overlay Opacity</td>
@@ -233,10 +265,22 @@
 						press to navigate to the next image. Default is [39, 78] which means Right arrow (39) and "n" (78).
 					</p>
 			</tr>
+			<tr class='inactive'>
+				<td class='name'>Maintenance mode</td>
+				<th scope='row' class='check-column'>
+					<input type="checkbox" name="wp_slimbox_maintenance"<?php if (get_option('wp_slimbox_maintenance') == 'on') echo ' checked="yes"';?> />
+				</th>
+				<td class='desc'>
+					<p>
+						This option enables a maintenance mode for testing purposes. When enabled slimbox will be disabled until you enable it by appending ?slimbox=on to a url.
+						It will then remain on until you disable it by appending ?slimbox=off to a url, you clear your cookies, or in certain cases you clear your browser. This
+						setting only impacts things at a vistor level, not a site wide level.
+					</p>
+			</tr>
 		</tbody>
 		</table>
 		<input type="hidden" name="action" value="update" />
-		<input type="hidden" name="page_options" value="wp_slimbox_autoload,wp_slimbox_loop,wp_slimbox_overlayOpacity,wp_slimbox_overlayColor,wp_slimbox_overlayFadeDuration,wp_slimbox_resizeDuration,wp_slimbox_resizeEasing,wp_slimbox_initialWidth,wp_slimbox_initialHeight,wp_slimbox_imageFadeDuration,wp_slimbox_captionAnimationDuration,wp_slimbox_counterText,wp_slimbox_closeKeys,wp_slimbox_previousKeys,wp_slimbox_nextKeys" />
+		<input type="hidden" name="page_options" value="wp_slimbox_autoload,wp_slimbox_loop,wp_slimbox_overlayOpacity,wp_slimbox_overlayColor,wp_slimbox_overlayFadeDuration,wp_slimbox_resizeDuration,wp_slimbox_resizeEasing,wp_slimbox_initialWidth,wp_slimbox_initialHeight,wp_slimbox_imageFadeDuration,wp_slimbox_captionAnimationDuration,wp_slimbox_counterText,wp_slimbox_closeKeys,wp_slimbox_previousKeys,wp_slimbox_nextKeys,wp_slimbox_picasaweb,wp_slimbox_flickr,wp_slimbox_maintenance" />
 		<div style="clear:both;padding-top:20px;"></div>
 		<p class="submit"><input type="submit" name="Submit" value="<?php _e('Update Options') ?>" /></p>
 		<div style="clear:both;padding-top:20px;"></div>

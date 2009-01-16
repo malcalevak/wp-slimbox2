@@ -4,10 +4,8 @@ Plugin Name: WP-Slimbox2
 Plugin URI: http://transientmonkey.com/wp-slimbox2
 Description: A Wordpress implementation of the Slimbox2 javascript, utilizing jQuery, originally written by Christophe Beyls. Requires WP 2.5+
 Author: Greg Yingling (malcalevak)
-Version: 0.9.2.3
+Version: 0.9.3
 Author URI: http://transientmonkey.com/
-
-Planned features include an assisted menu for selecting key codes, and implementation of the flickr and picasaweb javascripts.
 
 Copyright 2009 Transient Monkey
 
@@ -36,14 +34,15 @@ add_action('wp_print_scripts', 'wp_slimbox');
 function wp_slimbox() {
 	if (!is_admin())
 	{
+		if(get_option('wp_slimbox_maintenance') == 'on') {
+			if (isset($_REQUEST['slimbox'])) setcookie('slimboxC',$_REQUEST['slimbox'],0,'/');
+			if ($_REQUEST['slimbox'] == 'off' OR (!isset($_REQUEST['slimbox']) AND $_COOKIE['slimboxC'] != 'on')) return;
+		}
 		echo '<link rel="stylesheet" href="'.WP_PLUGIN_URL.'/wp-slimbox2/slimbox2.css" type="text/css" media="screen" />
 ';
 		if(get_option('wp_slimbox_resizeEasing') != 'swing') wp_enqueue_script('jquery_easing');
 		wp_enqueue_script('slimbox2_autoload');
 	}
-}
-
-function slimbox_adminhead() {
 }
 
 add_action('admin_menu', 'show_slimbox_options');

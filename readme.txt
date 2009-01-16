@@ -4,7 +4,7 @@ Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.5
 Tested up to: 2.7
-Stable Tag: 0.9.2.3
+Stable Tag: 0.9.3
 
 An WordPress implementation of the Slimbox2 javascript.
 
@@ -14,17 +14,19 @@ A WordPress implementation of the stellar Slimbox2 script by Christophe Beyls (a
 
 Almost, if not all, options are configurable from the administration panel. For more on the settings and what they do check out the <a href="http://www.digitalia.be/software/slimbox2/" title="Slimbox 2, the ultimate lightweight Lightbox clone for jQuery">Slimbox2</a> page.
 
-Planned Features:<br />
-1. Option to control which pages to load the script on.<br />
-2. Option for Flickr and picasaweb integration.<br />
-3. Easier to use settings management.<br />
+Support forums are generously hosted by Ryan Hellyer of PixoPoint, <a href="http://pixopoint.com/forum/index.php?board=6.0">here</a>.
 
-Recently Added Features:<br />
-1. Option to automatically apply to all images on a page.<br />
-2. Option to change the overlay color.<br />
-3. Emergency bug fix - v0.9.2.1<br />
-4. Emergency Overlay Opacity fix - v0.9.2.2<br />
-5. Yet another bug fix. Autoload wasn't loading options. - v0.9.2.3<br />
+Planned Features:<br />
+1. Additional gallery integration without requiring 'rel="lightbox"'.<br />
+2. Option to control which pages to load the script on.<br />
+3. Expanded and easier to use settings management.<br />
+
+Features Added in v0.9.3:<br />
+1. Flickr and picasaweb integration (see FAQ for more details)<br />
+2. Updated to Slimbox 2.01 - Fixed compatibility code for Opera 9.5+ and Opera for Wii which was not working with quirks mode web pages.<br />
+3. Addition of Maintenance Mode<br />
+4. Automatic grouping of items in posts or pages if autoload is used.<br />
+5. Compression and caching of autoload script.<br />
 
 == Installation ==
 
@@ -33,9 +35,16 @@ After you've downloaded and extracted the files:
 1. Upload the complete `WP-Slimbox2` folder to the `/wp-content/plugins/` directory<br />
 2. Activate the plugin through the 'Plugins' menu in WordPress<br />
 3. Visit the "WP-Slimbox2" page in your WordPress options menu to configure any advanced settings.<br />
-5. Manually (or in the future choose to automatically) add the `rel="lightbox"` attribute to any link tag to activate the lightbox or `rel="lightbox-imagesetname"` for an image set, using the title attribute to store a caption.<br />
+5. Manually add the `rel="lightbox"` attribute to any link tag to activate the lightbox or `rel="lightbox-imagesetname"` for an image set, using the title attribute to store a caption. Alternatively you may use the autoload option to automatically prepare links to images and additionally enable picasaweb and flickr integration to easily utilize their albums.<br />
 
 == Frequently Asked Questions ==
+
+= Does Slimbox2 support the lightbox effect on pages and videos? =
+
+No. As stated in the script creators FAQ, Slimbox was designed to display images only, to be simple and to have the smallest code. <br />
+
+= What kind of grouping does autoload utilize? =
+Autoload has been modified to group all images in a Wordpress post. If the images are instead on a page they will all be grouped together. If you want individual group sets it is recommend you instead insert 'rel="lightbox-groupname"' to specify your groups.
 
 = Why do I need WordPress 2.5+? =
 
@@ -50,6 +59,9 @@ Either the Javascript doesn't support it, or I haven't gotten around to adding i
 You want Lightbox or Slimbox effects using the jQuery library, and don't want any sort of "ad".<br />
 You want complete control over all the javascript settings from the admin page.<br />
 
+= What if I have other questions that haven't been answered? =
+Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support forums</a>, and read the Slimbox creators <a href="http://code.google.com/p/slimbox/wiki/FAQ">FAQ</a>.
+
 == Screenshots ==
 
 1. Administration interface in WordPress 2.7
@@ -63,6 +75,7 @@ Version 0.9.2 Beta: Addition of option to change the overlay color - Jan-07-2008
 Version 0.9.2.1 Beta: Emergency JS Fix - Jan-07-2008<br />
 Version 0.9.2.2 Beta: Emergency Admin for minor overlay opacity setting error - Jan-07-2008<br />
 Version 0.9.2.3 Beta: Bug fix. Autoload wasn't loading options. - v0.9.2.3 - Jan-08-2008<br />
+Version 0.9.3 Beta: Flickr and Picasaweb Integration, Slimbox 2.01, maintenance mode, autogrouping by post/page, compression and caching - Jan-14-2008<br />
 
 = Credits =
 
@@ -70,4 +83,6 @@ Thanks to the following for help with the development of this plugin:<br />
 
 * <a href="http://www.digitalia.be/software/slimbox2">Christophe Beyls</a> - Creator of the Slimbox2 Javascript<br />
 * <a href="http://gsgd.co.uk/sandbox/jquery/easing/">George McGinley Smith</a> - Creator of the jQuery Easing Plugin Javascript<br />
-* <a href="http://pixopoint.com">Ryan Hellyer</a> - For spurring my interest in WordPress plugins by welcoming my assistance on his <a href="http://pixopoint.com/multi-level-navigation/">Multi-level Navigation plugin</a><br />
+* <a href="http://pixopoint.com">Ryan Hellyer</a> - For spurring my interest in WordPress plugins by welcoming my assistance on his <a href="http://pixopoint.com/multi-level-navigation/">Multi-level Navigation plugin</a> and for hosting our <a href="http://pixopoint.com/forum/index.php?board=6.0">support forums</a>.<br />
+* Spi for code suggestion to autogroup items by post.
+* Anyone else I forgot to mention who's made a suggestion or provided me with ideas.

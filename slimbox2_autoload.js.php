@@ -1,6 +1,6 @@
 <?php
 require('../../../wp-blog-header.php');
-header('Content-type: text/javascript');
+require('gziphead.php');
 
 if (get_option('wp_slimbox_loop') == 'on') $loop = 'true';
 else $loop = 'false';
@@ -24,7 +24,7 @@ if (get_option('wp_slimbox_autoload') == 'on')
 $autoLoad = '$("a[href]").filter(function() {
 		return /\.(jpg|png|gif)$/i.test(this.href);
 	}).slimbox('.$options.', null, function(el) {
-		return (this == el) || (this.parentNode && (this.parentNode == el.parentNode));
+		return (this == el) || ($(this).parents("div.post, div#page")[0] && ($(this).parents("div.post, div#page")[0] == $(el).parents("div.post, div#page")[0]));
 	});';
 else
 $autoLoad = '$("a[rel^=\'lightbox\']").slimbox('.$options.', null, function(el) {
@@ -34,6 +34,19 @@ $autoLoad = '$("a[rel^=\'lightbox\']").slimbox('.$options.', null, function(el) 
 echo '
 jQuery(function($) {
 $("#lbOverlay").css("background-color","'.get_option('wp_slimbox_overlayColor').'");
-'.$autoLoad.'
+'.$autoLoad;
+if(get_option('wp_slimbox_picasaweb') == 'on') echo '
+$("a[href^=\'http://picasaweb.google.\'] > img:first-child[src]").parent().slimbox({}, function(el) {
+	return [el.firstChild.src.replace(/\/s\d+(-c)?\/([^\/]+)$/, "/s640/$2"),
+		(el.title || el.firstChild.alt) + \'<br /><a href="\' + el.href + \'">Picasa Web Albums page</a>\'];
+});
+';
+if(get_option('wp_slimbox_flickr') == 'on') echo '
+$("a[href^=\'http://www.flickr.com/photos/\'] > img:first-child[src]").parent().slimbox({}, function(el) {
+	return [el.firstChild.src.replace(/_[mts]\.(\w+)$/, ".$1"),
+		(el.title || el.firstChild.alt) + \'<br /><a href="\' + el.href + \'">Flickr page</a>\'];
+});
+';
+echo'
 });';
 ?>
