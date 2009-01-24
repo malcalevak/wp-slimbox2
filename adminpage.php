@@ -259,7 +259,7 @@
 		<input type="hidden" name="action" value="update" />
 		<input type="hidden" name="page_options" value="wp_slimbox_autoload,wp_slimbox_loop,wp_slimbox_overlayOpacity,wp_slimbox_overlayColor,wp_slimbox_overlayFadeDuration,wp_slimbox_resizeDuration,wp_slimbox_resizeEasing,wp_slimbox_initialWidth,wp_slimbox_initialHeight,wp_slimbox_imageFadeDuration,wp_slimbox_captionAnimationDuration,wp_slimbox_counterText,wp_slimbox_closeKeys,wp_slimbox_previousKeys,wp_slimbox_nextKeys,wp_slimbox_picasaweb,wp_slimbox_flickr,wp_slimbox_maintenance" />
 		<div style="clear:both;padding-top:20px;"></div>
-		<p class="submit"><input type="submit" name="Submit" value="<?php _e('Update Options'); ?>" /></p>
+		<p class="submit"><input type="submit" name="Submit" value="<?php _e('Update Options','wp-slimbox2'); ?>" /></p>
 		<div style="clear:both;padding-top:20px;"></div>
 	</form>
 </div>
