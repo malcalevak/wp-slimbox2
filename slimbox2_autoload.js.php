@@ -1,6 +1,17 @@
 <?php
 require('../../../wp-blog-header.php');
-require('gziphead.php');
+if (!defined( 'WP_CONTENT_URL')) {define('WP_CONTENT_URL',get_option('siteurl').'/wp-content');}
+if (!defined('WP_PLUGIN_URL')) {define('WP_PLUGIN_URL',WP_CONTENT_URL.'/plugins');}
+load_plugin_textdomain ('wp-slimbox2', PLUGINDIR.'/'.dirname(plugin_basename(__FILE__)) . '/languages', dirname(plugin_basename(__FILE__)) . '/languages');
+
+if ( extension_loaded('zlib') and !ini_get('zlib.output_compression') and ini_get('output_handler') != 'ob_gzhandler' and ((version_compare(phpversion(), '5.0', '>=') and ob_get_length() == false) or ob_get_length() === false) ) {
+	ob_start('ob_gzhandler');
+}
+header("Cache-Control: public");
+header("Pragma: cache");
+header("Expires: ".gmdate("D, d M Y H:i:s", time() + 60*60*24*get_option('wp_slimbox_cache'))." GMT");// 60 * 60 * 24 * number of days
+header("Last-Modified: ".gmdate("D, d M Y H:i:s", filemtime($_SERVER['SCRIPT_FILENAME']))." GMT");
+header('Content-Type: text/javascript; charset: UTF-8');
 
 if (get_option('wp_slimbox_loop') == 'on') $loop = 'true';
 else $loop = 'false';
@@ -34,6 +45,24 @@ $autoLoad = '$("a[rel^=\'lightbox\']").slimbox('.$options.', null, function(el) 
 echo '
 jQuery(function($) {
 $("#lbOverlay").css("background-color","'.get_option('wp_slimbox_overlayColor').'");
+$("#lbPrevLink").hover(
+	function () {
+		$(this).css("background-image","url('.WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/prevlabel.gif', 'wp-slimbox2').')");
+	},
+	function () {
+		$(this).css("background-image","");
+	}
+);
+$("#lbNextLink").hover(
+	function () {
+		$(this).css("background-image","url('.WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/nextlabel.gif', 'wp-slimbox2').')");
+	},
+	function () {
+		$(this).css("background-image","");
+	}
+);
+
+$("#lbCloseLink").css("background","transparent url('.WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/closelabel.gif', 'wp-slimbox2').') no-repeat center");
 '.$autoLoad;
 if(get_option('wp_slimbox_picasaweb') == 'on') echo '
 $("a[href^=\'http://picasaweb.google.\'] > img:first-child[src]").parent().slimbox({}, function(el) {
