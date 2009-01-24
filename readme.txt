@@ -23,7 +23,7 @@ Planned Features:<br />
 
 Recent Changes in v0.9.4.1:<br />
 1. Localization Support! (see FAQ for more info)<br />
-2. Espa&#227;ol/Spanish Localization Files.<br />
+2. Espa&#241;ol/Spanish Localization Files.<br />
 3. Caching of autload disabled, for now (for real this time 0.9.4.1).
 
 == Installation ==
@@ -81,7 +81,7 @@ Version 0.9.2.1 Beta: Emergency JS Fix - Jan-07-2009<br />
 Version 0.9.2.2 Beta: Emergency Admin for minor overlay opacity setting error - Jan-07-2009<br />
 Version 0.9.2.3 Beta: Bug fix. Autoload wasn't loading options. - v0.9.2.3 - Jan-08-2009<br />
 Version 0.9.3 Beta: Flickr and Picasaweb Integration, Slimbox 2.01, maintenance mode, autogrouping by post/page, compression and caching - Jan-14-2009<br />
-Version 0.9.4 Beta: Localization support implemented. Currently only Espa&#227;ol/Spanish provided. See FAQ to contribute other languages. Removed caching of autload script, at least for now. - v0.9.4 - Jan-24-2009<br />
+Version 0.9.4 Beta: Localization support implemented. Currently only Espa&#241;ol/Spanish provided. See FAQ to contribute other languages. Removed caching of autload script, at least for now. - v0.9.4 - Jan-24-2009<br />
 Version 0.9.4.1 Beta: Removed caching of autload script, for real this time. - v0.9.4.1 - Jan-24-2009<br />
 
 = Credits =
