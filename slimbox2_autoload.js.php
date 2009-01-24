@@ -9,7 +9,7 @@ if ( extension_loaded('zlib') and !ini_get('zlib.output_compression') and ini_ge
 }
 header("Cache-Control: public");
 header("Pragma: cache");
-header("Expires: ".gmdate("D, d M Y H:i:s", time() + 60*60*24*get_option('wp_slimbox_cache'))." GMT");// 60 * 60 * 24 * number of days
+//header("Expires: ".gmdate("D, d M Y H:i:s", time() + 60*60*24*get_option('wp_slimbox_cache'))." GMT");// 60 * 60 * 24 * number of days
 header("Last-Modified: ".gmdate("D, d M Y H:i:s", filemtime($_SERVER['SCRIPT_FILENAME']))." GMT");
 header('Content-Type: text/javascript; charset: UTF-8');
 

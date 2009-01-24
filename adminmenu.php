@@ -19,5 +19,5 @@ add_option('wp_slimbox_nextKeys', __('39, 78', 'wp-slimbox2'));
 add_option('wp_slimbox_picasaweb', 'false');
 add_option('wp_slimbox_flickr', 'false');
 add_option('wp_slimbox_maintenance', 'false');
-add_option('wp_slimbox_cache', '0');
+//add_option('wp_slimbox_cache', '0');
 ?>
