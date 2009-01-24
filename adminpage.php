@@ -246,12 +246,12 @@
 					</p>
 			</tr>
 <!--			<tr class='inactive'>
-				<td class='name'><?php _e('Javascript Caching', 'wp-slimbox2'); ?></td>
+				<td class='name'><?php// _e('Javascript Caching', 'wp-slimbox2'); ?></td>
 				<th scope='row' class='check-column'>
 					<input type="text" name="wp_slimbox_cache" value="<?php// echo get_option('wp_slimbox_cache'); ?>" />
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option enables caching of the autoload javascript. Be warned that if caching is enabled visitors to your site will not see any changes to settings until their cache is cleared or expires, even if you disable caching. Set it to 0 to disable caching.', 'wp-slimbox2'); ?>
+					<p> <?php// _e('This option enables caching of the autoload javascript. Be warned that if caching is enabled visitors to your site will not see any changes to settings until their cache is cleared or expires, even if you disable caching. Set it to 0 to disable caching.', 'wp-slimbox2'); ?>
 					</p>
 			</tr>
 -->		</tbody>
