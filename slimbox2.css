@@ -42,7 +42,7 @@
 	left: 0;
 }
 
-#lbPrevLink:hover {
+#lbPrevLink:hover, #lbPrevLink:active {
 	background: transparent no-repeat 0 15%;
 }
 
@@ -50,7 +50,7 @@
 	right: 0;
 }
 
-#lbNextLink:hover {
+#lbNextLink:hover, #lbNextLink:active {
 	background: transparent no-repeat 100% 15%;
 }
 
