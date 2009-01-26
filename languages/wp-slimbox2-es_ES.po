@@ -13,7 +13,8 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: SPAIN\n"
-"X-Poedit-SearchPath-0: C:\\Users\\Malcalevak\\Desktop\\wp-slimbox2-translations\\wp-slimbox2\n"
+"X-Poedit-SearchPath-0: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2\n"
+": "
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminmenu.php:14
 msgid "Image {x} of {y}"
@@ -161,7 +162,7 @@ msgstr "Texto del contador"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:210
 msgid "This option allows the user to customize, translate or disable the counter text which appears in the captions when multiple images are shown. Inside the text, {x} will be replaced by the current image index, and {y} will be replaced by the total number of images. Set it to false (boolean value, without quotes) or \"\" to disable the counter display. Default is \"Image {x} of {y}\"."
-msgstr "Esta opción permite al usuario modificar, traducir o desactivar el texto del contador de imágenes que aparece en la leyenda, cuando se muestren múltiples imágenes. En ese texto, {x} será sustituido por el índice actual de imágenes; {y} será sustituido por el número total de imágenes. Con el valor 'false' (valor booleano, sin comillas) o \"\" el contador no será mostrado. El valor por defecto es \"Image {x} of {y}\"."
+msgstr "Esta opción permite al usuario modificar, traducir o desactivar el texto del contador de imágenes que aparece en la leyenda, cuando se muestren múltiples imágenes. En ese texto, {x} será sustituido por el índice actual de imágenes; {y} será sustituido por el número total de imágenes. Con el valor 'false' (valor booleano, sin comillas) o \"\" el contador no será mostrado. El valor por defecto es \"Imagen {x} de {y}\"."
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:214
 msgid "Close Keys"
@@ -197,7 +198,7 @@ msgstr "Esta opción activa el modo de mantenimiento, para realizar pruebas. Cua
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:254
 msgid "Update Options"
-msgstr "Opciones de actualización"
+msgstr "Actualizar opciones"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/slimbox2_autoload.js.php:41
 msgid "default/prevlabel.gif"
