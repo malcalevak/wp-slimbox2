@@ -26,8 +26,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 if (!defined( 'WP_CONTENT_URL')) {define('WP_CONTENT_URL',get_option('siteurl').'/wp-content');}
 if (!defined('WP_PLUGIN_URL')) {define('WP_PLUGIN_URL',WP_CONTENT_URL.'/plugins');}
 
-wp_register_script('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/slimbox2.js',array('jquery'), '2.0');
-wp_register_script('slimbox2_autoload', WP_PLUGIN_URL.'/wp-slimbox2/slimbox2_autoload.js.php',array('slimbox2'), '1.0');
+wp_register_script('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/slimbox2.js',array('jquery'), '2.02');
+wp_register_script('slimbox2_autoload', WP_PLUGIN_URL.'/wp-slimbox2/slimbox2_autoload.js.php',array('slimbox2'), '1.0');//add option for version number, update with each save
 wp_register_script('jquery_easing', WP_PLUGIN_URL.'/wp-slimbox2/jquery.easing.1.3.packed.js',array('jquery'), '1.3');
 
 add_action('wp_print_scripts', 'wp_slimbox');

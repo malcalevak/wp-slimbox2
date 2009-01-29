@@ -47,7 +47,7 @@ jQuery(function($) {
 $("#lbOverlay").css("background-color","'.get_option('wp_slimbox_overlayColor').'");
 $("#lbPrevLink").hover(
 	function () {
-		$(this).css("background-image","url('.WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/prevlabel.gif', 'wp-slimbox2').')");
+		$(this).css("background-image","url(\''.WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/prevlabel.gif', 'wp-slimbox2').'\')");
 	},
 	function () {
 		$(this).css("background-image","");
@@ -55,14 +55,19 @@ $("#lbPrevLink").hover(
 );
 $("#lbNextLink").hover(
 	function () {
-		$(this).css("background-image","url('.WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/nextlabel.gif', 'wp-slimbox2').')");
+		$(this).css("background-image","url(\''.WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/nextlabel.gif', 'wp-slimbox2').'\')");
 	},
 	function () {
 		$(this).css("background-image","");
 	}
-);
-
-$("#lbCloseLink").css("background","transparent url('.WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/closelabel.gif', 'wp-slimbox2').') no-repeat center");
+);';
+if(__('LTR', 'wp-slimbox2') == 'RTL') echo '
+$("#lbPrevLink").addClass("next");
+$("#lbNextLink").addClass("prev");
+$(".next").attr("id", "lbNextLink");
+$(".prev").attr("id", "lbPrevLink");
+';
+echo '$("#lbCloseLink").css("background","transparent url(\''.WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/closelabel.gif', 'wp-slimbox2').'\') no-repeat center");
 '.$autoLoad;
 if(get_option('wp_slimbox_picasaweb') == 'on') echo '
 $("a[href^=\'http://picasaweb.google.\'] > img:first-child[src]").parent().slimbox({}, function(el) {

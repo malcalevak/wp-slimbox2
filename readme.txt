@@ -83,7 +83,11 @@ Version 0.9.2.3 Beta: Bug fix. Autoload wasn't loading options. - v0.9.2.3 - Jan
 Version 0.9.3 Beta: Flickr and Picasaweb Integration, Slimbox 2.01, maintenance mode, autogrouping by post/page, compression and caching - Jan-14-2009<br />
 Version 0.9.4 Beta: Localization support implemented. Currently only Espa&#241;ol/Spanish provided. See FAQ to contribute other languages. Removed caching of autload script, at least for now. - v0.9.4 - Jan-24-2009<br />
 Version 0.9.4.1 Beta: Removed caching of autload script, for real this time. - v0.9.4.1 - Jan-24-2009<br />
-Version 0.9.4.2 Beta: Added minor IE6 fix to prevent tiling of next and previous images in a unique scenario. Espa&#241;ol/Spanish language typo correction.
+Version 0.9.4.2 Beta:
+	Added minor IE6 fix to prevent tiling of next and previous images in a unique scenario.
+	Espa&#241;ol/Spanish language typo correction.
+	Updated to Slimbox 2.02 (and adjusted version # accordingly)
+	Support for RTL languages added (proper image progression and button display)
 
 = Credits =
 
