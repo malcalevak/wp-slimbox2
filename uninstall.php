@@ -18,4 +18,5 @@ delete_option('wp_slimbox_nextKeys');
 delete_option('wp_slimbox_picasaweb');
 delete_option('wp_slimbox_flickr');
 delete_option('wp_slimbox_maintenance');
+delete_option('wp_slimbox_cache');
 ?>

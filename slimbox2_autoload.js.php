@@ -9,7 +9,7 @@ if ( extension_loaded('zlib') and !ini_get('zlib.output_compression') and ini_ge
 }
 header("Cache-Control: public");
 header("Pragma: cache");
-//header("Expires: ".gmdate("D, d M Y H:i:s", time() + 60*60*24*get_option('wp_slimbox_cache'))." GMT");// 60 * 60 * 24 * number of days
+header("Expires: ".gmdate("D, d M Y H:i:s", time() + 60*60*24*365)." GMT");// cache for one year
 header("Last-Modified: ".gmdate("D, d M Y H:i:s", filemtime($_SERVER['SCRIPT_FILENAME']))." GMT");
 header('Content-Type: text/javascript; charset: UTF-8');
 
@@ -33,7 +33,7 @@ $options = '{
 
 if (get_option('wp_slimbox_autoload') == 'on') 
 $autoLoad = '$("a[href]").filter(function() {
-		return /\.(jpg|png|gif)$/i.test(this.href);
+		return /\.(jpg|png|gif)(\?[\d\w=&]*)?$/i.test(this.href);
 	}).slimbox('.$options.', null, function(el) {
 		return (this == el) || ($(this).parents("div.post, div#page")[0] && ($(this).parents("div.post, div#page")[0] == $(el).parents("div.post, div#page")[0]));
 	});';
@@ -71,7 +71,7 @@ echo '$("#lbCloseLink").css("background","transparent url(\''.WP_PLUGIN_URL.'/wp
 '.$autoLoad;
 if(get_option('wp_slimbox_picasaweb') == 'on') echo '
 $("a[href^=\'http://picasaweb.google.\'] > img:first-child[src]").parent().slimbox({}, function(el) {
-	return [el.firstChild.src.replace(/\/s\d+(-c)?\/([^\/]+)$/, "/s640/$2"),
+	return [el.firstChild.src.replace(/\/s\d+(?:\-c)?\/([^\/]+)$/, "/s640/$2"),
 		(el.title || el.firstChild.alt) + \'<br /><a href="\' + el.href + \'">Picasa Web Albums page</a>\'];
 });
 ';

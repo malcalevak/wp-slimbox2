@@ -245,19 +245,11 @@
 					<p> <?php _e('This option enables a maintenance mode for testing purposes. When enabled slimbox will be disabled until you enable it by appending ?slimbox=on to a url. It will then remain on until you disable it by appending ?slimbox=off to a url, you clear your cookies, or in certain cases you clear your browser. This setting only impacts things at a vistor level, not a site wide level.', 'wp-slimbox2'); ?>
 					</p>
 			</tr>
-<!--			<tr class='inactive'>
-				<td class='name'><?php// _e('Javascript Caching', 'wp-slimbox2'); ?></td>
-				<th scope='row' class='check-column'>
-					<input type="text" name="wp_slimbox_cache" value="<?php// echo get_option('wp_slimbox_cache'); ?>" />
-				</th>
-				<td class='desc'>
-					<p> <?php// _e('This option enables caching of the autoload javascript. Be warned that if caching is enabled visitors to your site will not see any changes to settings until their cache is cleared or expires, even if you disable caching. Set it to 0 to disable caching.', 'wp-slimbox2'); ?>
-					</p>
-			</tr>
--->		</tbody>
+			<input type="hidden" name="wp_slimbox_cache" value="<?php echo time(); ?>" />
+		</tbody>
 		</table>
 		<input type="hidden" name="action" value="update" />
-		<input type="hidden" name="page_options" value="wp_slimbox_autoload,wp_slimbox_loop,wp_slimbox_overlayOpacity,wp_slimbox_overlayColor,wp_slimbox_overlayFadeDuration,wp_slimbox_resizeDuration,wp_slimbox_resizeEasing,wp_slimbox_initialWidth,wp_slimbox_initialHeight,wp_slimbox_imageFadeDuration,wp_slimbox_captionAnimationDuration,wp_slimbox_counterText,wp_slimbox_closeKeys,wp_slimbox_previousKeys,wp_slimbox_nextKeys,wp_slimbox_picasaweb,wp_slimbox_flickr,wp_slimbox_maintenance" />
+		<input type="hidden" name="page_options" value="wp_slimbox_autoload,wp_slimbox_loop,wp_slimbox_overlayOpacity,wp_slimbox_overlayColor,wp_slimbox_overlayFadeDuration,wp_slimbox_resizeDuration,wp_slimbox_resizeEasing,wp_slimbox_initialWidth,wp_slimbox_initialHeight,wp_slimbox_imageFadeDuration,wp_slimbox_captionAnimationDuration,wp_slimbox_counterText,wp_slimbox_closeKeys,wp_slimbox_previousKeys,wp_slimbox_nextKeys,wp_slimbox_picasaweb,wp_slimbox_flickr,wp_slimbox_maintenance,wp_slimbox_cache" />
 		<div style="clear:both;padding-top:20px;"></div>
 		<p class="submit"><input type="submit" name="Submit" value="<?php _e('Update Options','wp-slimbox2'); ?>" /></p>
 		<div style="clear:both;padding-top:20px;"></div>
