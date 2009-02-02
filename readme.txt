@@ -4,7 +4,7 @@ Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.6
 Tested up to: 2.7
-Stable Tag: 0.9.4.1
+Stable Tag: 0.9.5
 
 An WordPress implementation of the Slimbox2 javascript.
 
@@ -21,10 +21,14 @@ Planned Features:<br />
 2. Option to control which pages to load the script on.<br />
 3. Expanded and easier to use settings management.<br />
 
-Recent Changes in v0.9.4.1:<br />
-1. Localization Support! (see FAQ for more info)<br />
-2. Espa&#241;ol/Spanish Localization Files.<br />
-3. Caching of autload disabled, for now (for real this time 0.9.4.1).
+Recent Changes in v0.9.5:<br />
+1. 	Support for RTL languages added (proper image progression and button display, still no RTL translations)<br />
+2. 	Caching/compression reenabled on javascript - cache for one year, or until version change which occurs on option update.<br />
+3. 	Support options on autoloaded image files (ie .jpg?w=400 now is properly detected)<br />
+4. 	Updated to Slimbox 2.02 (and adjusted version # accordingly, see Slimbox website for more details)<br />
+5. 	Added minor IE6 fix to prevent tiling of next and previous images in a unique scenario.<br />
+6. 	Espa&#241;ol/Spanish language typo correction.<br />
+
 
 == Installation ==
 
