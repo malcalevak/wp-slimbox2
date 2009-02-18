@@ -39,19 +39,13 @@
 }
 
 #lbPrevLink {
-	left: 0;
-}
-
-#lbPrevLink:hover, #lbPrevLink:active {
-	background: transparent no-repeat 0 15%;
+background: transparent no-repeat 0 15%;
+left: 0;
 }
 
 #lbNextLink {
-	right: 0;
-}
-
-#lbNextLink:hover, #lbNextLink:active {
-	background: transparent no-repeat 100% 15%;
+background: transparent no-repeat 100% 15%;
+right: 0;
 }
 
 #lbBottom {
