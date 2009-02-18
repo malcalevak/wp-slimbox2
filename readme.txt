@@ -21,14 +21,9 @@ Planned Features:<br />
 2. Option to control which pages to load the script on.<br />
 3. Expanded and easier to use settings management.<br />
 
-Recent Changes in v0.9.5:<br />
-1. 	Support for RTL languages added (proper image progression and button display, still no RTL translations)<br />
-2. 	Caching/compression reenabled on javascript - cache for one year, or until version change which occurs on option update.<br />
-3. 	Support options on autoloaded image files (ie .jpg?w=400 now is properly detected)<br />
-4. 	Updated to Slimbox 2.02 (and adjusted version # accordingly, see Slimbox website for more details)<br />
-5. 	Added minor IE6 fix to prevent tiling of next and previous images in a unique scenario.<br />
-6. 	Espa&#241;ol/Spanish language typo correction.<br />
-
+Recent Changes in v0.9.6:<br />
+1. 	Addition of German/Deutsch localization. NOTE: SWITCHING LOCALIZATIONS DOES NOT RESET SCRIPT CACHE VARIABLE<br />
+2. 	CSS fix to prevent image tiling in Safari.<br />
 
 == Installation ==
 
@@ -77,23 +72,25 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 2. Overlay effect.
 
 == History ==
-
-Version 0.9 Beta: Intial release - Jan-05-2008<br />
-Version 0.9.1 Beta: Addition of option to enable automatically applying to all image links (png,jpg,gif) - Jan-06-2009<br />
-Version 0.9.2 Beta: Addition of option to change the overlay color - Jan-07-2009<br />
-Version 0.9.2.1 Beta: Emergency JS Fix - Jan-07-2009<br />
-Version 0.9.2.2 Beta: Emergency Admin for minor overlay opacity setting error - Jan-07-2009<br />
-Version 0.9.2.3 Beta: Bug fix. Autoload wasn't loading options. - v0.9.2.3 - Jan-08-2009<br />
-Version 0.9.3 Beta: Flickr and Picasaweb Integration, Slimbox 2.01, maintenance mode, autogrouping by post/page, compression and caching - Jan-14-2009<br />
-Version 0.9.4 Beta: Localization support implemented. Currently only Espa&#241;ol/Spanish provided. See FAQ to contribute other languages. Removed caching of autload script, at least for now. - v0.9.4 - Jan-24-2009<br />
-Version 0.9.4.1 Beta: Removed caching of autload script, for real this time. - v0.9.4.1 - Jan-24-2009<br />
-Version 0.9.5 Beta:
+Version 0.9.6 Beta:
+	Added German/Deutsch translation - thanks Laws
+	Tiling Next/Prev Links in Safari Fix - thanks monodistortion
+Version 0.9.5 Beta - Feb-01-2009:
 	Added minor IE6 fix to prevent tiling of next and previous images in a unique scenario.
 	Espa&#241;ol/Spanish language typo correction.
 	Updated to Slimbox 2.02 (and adjusted version # accordingly, see Slimbox website for more details)
 	Support for RTL languages added (proper image progression and button display)
 	Caching/compression reenabled on javascript - cache for one year, or until version change which occurs on option update.
 	Support options on autoloaded image files (ie .jpg?w=400 now is properly detected)
+Version 0.9.4.1 Beta: Removed caching of autload script, for real this time. - v0.9.4.1 - Jan-24-2009<br />
+Version 0.9.4 Beta: Localization support implemented. Currently only Espa&#241;ol/Spanish provided. See FAQ to contribute other languages. Removed caching of autload script, at least for now. - v0.9.4 - Jan-24-2009<br />
+Version 0.9.3 Beta: Flickr and Picasaweb Integration, Slimbox 2.01, maintenance mode, autogrouping by post/page, compression and caching - Jan-14-2009<br />
+Version 0.9.2.3 Beta: Bug fix. Autoload wasn't loading options. - v0.9.2.3 - Jan-08-2009<br />
+Version 0.9.2.2 Beta: Emergency Admin for minor overlay opacity setting error - Jan-07-2009<br />
+Version 0.9.2.1 Beta: Emergency JS Fix - Jan-07-2009<br />
+Version 0.9.2 Beta: Addition of option to change the overlay color - Jan-07-2009<br />
+Version 0.9.1 Beta: Addition of option to enable automatically applying to all image links (png,jpg,gif) - Jan-06-2009<br />
+Version 0.9 Beta: Intial release - Jan-05-2008<br />
 
 = Credits =
 
@@ -104,4 +101,6 @@ Thanks to the following for help with the development of this plugin:<br />
 * <a href="http://pixopoint.com">Ryan Hellyer</a> - For spurring my interest in WordPress plugins by welcoming my assistance on his <a href="http://pixopoint.com/multi-level-navigation/">Multi-level Navigation plugin</a> and for hosting our <a href="http://pixopoint.com/forum/index.php?board=6.0">support forums</a>.<br />
 * Spi for code suggestion to autogroup items by post.
 * <a href="http://nv1962.net/">nv1962</a> - Suggestion to implement localization and Spanish translation.
+* Laws for German/Deutsch localization.
+* monodistortion  for CSS tweaks to prevent tiling of images.
 * Anyone else I forgot to mention who's made a suggestion or provided me with ideas.
