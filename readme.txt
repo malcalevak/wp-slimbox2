@@ -24,6 +24,7 @@ Planned Features:<br />
 Recent Changes in v0.9.6:<br />
 1. 	Addition of German/Deutsch localization. NOTE: SWITCHING LOCALIZATIONS DOES NOT RESET SCRIPT CACHE VARIABLE<br />
 2. 	CSS fix to prevent image tiling in Safari.<br />
+3.  Switch from wp-blog-header to wp-load.<br />
 
 == Installation ==
 

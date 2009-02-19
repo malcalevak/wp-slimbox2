@@ -1,5 +1,5 @@
 <?php
-require('../../../wp-blog-header.php');
+require_once("../../../wp-load.php");
 if (!defined( 'WP_CONTENT_URL')) {define('WP_CONTENT_URL',get_option('siteurl').'/wp-content');}
 if (!defined('WP_PLUGIN_URL')) {define('WP_PLUGIN_URL',WP_CONTENT_URL.'/plugins');}
 load_plugin_textdomain ('wp-slimbox2', PLUGINDIR.'/'.dirname(plugin_basename(__FILE__)) . '/languages', dirname(plugin_basename(__FILE__)) . '/languages');
@@ -11,7 +11,7 @@ header("Cache-Control: public");
 header("Pragma: cache");
 header("Expires: ".gmdate("D, d M Y H:i:s", time() + 60*60*24*365)." GMT");// cache for one year
 header("Last-Modified: ".gmdate("D, d M Y H:i:s", filemtime($_SERVER['SCRIPT_FILENAME']))." GMT");
-header('Content-Type: text/javascript; charset: UTF-8');
+header('Content-Type: text/javascript; charset='.get_option('blog_charset').'');
 
 if (get_option('wp_slimbox_loop') == 'on') $loop = 'true';
 else $loop = 'false';
