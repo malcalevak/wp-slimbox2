@@ -3,8 +3,8 @@ Contributors: malcalevak
 Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.6
-Tested up to: 2.7
-Stable Tag: 0.9.5
+Tested up to: 2.7.1
+Stable Tag: 0.9.6
 
 An WordPress implementation of the Slimbox2 javascript.
 
@@ -22,9 +22,9 @@ Planned Features:<br />
 3. Expanded and easier to use settings management.<br />
 
 Recent Changes in v0.9.6:<br />
-1. 	Addition of German/Deutsch localization. NOTE: SWITCHING LOCALIZATIONS DOES NOT RESET SCRIPT CACHE VARIABLE<br />
+1. 	Addition of rudimentary German/Deutsch localization.<br />
 2. 	CSS fix to prevent image tiling in Safari.<br />
-3.  Switch from wp-blog-header to wp-load.<br />
+3.  Switch from wp-blog-header to wp-load, may resolve issue on certain servers that fail to properly serve dynamic JS and CSS.<br />
 
 == Installation ==
 
@@ -58,6 +58,7 @@ I only know English, but as of v.0.9.4 the plugin supports localization using PO
 A copy of the POT file to use in your translations can be found in the languages directory as wp-slimbox2.pot.<br />
 If you're willing to provide a translation I'd be more than happy to include it. The NEXT, PREV, and Close buttons can be translated as well.<br />
 If you've translated the plugin please let me know by posting on our <a href="http://pixopoint.com/forum/index.php?board=6.0">support forums</a>.<br />
+A note to those using a translation - YOU MUST UPDATE YOUR SETTINGS after setting your locale or your local images will not update.<br />
 
 = Why should I use this plugin? =
 
@@ -65,7 +66,7 @@ You want Lightbox or Slimbox effects using the jQuery library, and don't want an
 You want complete control over all the javascript settings from the admin page.<br />
 
 = What if I have other questions that haven't been answered? =
-Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support forums</a>, and read the Slimbox creators <a href="http://code.google.com/p/slimbox/wiki/FAQ">FAQ</a>.
+Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support forums</a>, and read the Slimbox creators <a href="http://code.google.com/p/slimbox/wiki/FAQ">FAQ</a>.<br />
 
 == Screenshots ==
 
@@ -73,16 +74,17 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 2. Overlay effect.
 
 == History ==
-Version 0.9.6 Beta:
-	Added German/Deutsch translation - thanks Laws
-	Tiling Next/Prev Links in Safari Fix - thanks monodistortion
-Version 0.9.5 Beta - Feb-01-2009:
-	Added minor IE6 fix to prevent tiling of next and previous images in a unique scenario.
-	Espa&#241;ol/Spanish language typo correction.
-	Updated to Slimbox 2.02 (and adjusted version # accordingly, see Slimbox website for more details)
-	Support for RTL languages added (proper image progression and button display)
-	Caching/compression reenabled on javascript - cache for one year, or until version change which occurs on option update.
-	Support options on autoloaded image files (ie .jpg?w=400 now is properly detected)
+Version 0.9.6 Beta:<br />
+	Added rudimentary German/Deutsch translation - thanks Laws<br />
+	Tiling Next/Prev Links in Safari Fix - thanks monodistortion<br />
+	Switch from wp-blog-header to wp-load, may resolve issue on certain servers that fail to properly serve dynamic JS and CSS<br />
+Version 0.9.5 Beta - Feb-01-2009:<br />
+	Added minor IE6 fix to prevent tiling of next and previous images in a unique scenario.<br />
+	Espa&#241;ol/Spanish language typo correction.<br />
+	Updated to Slimbox 2.02 (and adjusted version # accordingly, see Slimbox website for more details)<br />
+	Support for RTL languages added (proper image progression and button display)<br />
+	Caching/compression reenabled on javascript - cache for one year, or until version change which occurs on option update.<br />
+	Support options on autoloaded image files (ie .jpg?w=400 now is properly detected)<br />
 Version 0.9.4.1 Beta: Removed caching of autload script, for real this time. - v0.9.4.1 - Jan-24-2009<br />
 Version 0.9.4 Beta: Localization support implemented. Currently only Espa&#241;ol/Spanish provided. See FAQ to contribute other languages. Removed caching of autload script, at least for now. - v0.9.4 - Jan-24-2009<br />
 Version 0.9.3 Beta: Flickr and Picasaweb Integration, Slimbox 2.01, maintenance mode, autogrouping by post/page, compression and caching - Jan-14-2009<br />
@@ -100,8 +102,8 @@ Thanks to the following for help with the development of this plugin:<br />
 * <a href="http://www.digitalia.be/software/slimbox2">Christophe Beyls</a> - Creator of the Slimbox2 Javascript<br />
 * <a href="http://gsgd.co.uk/sandbox/jquery/easing/">George McGinley Smith</a> - Creator of the jQuery Easing Plugin Javascript<br />
 * <a href="http://pixopoint.com">Ryan Hellyer</a> - For spurring my interest in WordPress plugins by welcoming my assistance on his <a href="http://pixopoint.com/multi-level-navigation/">Multi-level Navigation plugin</a> and for hosting our <a href="http://pixopoint.com/forum/index.php?board=6.0">support forums</a>.<br />
-* Spi for code suggestion to autogroup items by post.
-* <a href="http://nv1962.net/">nv1962</a> - Suggestion to implement localization and Spanish translation.
-* Laws for German/Deutsch localization.
-* monodistortion  for CSS tweaks to prevent tiling of images.
-* Anyone else I forgot to mention who's made a suggestion or provided me with ideas.
+* Spi for code suggestion to autogroup items by post.<br />
+* <a href="http://nv1962.net/">nv1962</a> - Suggestion to implement localization and Spanish translation.<br />
+* Laws for German/Deutsch localization.<br />
+* monodistortion  for CSS tweaks to prevent tiling of images.<br />
+* Anyone else I forgot to mention who's made a suggestion or provided me with ideas.<br />
