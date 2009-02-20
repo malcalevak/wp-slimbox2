@@ -74,7 +74,7 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 2. Overlay effect.
 
 == History ==
-Version 0.9.6 Beta:<br />
+Version 0.9.6 Beta - Feb-19-2009:<br />
 	Added rudimentary German/Deutsch translation - thanks Laws<br />
 	Tiling Next/Prev Links in Safari Fix - thanks monodistortion<br />
 	Switch from wp-blog-header to wp-load, may resolve issue on certain servers that fail to properly serve dynamic JS and CSS<br />
