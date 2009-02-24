@@ -4,7 +4,7 @@ Plugin Name: WP-Slimbox2
 Plugin URI: http://transientmonkey.com/wp-slimbox2
 Description: A Wordpress implementation of the Slimbox2 javascript, utilizing jQuery, originally written by Christophe Beyls. Requires WP 2.6+
 Author: Greg Yingling (malcalevak)
-Version: 0.9.6
+Version: 0.9.5
 Author URI: http://transientmonkey.com/
 
 Copyright 2009 Transient Monkey
@@ -29,6 +29,8 @@ if (!defined('WP_PLUGIN_URL')) {define('WP_PLUGIN_URL',WP_CONTENT_URL.'/plugins'
 wp_register_script('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/slimbox2.js',array('jquery'), '2.02');
 wp_register_script('slimbox2_autoload', WP_PLUGIN_URL.'/wp-slimbox2/slimbox2_autoload.js.php',array('slimbox2'),get_option('wp_slimbox_cache'));//add option for version number, update with each save
 wp_register_script('jquery_easing', WP_PLUGIN_URL.'/wp-slimbox2/jquery.easing.1.3.packed.js',array('jquery'), '1.3');
+wp_register_script('jquery_farbtastic', WP_PLUGIN_URL.'/wp-slimbox2/farbtastic/farbtastic.js',array('jquery'), '1.2');
+wp_register_script('load_farbtastic', WP_PLUGIN_URL.'/wp-slimbox2/farbtastic/load_farbtastic.js',array('jquery_farbtastic'), '1.0');
 
 add_action('wp_print_scripts', 'wp_slimbox');
 function wp_slimbox() {
@@ -42,7 +44,10 @@ function wp_slimbox() {
 ';
 		if(get_option('wp_slimbox_resizeEasing') != 'swing') wp_enqueue_script('jquery_easing');
 		wp_enqueue_script('slimbox2_autoload');
-	}
+	} else {
+		echo '<link rel="stylesheet" href="'.WP_PLUGIN_URL.'/wp-slimbox2/farbtastic/farbtastic.css" type="text/css" media="screen" />
+';
+		wp_enqueue_script('load_farbtastic');}
 }
 
 add_action('admin_menu', 'show_slimbox_options');

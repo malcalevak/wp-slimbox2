@@ -85,7 +85,8 @@
 			<tr class='inactive'>
 				<td class='name'><?php _e('Overlay Color', 'wp-slimbox2'); ?></td>
 				<th scope='row' class='check-column'>
-					<input type="text" name="wp_slimbox_overlayColor" value="<?php echo get_option('wp_slimbox_overlayColor'); ?>" size="7" maxlength="7"/>
+					<input type="text" id="wp_slimbox_overlayColor" name="wp_slimbox_overlayColor" value="<?php echo get_option('wp_slimbox_overlayColor'); ?>" size="7" maxlength="7"/><div id="picker"></div>
+
 				</th>
 				<td class='desc'>
 					<p> <?php _e('This option allows the user to set the color of the overlay using a valid HTML color code. Default is #000000.', 'wp-slimbox2'); ?>
