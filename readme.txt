@@ -21,10 +21,8 @@ Planned Features:<br />
 2. Option to control which pages to load the script on.<br />
 3. Expanded and easier to use settings management.<br />
 
-Recent Changes in v0.9.6:<br />
-1. 	Addition of rudimentary German/Deutsch localization.<br />
-2. 	CSS fix to prevent image tiling in Safari.<br />
-3.  Switch from wp-blog-header to wp-load, may resolve issue on certain servers that fail to properly serve dynamic JS and CSS.<br />
+Recent Changes in v0.9.7:<br />
+1. 	Addition of farbtastic overlay color select.<br />
 
 == Installation ==
 
@@ -74,6 +72,8 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 2. Overlay effect.
 
 == History ==
+Version 0.9.7 Beta - XXX-XX-2009:<br />
+	Added farbtastic color select.<br />
 Version 0.9.6 Beta - Feb-19-2009:<br />
 	Added rudimentary German/Deutsch translation - thanks Laws<br />
 	Tiling Next/Prev Links in Safari Fix - thanks monodistortion<br />
@@ -101,6 +101,7 @@ Thanks to the following for help with the development of this plugin:<br />
 
 * <a href="http://www.digitalia.be/software/slimbox2">Christophe Beyls</a> - Creator of the Slimbox2 Javascript<br />
 * <a href="http://gsgd.co.uk/sandbox/jquery/easing/">George McGinley Smith</a> - Creator of the jQuery Easing Plugin Javascript<br />
+* <a href="http://acko.net/dev/farbtastic/">Steven Wittens</a> - Creator of the jQuery Farbtastic colorpicker Javascript<br />
 * <a href="http://pixopoint.com">Ryan Hellyer</a> - For spurring my interest in WordPress plugins by welcoming my assistance on his <a href="http://pixopoint.com/multi-level-navigation/">Multi-level Navigation plugin</a> and for hosting our <a href="http://pixopoint.com/forum/index.php?board=6.0">support forums</a>.<br />
 * Spi for code suggestion to autogroup items by post.<br />
 * <a href="http://nv1962.net/">nv1962</a> - Suggestion to implement localization and Spanish translation.<br />
