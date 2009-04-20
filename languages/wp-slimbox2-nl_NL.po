@@ -1,0 +1,216 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP-Slimbox2 v0.9.6\n"
+"PO-Revision-Date: 2009-04-17 09:41-0700\n"
+"Last-Translator: admin <alvaro@mediaprima.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;__ngettext_noop:1,2;_c\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: ."
+
+#: adminmenu.php:15
+msgid "Image {x} of {y}"
+msgstr "Afbeelding {x} van de {y}"
+
+#: adminmenu.php:16
+msgid "27, 88, 67"
+msgstr "27, 88, 83"
+
+#: adminmenu.php:17
+msgid "37, 80"
+msgstr "37, 84"
+
+#: adminmenu.php:18
+msgid "39, 78"
+msgstr "39, 86"
+
+#: adminpage.php:8
+msgid "WP Slimbox2 Plugin"
+msgstr "WP-Slimbox2 Plugin"
+
+#: adminpage.php:10
+msgid "Settings"
+msgstr "Instellingen"
+
+#: adminpage.php:14
+msgid "Setting"
+msgstr "Instelling"
+
+#: adminpage.php:15
+msgid "Description"
+msgstr "Omschrijving"
+
+#: adminpage.php:21
+msgid "Use the various options above to control some of the advanced settings of the plugin"
+msgstr "Met opties hierboven kunt u verscheidene geavanceerde instellingen beheren."
+
+#: adminpage.php:28
+msgid "Autoload?"
+msgstr "Automatisch laden?"
+
+#: adminpage.php:33
+msgid "This option allows the user to automatically activate Slimbox on all links pointing to \".jpg\" or \".png\" or \".gif\". All image links contained in the same block or paragraph (having the same parent element) will automatically be grouped together in a gallery. If this isn't activated you will need to manually add 'rel=\"lightbox\"' for individual images or 'rel=\"lightbox-imagesetname\"' for groups on all links you wish to use Slimbox."
+msgstr "Met deze optie kunt u Slimbox automatisch activeren voor alle links die naar \".jpg\" of \".png\" of \".gif\" verwijzen. Alle links naar afbeeldingen in hetzelfde blok of paragraaf (in hetzelfde element) zullen automatisch in een galerij gegroepeerd worden. Als deze optie niet is aangevinkt, moet u handmatig voor individuele afbeeldingen 'rel=\"lightbox\"' of voor groepen 'rel=\"lightbox-imagesetname\"' aangeven voor all links waarvoor u Slimbox wilt toepassen."
+
+#: adminpage.php:38
+msgid "Enable Picasweb Integration?"
+msgstr "Picasaweb-integratie inschakelen?"
+
+#: adminpage.php:43
+msgid "This option allows the user to automatically add the lightbox effect to Picasaweb links when provided an appropriate thumbnail (this seperate from the autoload script which only functions on image links)."
+msgstr "Met deze optie kunt u automatisch het lightbox-effect toepassen op alle Picasaweb links, mits een geschikte miniatuur voorhanden is (dit is onafhankelijk van het automatisch laden script dat alleen werkt op links naar 'losse' afbeeldingen)"
+
+#: adminpage.php:48
+msgid "Enable Flickr Integration?"
+msgstr "Flickr-integratie inschakelen?"
+
+#: adminpage.php:53
+msgid "This option allows the user to automatically add the lightbox effect to Flickr links when provided an appropriate thumbnail (this seperate from the autoload script which only functions on image links)."
+msgstr "Met deze optie kunt u automatisch het lightbox-effect toepassen op alle Flickr links, mits een geschikte miniatuur voorhanden is (dit is onafhankelijk van het automatisch laden script dat alleen werkt op links naar 'losse' afbeeldingen)"
+
+#: adminpage.php:58
+msgid "Loop?"
+msgstr "Lussen?"
+
+#: adminpage.php:63
+msgid "This option allows the user to navigate between the first and last images of a Slimbox gallery, when there is more than one image to display."
+msgstr "Met deze optie kunt u van de laatste naar eerste afbeelding (en terug) van een Slimbox-galerij navigeren, mits er meer dan 1 afbeelding is."
+
+#: adminpage.php:68
+msgid "Overlay Opacity"
+msgstr "Overlay-transparantie"
+
+#: adminpage.php:81
+msgid "This option allows the user to adjust the opacity of the background overlay. 1 is opaque, 0 is completely transparent."
+msgstr "Met deze optie kunt u de transparantie instellen van de achtergrond-overlay: 1 is geheel ondoorzichtig, 0 is geheel transparant."
+
+#: adminpage.php:86
+msgid "Overlay Color"
+msgstr "Overlay-kleur"
+
+#: adminpage.php:91
+msgid "This option allows the user to set the color of the overlay using a valid HTML color code. Default is #000000."
+msgstr "Met deze optie kunt u de kleur van de overlay instellen, d.m.v. een geldige HTML-kleurcode. Standaard: #000000."
+
+#: adminpage.php:96
+msgid "Overlay Fade Duration"
+msgstr "Overlay-overgangsduur"
+
+#: adminpage.php:109
+msgid "This option allows the user to adjust the duration of the overlay fade-in and fade-out animations, in milliseconds. Set it to 1 to disable the overlay fade effects."
+msgstr "Met deze optie kunt u de duur van het fade-in/fade-out overvloei effect instellen van de overlay, in milliseconden. Geef 1 in voor het uitschakelen van de overgangseffecten."
+
+#: adminpage.php:114
+msgid "Resize Duration"
+msgstr "Omvorming-duur"
+
+#: adminpage.php:127
+msgid "This option allows the user to adjust the duration of the resize animation for width and height, in milliseconds. Set it to 1 to disable resize animations."
+msgstr "Met deze optie kunt u de duur instellen, in milliseconden, van de omvorming-animatie voor hoogte en breedte. Geef 1 in voor uitschakeling van de omvorming animatie."
+
+#: adminpage.php:132
+msgid "Resize Easing"
+msgstr "Omvorming effect"
+
+#: adminpage.php:145
+msgid "This option allows the user to adjust the name of the easing effect that you want to use for the resize animation (jQuery Easing Plugin required). Many easings require a longer execution time to look good, so you should adjust the resizeDuration option above as well."
+msgstr "Met deze optie kunt u het specifieke omvorming-effect invoeren dat u wilt toepassen op de afbeeldingen (de jQuery Easing-plugin is vereist). Veel effecten hebben meer tijd nodig voor uitvoering om er goed uit te zien; pas omvormingsduur optie, hierboven, dus overeenkomstig aan."
+
+#: adminpage.php:150
+msgid "Initial Width"
+msgstr "Aanvangsbreedte"
+
+#: adminpage.php:155
+msgid "This option allows the user to adjust the initial width of the box, in pixels."
+msgstr "Met deze optie kunt u de aanvangsbreedte van de box instellen (in pixels)."
+
+#: adminpage.php:160
+msgid "Initial Height"
+msgstr "Aanvangshoogte"
+
+#: adminpage.php:165
+msgid "This option allows the user to adjust the initial height of the box, in pixels."
+msgstr "Met deze optie kunt u de aanvangshoogte van de box instellen (in pixels)."
+
+#: adminpage.php:169
+msgid "Image Fade Duration"
+msgstr "Overvloei-duur"
+
+#: adminpage.php:182
+msgid "This option allows the user to adjust the duration of the image fade-in animation, in milliseconds. Set it to 1 to disable this effect and make the image appear instantly."
+msgstr "Met deze optie kunt u de duur van de overvloei-animatie instellen, in milliseconden. Geef 1 in voor uitschakeling van dit effect, waardoor de afbeelding direct wordt getoond."
+
+#: adminpage.php:187
+msgid "Caption Animation Duration"
+msgstr "Animatie-duur van bijschrift"
+
+#: adminpage.php:200
+msgid "This option allows the user to adjust the duration of the caption animation, in milliseconds. Set it to 1 to disable it and make the caption appear instantly."
+msgstr "Met deze optie kunt u de animatie-duur instellen voor het bijschrift, in milliseconden. Geef 1 in om het uit te schakelen, waardoor het bijschrift meteen wordt getoond."
+
+#: adminpage.php:204
+msgid "Counter Text"
+msgstr "Teller-tekst"
+
+#: adminpage.php:209
+msgid "This option allows the user to customize, translate or disable the counter text which appears in the captions when multiple images are shown. Inside the text, {x} will be replaced by the current image index, and {y} will be replaced by the total number of images. Set it to false (boolean value, without quotes) or \"\" to disable the counter display. Default is \"Image {x} of {y}\"."
+msgstr "Met deze optie kunt u de teller-text aanpassen, vertalen of uitschakelen, zoals te zien als meerdere afbeeldingen worden getoond. In die tekst wordt {x} vervangen door de huidige afbeeldingsindex (tellerstand), en {y} wordt vervangen door het totale aantal afbeeldingen. Geef de waarde 'false' (zonder aanhalingstekens!) of \"\" om de teller-tekst uit te schakelen. Standaard waarde is \"Afbeelding {x} van de {y}\"."
+
+#: adminpage.php:213
+msgid "Close Keys"
+msgstr "Sluiten-waarden"
+
+#: adminpage.php:218
+msgid "This option allows the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> of the keys to press to close Slimbox. Default is [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67)."
+msgstr "Met deze optie kunt u een aantal <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">toets-waarden</a> instellen die ingedrukt kunnen worden om Slimbox te sluiten. Standaard waarde is [27, 88, 83] hetgeen overeenkomt met Esc (27), \"x\" (88) and \"s\" (83)."
+
+#: adminpage.php:222
+msgid "Previous Keys"
+msgstr "Terug-waarden"
+
+#: adminpage.php:227
+msgid "This option allows the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> of the keys to press to navigate to the previous image. Default is [37, 80] which means Left arrow (37) and \"p\" (80)."
+msgstr "Met deze optie kunt u een aantal <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">toets-waarden</a> instellen om terug te gaan naar de vorige afbeelding. Standaard waarde is [37, 84] hetgeen overeenkomt met Links-pijl (37) en \"t\" (84)."
+
+#: adminpage.php:231
+msgid "Next Keys"
+msgstr "Volgende-waarden"
+
+#: adminpage.php:236
+msgid "This option allows the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> of the keys to press to navigate to the next image. Default is [39, 78] which means Right arrow (39) and \"n\" (78)."
+msgstr "Met deze optie kunt u een aantal <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">toets-waarden</a> instellen om naar de volgende afbeelding te gaan. Standaard waarde is [39, 86] hetgeen overeenkomt met Rechts-pijl (39) en \"v\" (86)."
+
+#: adminpage.php:240
+msgid "Maintenance mode"
+msgstr "Onderhoud-modus"
+
+#: adminpage.php:245
+msgid "This option enables a maintenance mode for testing purposes. When enabled slimbox will be disabled until you enable it by appending ?slimbox=on to a url. It will then remain on until you disable it by appending ?slimbox=off to a url, you clear your cookies, or in certain cases you clear your browser. This setting only impacts things at a vistor level, not a site wide level."
+msgstr "Met deze optie kunt u de onderhouds-modus aanzetten. Daarmee wordt Slimbox uitgeschakeld, totdat het weer wordt aangezet door ?slimbox=on aan een url toe te voegen. Daarna blijft het aanstaan, totdat u aan een url ?slimbox=off toevoegt, ofwel u uw cookies wist, of - in bepaalde gevallen - uw browser-cache leegt. Deze instelling is alleen op bezoekers van toepassing; niet over de gehele site."
+
+#: adminpage.php:254
+msgid "Update Options"
+msgstr "Instellingen aanpassen"
+
+#: slimbox2_autoload.js.php:50
+msgid "default/prevlabel.gif"
+msgstr "nl_NL/prevlabel-nl.gif"
+
+#: slimbox2_autoload.js.php:58
+msgid "default/nextlabel.gif"
+msgstr "nl_NL/nextlabel-nl.gif"
+
+#: slimbox2_autoload.js.php:64
+msgid "LTR"
+msgstr "Links-naar-rechts schrift"
+
+#: slimbox2_autoload.js.php:70
+msgid "default/closelabel.gif"
+msgstr "nl_NL/closelabel-nl.gif"
+

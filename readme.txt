@@ -4,7 +4,7 @@ Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.6
 Tested up to: 2.7.1
-Stable Tag: 0.9.6
+Stable Tag: 0.9.7
 
 An WordPress implementation of the Slimbox2 javascript.
 
@@ -23,6 +23,11 @@ Planned Features:<br />
 
 Recent Changes in v0.9.7:<br />
 1. 	Addition of farbtastic overlay color select.<br />
+2. 	Automatic key code recognition.<br />
+3. 	Addition of French/Français and Dutch/Nederlandse languages.<br />
+4. 	Options transferred to WPlize class, less database calls.<br />
+5. 	Flickr and Picasaweb images now properly load Slimbox settings.<br />
+6. 	Minor typographical corrections.<br />
 
 == Installation ==
 
@@ -40,7 +45,7 @@ After you've downloaded and extracted the files:
 No. As stated in the script creators FAQ, Slimbox was designed to display images only, to be simple and to have the smallest code. <br />
 
 = What kind of grouping does autoload utilize? =
-Autoload has been modified to group all images in a Wordpress post. If the images are instead on a page they will all be grouped together. If you want individual group sets it is recommend you instead insert 'rel="lightbox-groupname"' to specify your groups.
+Autoload has been modified to group all images in a Wordpress post if the theme places posts inside a div with class="post". If the images are instead on a page they will all be grouped together. If you want individual group sets it is recommend you instead manually insert 'rel="lightbox-groupname"' inside your hyperlinks to specify your groups.
 
 = Why do I need WordPress 2.6+? =
 
@@ -72,8 +77,13 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 2. Overlay effect.
 
 == History ==
-Version 0.9.7 Beta - XXX-XX-2009:<br />
-	Added farbtastic color select.<br />
+Version 0.9.7 Beta - Apr-2X-2009:<br />
+	Addition of farbtastic overlay color select.
+	Automatic key code recognition.
+	Addition of French/Français and Dutch/Nederlandse languages.
+	Options transferred to WPlize class, less database calls.
+	Flickr and Picasaweb images now properly load Slimbox settings.
+	Minor typographical corrections.
 Version 0.9.6 Beta - Feb-19-2009:<br />
 	Added rudimentary German/Deutsch translation - thanks Laws<br />
 	Tiling Next/Prev Links in Safari Fix - thanks monodistortion<br />
