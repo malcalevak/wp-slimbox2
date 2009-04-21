@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-20 19:03-0500\n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Greg Yingling <malcalevak@yahoo.com>\n"
 "Language-Team: malcalevak\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,7 +33,7 @@ msgstr "39,86"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:8
 msgid "WP Slimbox2 Plugin"
-msgstr "WP Slimbox2 Plugin"
+msgstr ""
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:46
 msgid "Settings"
@@ -168,7 +168,7 @@ msgid "Close Keys"
 msgstr "Schließen mit den Tasten:"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:219
-msgid "These options allow the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> representing the keys to press to close or navigate to the next or previous images.</p><p>Just select the corresponding text box and press the keys you would like to use. Alternately check the box below to manually enter or clear key codes.</p><p>Default close values are [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67).</p><p>Default next values are [37, 80] which means Left arrow (37) and \"p\" (80).</p><p>Default previous values are [39, 78] which means Right arrow (39) and \"n\" (78)."
+msgid "These options allow the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> representing the keys to press to close or navigate to the next or previous images.</p><p>Just select the corresponding text box and press the keys you would like to use. Alternately check the box below to manually enter or clear key codes.</p><p>Default close values are [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67).</p><p>Default previous values are [37, 80] which means Left arrow (37) and \"p\" (80).</p><p>Default next values are [39, 78] which means Right arrow (39) and \"n\" (78)."
 msgstr "Hiermit können über <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">Key-Codes</a> die Tasten festgelegt werden, mit denen die Slimbox geschlossen oder in Gallerien geblättert wird.</p><p> Wählen Sie einfach eine Textbox aus und drücken Sie die Taste, die Sie für die entsprechende Funktion verwenden wollen. Die Checkbox erlaubt das manuelles Eingeben und Löschen von Key-Codes.</p><p>Die Standardeinstellung zum Schließen ist [27, 88, 67], dies bedeutet Esc (27), \"x\" (88) und \"c\" (67).</p><p>Die Standardeinstellungen zum Blättern sind [37,90] (\"Pfeil nach Links\" (37) und \"z\" (90)) bzw. [39,86] (\"Pfeil nach Rechts\" (39) und \"v\" (86))."
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:220
@@ -209,7 +209,7 @@ msgstr "de_DE/nextlabel-de.gif"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/javascript/slimbox2_autoload.js.php:61
 msgid "LTR"
-msgstr "LTR"
+msgstr ""
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/javascript/slimbox2_autoload.js.php:68
 msgid "default/closelabel.gif"

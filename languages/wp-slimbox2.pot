@@ -166,7 +166,7 @@ msgid "Close Keys"
 msgstr ""
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:219
-msgid "These options allow the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> representing the keys to press to close or navigate to the next or previous images.</p><p>Just select the corresponding text box and press the keys you would like to use. Alternately check the box below to manually enter or clear key codes.</p><p>Default close values are [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67).</p><p>Default next values are [37, 80] which means Left arrow (37) and \"p\" (80).</p><p>Default previous values are [39, 78] which means Right arrow (39) and \"n\" (78)."
+msgid "These options allow the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> representing the keys to press to close or navigate to the next or previous images.</p><p>Just select the corresponding text box and press the keys you would like to use. Alternately check the box below to manually enter or clear key codes.</p><p>Default close values are [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67).</p><p>Default previous values are [37, 80] which means Left arrow (37) and \"p\" (80).</p><p>Default next values are [39, 78] which means Right arrow (39) and \"n\" (78)."
 msgstr ""
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:220

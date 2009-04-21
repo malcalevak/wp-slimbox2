@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-20 19:04-0500\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Guillaume Barry <barryguillaume@gmail.com>\n"
+"Last-Translator: Greg Yingling <malcalevak@yahoo.com>\n"
 "Language-Team: jandry <barryguillaume@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -168,8 +168,8 @@ msgid "Close Keys"
 msgstr "Touches \"fermer\""
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:219
-msgid "These options allow the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> representing the keys to press to close or navigate to the next or previous images.</p><p>Just select the corresponding text box and press the keys you would like to use. Alternately check the box below to manually enter or clear key codes.</p><p>Default close values are [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67).</p><p>Default next values are [37, 80] which means Left arrow (37) and \"p\" (80).</p><p>Default previous values are [39, 78] which means Right arrow (39) and \"n\" (78)."
-msgstr "Permet de spécifier une liste de <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">codes de touche</a> représentant les touches à appuyer pour fermer ou naviguer aux images précedentes ou suivantes.</p><p>Selectionnez simplement le champ texte correspondant et appuyez sur la touche souhaitée. Sinon cochez la case pour entrer ou effacer les codes touche manuellement.</p><p>La valeur par défaut pour fermer est [27, 88, 70] signifiant Echap (27), \"x\" (88) et \"f\" (67).</p><p>La valeur par défaut pour précédent est [37, 80] signifiant flèche gauche (37) et \"p\" (80).</p><p>La valeur par défaut pour suivant est [39, 83] signifiant flèche droite (39) et \"s\" (83)."
+msgid "These options allow the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> representing the keys to press to close or navigate to the next or previous images.</p><p>Just select the corresponding text box and press the keys you would like to use. Alternately check the box below to manually enter or clear key codes.</p><p>Default close values are [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67).</p><p>Default previous values are [37, 80] which means Left arrow (37) and \"p\" (80).</p><p>Default next values are [39, 78] which means Right arrow (39) and \"n\" (78)."
+msgstr "Permet de spécifier une liste de <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">codes de touche</a> représentant les touches à appuyer pour fermer ou naviguer aux images précedentes ou suivantes.</p><p>Selectionnez simplement le champ texte correspondant et appuyez sur la touche souhaitée. Sinon cochez la case pour entrer ou effacer les codes touche manuellement.</p><p>La valeur par défaut pour fermer est [27, 88, 70] signifiant Echap (27), \"x\" (88) et \"f\" (67).</p><p>La valeur par défaut pour suivant est [39, 83] signifiant flèche droite (39) et \"s\" (83).</p><p>La valeur par défaut pour précédent est [37, 80] signifiant flèche gauche (37) et \"p\" (80)."
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:220
 msgid "Enable Manual Key Code Entry?"

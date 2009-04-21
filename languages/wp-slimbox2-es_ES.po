@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-20 19:04-0500\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Greg Yingling <malcalevak@transientmonkey.com>\n"
+"Last-Translator: Greg Yingling <malcalevak@yahoo.com>\n"
 "Language-Team: malcalevak\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,26 +14,23 @@ msgstr ""
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: SPAIN\n"
 ": \n"
-"X-Poedit-SearchPath-0: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2"
+"X-Poedit-SearchPath-0: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2\n"
 
 #: adminmenu.php:19
 msgid "Image {x} of {y}"
 msgstr "Imagen {x} de {y}"
 
 #: adminmenu.php:20
-#, fuzzy
 msgid "27,88,67"
-msgstr "27, 88, 67"
+msgstr "27,88,67"
 
 #: adminmenu.php:21
-#, fuzzy
 msgid "37,80"
-msgstr "65, 37"
+msgstr "65,37"
 
 #: adminmenu.php:22
-#, fuzzy
 msgid "39,78"
-msgstr "80, 39"
+msgstr "80,39"
 
 #: adminpage.php:8
 msgid "WP Slimbox2 Plugin"
@@ -181,7 +178,7 @@ msgid "Close Keys"
 msgstr "Teclas para cerrar"
 
 #: adminpage.php:219
-msgid "These options allow the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> representing the keys to press to close or navigate to the next or previous images.</p><p>Just select the corresponding text box and press the keys you would like to use. Alternately check the box below to manually enter or clear key codes.</p><p>Default close values are [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67).</p><p>Default next values are [37, 80] which means Left arrow (37) and \"p\" (80).</p><p>Default previous values are [39, 78] which means Right arrow (39) and \"n\" (78)."
+msgid "These options allow the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> representing the keys to press to close or navigate to the next or previous images.</p><p>Just select the corresponding text box and press the keys you would like to use. Alternately check the box below to manually enter or clear key codes.</p><p>Default close values are [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67).</p><p>Default previous values are [37, 80] which means Left arrow (37) and \"p\" (80).</p><p>Default next values are [39, 78] which means Right arrow (39) and \"n\" (78)."
 msgstr "Estas opciones permiten al usuario especificar una matriz de <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">códigos de teclas</a> que representan las teclas por pulsar para cerrar o navegar a la anterior o próxima imagen.</p><p>Simplemente seleccione la casilla de texto correspondiente, y pulse la tecla que prefiere usar. Como alternativa, puede también consultar la tabla abajo, para introducir o borrar manualmente los códigos de tecla.</p><p>Los valores por defecto para 'Cerrar' son: [27, 88, 67] lo que significa Esc (27), \"x\" (88) y \"c\" (67).</p><p>Los valores por defecto para 'Próximo' son: [39, 80] lo que significa la Flecha derecha (39) y \"p\" (80).</p><p>Los valores por defecto para 'Anterior' son: [37, 65] lo que significa la Flecha izquierda (39) y \"a\" (65)."
 
 #: adminpage.php:220
@@ -223,7 +220,7 @@ msgstr "es_ES/nextlabel-es.gif"
 
 #: javascript/slimbox2_autoload.js.php:61
 msgid "LTR"
-msgstr "Izq. a dcha."
+msgstr ""
 
 #: javascript/slimbox2_autoload.js.php:68
 msgid "default/closelabel.gif"
