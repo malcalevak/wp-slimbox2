@@ -20,19 +20,16 @@ msgid "Image {x} of {y}"
 msgstr "Bild {x} von {y}"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminmenu.php:20
-#, fuzzy
 msgid "27,88,67"
-msgstr "27, 88, 67"
+msgstr "27,88,67"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminmenu.php:21
-#, fuzzy
 msgid "37,80"
-msgstr "37, 90"
+msgstr "37,90"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminmenu.php:22
-#, fuzzy
 msgid "39,78"
-msgstr "39, 86"
+msgstr "39,86"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:8
 msgid "WP Slimbox2 Plugin"
@@ -63,41 +60,36 @@ msgid "This option allows the user to automatically activate Slimbox on all link
 msgstr "Hiermit wird Slimbox für alle Links auf \".jpg\", \".png\" oder \".gif\" aktiviert. Alle Links zu Bildern im selben Block oder Absatz (mit demselben Parent-Element) werden automatisch zu einer Gallerie zusammengefasst. Wenn dies nicht aktiviert ist, müssen Sie für einzelne Bilder 'rel=\"lightbox\"' oder für Gruppen 'rel=\"lightbox-imagesetname\"' von Hand in die Links einsetzen, bei denen Sie Slimbox verwenden möchten."
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:74
-#, fuzzy
 msgid "Enable Picasaweb Integration?"
-msgstr "Picasweb-Integration verwenden?"
+msgstr "Picasaweb-Integration verwenden?"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:79
-#, fuzzy
 msgid "This option allows the user to automatically add the Slimbox effect to Picasaweb links when provided an appropriate thumbnail (this is separate from the autoload script which only functions on image links)."
-msgstr "Hiermit wird der Lightboxeffekt automatisch für Picasaweb-Links aktiviert, wenn ein passendes Thumbnail vorhanden ist. (Dies ist unabhängig vom Autoload-Script, das nur mit Links zu Bildern funktioniert.)"
+msgstr "Hiermit wird der Slimboxeffekt automatisch für Picasaweb-Links aktiviert, wenn ein passendes Thumbnail vorhanden ist. (Dies ist unabhängig vom Autoload-Script, das nur mit Links zu Bildern funktioniert.)"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:84
 msgid "Enable Flickr Integration?"
 msgstr "Flickr-Integration verwenden?"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:89
-#, fuzzy
 msgid "This option allows the user to automatically add the Slimbox effect to Flickr links when provided an appropriate thumbnail (this is separate from the autoload script which only functions on image links)."
-msgstr "Hiermit wird der Lightboxeffekt automatisch für Flickr-Links aktiviert, wenn ein passendes Thumbnail vorhanden ist. (Dies ist unabhängig vom Autoload-Script, das nur mit Links zu Bildern funktioniert.)"
+msgstr "Hiermit wird der Slimboxeffekt automatisch für Flickr-Links aktiviert, wenn ein passendes Thumbnail vorhanden ist. (Dies ist unabhängig vom Autoload-Script, das nur mit Links zu Bildern funktioniert.)"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:94
 msgid "Loop?"
 msgstr "Wiederholen?"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:99
-#, fuzzy
 msgid "This option allows the user to navigate between the first and last images of a Slimbox gallery when there is more than one image to display."
-msgstr "Hiermit wird die Navigation zwischen dem letzten und ersten Bild einer Slimboxgallerie aktiviert."
+msgstr "Hiermit wird die Navigation zwischen dem letzten und ersten Bild einer Slimboxgallerie aktiviert. (Nur wenn mehrere Bilder vorhanden sind.)"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:104
 msgid "Overlay Opacity"
 msgstr "Overlay Durchsichtigkeit"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:111
-#, fuzzy
 msgid "This option allows the user to adjust the opacity of the background overlay. 1 is completely opaque, 0 is completely transparent."
-msgstr "Hiermit wird die Durchsichtigkeit des Hintergrundoverlays eingestellt. 1 ist undurchsichtig, 0 ist vollständig transparent."
+msgstr "Hiermit wird die Durchsichtigkeit des Hintergrundoverlay eingestellt. 1 ist undurchsichtig, 0 ist vollständig transparent."
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:116
 msgid "Overlay Color"
@@ -105,25 +97,23 @@ msgstr "Overlay Farbe"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:122
 msgid "This option allows the user to set the color of the overlay by selecting your hue from the circle and color gradient from the square. Alternatively you may manually enter a valid HTML color code. The color of the entry field will change to reflect your selected color. Default is #000000."
-msgstr ""
+msgstr "Hiermit wird die Farbe des Overlays festgelegt. Wählen Sie den gewünschten Farbton in dem Kreis und den Farbverlauf in dem Quadrat aus. Sie können die HTML-Farbcodes auch direkt eingeben. Die Farbe des Eingabefeldes ändert sich den ausgewählten Farben entsprechend. Standard ist #000000 (Schwarz)."
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:127
 msgid "Overlay Fade Duration"
 msgstr "Dauer der Ein- und Ausblendeeffekte"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:134
-#, fuzzy
 msgid "This option allows the user to adjust the duration of the overlay fade-in and fade-out animations, in milliseconds."
-msgstr "Hiermit wird die Dauer der Ein- und Ausblendeanimation des Overlay in Millisekunden eingestellt. 1 deaktiviert die Animation."
+msgstr "Hiermit wird die Dauer der Ein- und Ausblendeanimation des Overlay in Millisekunden eingestellt."
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:139
 msgid "Resize Duration"
 msgstr "Dauer der Größenanpassung"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:146
-#, fuzzy
 msgid "This option allows the user to adjust the duration of the resize animation for width and height, in milliseconds."
-msgstr "Hiermit wird die Dauer der Größenanpassung in Millisekunden eingestellt. 1 deaktiviert die Animation."
+msgstr "Hiermit wird die Dauer der Größenanpassung für Breite und Höhe in Millisekunden eingestellt."
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:151
 msgid "Resize Easing"
@@ -154,18 +144,16 @@ msgid "Image Fade Duration"
 msgstr "Dauer des Einblenden des Bildes"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:189
-#, fuzzy
 msgid "This option allows the user to adjust the duration of the image fade-in animation, in milliseconds. Disabling this effect will make the image appear instantly."
-msgstr "Hiermit wird die Dauer der Einblendeanimation des Bildes in Millisekunden eingestellt.  1 deaktiviert die Animation und das Bild erscheint sofort."
+msgstr "Hiermit wird die Dauer der Einblendeanimation des Bildes in Millisekunden eingestellt. Wenn dieser Effekt ausgeschaltet ist, erscheint das Bild sofort."
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:194
 msgid "Caption Animation Duration"
 msgstr "Dauer der Animation der Bildunterschrift"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:201
-#, fuzzy
 msgid "This option allows the user to adjust the duration of the caption animation, in milliseconds. Disabling this effect will make the caption appear instantly."
-msgstr "Hiermit wird die Dauer der Animation der Bildunterschrift in Millisekunden eingestellt.  1 deaktiviert die Animation und die Bildunterschrfit erscheint sofort."
+msgstr "Hiermit wird die Dauer der Animation der Bildunterschrift in Millisekunden eingestellt.  Wenn dieser Effekt ausgeschaltet ist, erscheint die Bildunterschrift sofort."
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:205
 msgid "Counter Text"
@@ -181,15 +169,15 @@ msgstr "Schließen mit den Tasten:"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:219
 msgid "These options allow the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> representing the keys to press to close or navigate to the next or previous images.</p><p>Just select the corresponding text box and press the keys you would like to use. Alternately check the box below to manually enter or clear key codes.</p><p>Default close values are [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67).</p><p>Default next values are [37, 80] which means Left arrow (37) and \"p\" (80).</p><p>Default previous values are [39, 78] which means Right arrow (39) and \"n\" (78)."
-msgstr ""
+msgstr "Hiermit können über <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">Key-Codes</a> die Tasten festgelegt werden, mit denen die Slimbox geschlossen oder in Gallerien geblättert wird.</p><p> Wählen Sie einfach eine Textbox aus und drücken Sie die Taste, die Sie für die entsprechende Funktion verwenden wollen. Die Checkbox erlaubt das manuelles Eingeben und Löschen von Key-Codes.</p><p>Die Standardeinstellung zum Schließen ist [27, 88, 67], dies bedeutet Esc (27), \"x\" (88) und \"c\" (67).</p><p>Die Standardeinstellungen zum Blättern sind [37,90] (\"Pfeil nach Links\" (37) und \"z\" (90)) bzw. [39,86] (\"Pfeil nach Rechts\" (39) und \"v\" (86))."
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:220
 msgid "Enable Manual Key Code Entry?"
-msgstr ""
+msgstr "Manuelle Eingabe des Key-Codes erlauben?"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:220
 msgid "That key has already been defined."
-msgstr ""
+msgstr "Diese Taste wird schon verwendet."
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:224
 msgid "Previous Keys"
@@ -204,9 +192,8 @@ msgid "Maintenance mode"
 msgstr "Wartungsmodus"
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:241
-#, fuzzy
 msgid "This option enables a maintenance mode for testing purposes. When enabled slimbox will be disabled until you enable it by appending ?slimbox=on to a url. It will then remain on until you disable it by appending ?slimbox=off to a url, you clear your cookies, or in certain cases you clear your browser cache. This setting only impacts things at a vistor level, not a site wide level."
-msgstr "Hiermit wird der Wartungsmodus für Experimente aktiviert. Slimbox wird dadurch deaktiviert und kann manuell verwendet werden, indem ?slimbox=on an eine URL angehängt wird. Es bleibt dann aktiv bis  ?slimbox=off an eine URL angehängt wird, Cookies gelöscht werden oder (in manchen Fällen) der Browser neu gestartet wird. Diese Einstellung wirkt sich nur auf Besucherebene aus, nicht auf die Seite selbst."
+msgstr "Hiermit wird der Wartungsmodus für Experimente aktiviert. Slimbox wird dadurch deaktiviert und kann manuell verwendet werden, indem ?slimbox=on an eine URL angehängt wird. Es bleibt dann aktiv bis  ?slimbox=off an eine URL angehängt wird, Cookies gelöscht werden oder (in manchen Fällen) der Browser neu gestartet wird. Diese Einstellung wirkt sich nur auf Besucherebene aus, nicht auf die ganze Seite."
 
 #: C:\Users\Malcalevak\Desktop\wp-slimbox2-translations\wp-slimbox2/adminpage.php:249
 msgid "Update Options"
