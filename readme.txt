@@ -80,7 +80,7 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 Version 0.9.7 Beta - Apr-2X-2009:<br />
 	Addition of farbtastic overlay color select.
 	Automatic key code recognition.
-	Addition of French/Français and Dutch/Nederlandse languages.
+	Addition of French/Fran&ccedil;ais and Dutch/Nederlandse languages.
 	Options transferred to WPlize class, less database calls.
 	Flickr and Picasaweb images now properly load Slimbox settings.
 	Minor typographical corrections.
@@ -114,7 +114,8 @@ Thanks to the following for help with the development of this plugin:<br />
 * <a href="http://acko.net/dev/farbtastic/">Steven Wittens</a> - Creator of the jQuery Farbtastic colorpicker Javascript<br />
 * <a href="http://pixopoint.com">Ryan Hellyer</a> - For spurring my interest in WordPress plugins by welcoming my assistance on his <a href="http://pixopoint.com/multi-level-navigation/">Multi-level Navigation plugin</a> and for hosting our <a href="http://pixopoint.com/forum/index.php?board=6.0">support forums</a>.<br />
 * Spi for code suggestion to autogroup items by post.<br />
-* <a href="http://nv1962.net/">nv1962</a> - Suggestion to implement localization and Spanish translation.<br />
+* <a href="http://nv1962.net/">nv1962</a> - Suggestion to implement localization and Spanish/Espa&#241;ol and Dutch/Nederlandse translations.<br />
 * Laws for German/Deutsch localization.<br />
 * monodistortion  for CSS tweaks to prevent tiling of images.<br />
+* Jandry for the French/Fran&ccedil;ais translation.
 * Anyone else I forgot to mention who's made a suggestion or provided me with ideas.<br />
