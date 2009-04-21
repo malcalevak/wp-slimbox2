@@ -77,7 +77,7 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 2. Overlay effect.
 
 == History ==
-Version 0.9.7 Beta - Apr-2X-2009:<br />
+Version 0.9.7 Beta - Apr-21-2009:<br />
 	Addition of farbtastic overlay color select.
 	Automatic key code recognition.
 	Addition of French/Fran&ccedil;ais and Dutch/Nederlandse languages.
