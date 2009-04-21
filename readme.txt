@@ -78,12 +78,12 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 
 == History ==
 Version 0.9.7 Beta - Apr-21-2009:<br />
-	Addition of farbtastic overlay color select.
-	Automatic key code recognition.
-	Addition of French/Fran&ccedil;ais and Dutch/Nederlandse languages.
-	Options transferred to WPlize class, less database calls.
-	Flickr and Picasaweb images now properly load Slimbox settings.
-	Minor typographical corrections.
+	Addition of farbtastic overlay color select.<br />
+	Automatic key code recognition.<br />
+	Addition of French/Fran&ccedil;ais and Dutch/Nederlandse languages.<br />
+	Options transferred to WPlize class, less database calls.<br />
+	Flickr and Picasaweb images now properly load Slimbox settings.<br />
+	Minor typographical corrections.<br />
 Version 0.9.6 Beta - Feb-19-2009:<br />
 	Added rudimentary German/Deutsch translation - thanks Laws<br />
 	Tiling Next/Prev Links in Safari Fix - thanks monodistortion<br />
