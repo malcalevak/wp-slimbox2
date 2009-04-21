@@ -14,258 +14,218 @@ msgstr ""
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: SPAIN\n"
 ": \n"
-"X-Poedit-SearchPath-0: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2\n"
+"X-Poedit-SearchPath-0: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminmenu.php:19
+#: adminmenu.php:19
 msgid "Image {x} of {y}"
 msgstr "Imagen {x} de {y}"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminmenu.php:20
+#: adminmenu.php:20
 #, fuzzy
 msgid "27,88,67"
 msgstr "27, 88, 67"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminmenu.php:21
+#: adminmenu.php:21
 #, fuzzy
 msgid "37,80"
 msgstr "65, 37"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminmenu.php:22
+#: adminmenu.php:22
 #, fuzzy
 msgid "39,78"
 msgstr "80, 39"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:8
+#: adminpage.php:8
 msgid "WP Slimbox2 Plugin"
 msgstr "Plugin de WP Slimbox2"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:46
+#: adminpage.php:46
 msgid "Settings"
 msgstr "Ajustes"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:50
+#: adminpage.php:50
 msgid "Setting"
 msgstr "Opción"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:51
+#: adminpage.php:51
 msgid "Description"
 msgstr "Descripción"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:57
+#: adminpage.php:57
 msgid "Use the various options above to control some of the advanced settings of the plugin"
 msgstr "Utilice las opciones indicadas arriba para controlar algunos de los ajustes más avanzados del plugin"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:64
+#: adminpage.php:64
 msgid "Autoload?"
 msgstr "¿Carga automática?"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:69
+#: adminpage.php:69
 msgid "This option allows the user to automatically activate Slimbox on all links pointing to \".jpg\" or \".png\" or \".gif\". All image links contained in the same block or paragraph (having the same parent element) will automatically be grouped together in a gallery. If this isn't activated you will need to manually add 'rel=\"lightbox\"' for individual images or 'rel=\"lightbox-imagesetname\"' for groups on all links you wish to use Slimbox."
 msgstr "Esta opción permite al usuario activar automáticamente Slimbox en todo enlace a archivos \".jpg\" o \".png\" o \".gif\". Todos los enlaces a imágenes contenidas en el mismo bloque ó párrafo (siempre que pertenezcan al mismo elemento) serán agrupados automáticamente en una galería. Si no activa esta opción, tendrá que añadir manualmente 'rel=\"lightbox\"' para imágenes individuales, o 'rel=\"lightbox-nombredelgrupo\"' para los grupos en cuyos enlaces desee usar Slimbox."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:74
+#: adminpage.php:74
 #, fuzzy
 msgid "Enable Picasaweb Integration?"
 msgstr "¿Activar integración con Picasaweb?"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:79
+#: adminpage.php:79
 #, fuzzy
 msgid "This option allows the user to automatically add the Slimbox effect to Picasaweb links when provided an appropriate thumbnail (this is separate from the autoload script which only functions on image links)."
 msgstr "Esta opción permite al usuario añadir automáticamente el efecto Lightbox a enlaces desde Picasaweb, cuando se provee una miniatura apropiada (esto va aparte de la opción de carga automática, que sólo funciona con enlaces a imágenes)."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:84
+#: adminpage.php:84
 msgid "Enable Flickr Integration?"
 msgstr "¿Activar integración con Flickr?"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:89
+#: adminpage.php:89
 #, fuzzy
 msgid "This option allows the user to automatically add the Slimbox effect to Flickr links when provided an appropriate thumbnail (this is separate from the autoload script which only functions on image links)."
 msgstr "Esta opción permite al usuario añadir automáticamente el efecto Lightbox a enlaces desde Flickr, cuando se provee una miniatura apropiada (esto va aparte de la opción de carga automática, que sólo funciona con enlaces a imágenes)."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:94
+#: adminpage.php:94
 msgid "Loop?"
 msgstr "¿Bucle?"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:99
+#: adminpage.php:99
 #, fuzzy
 msgid "This option allows the user to navigate between the first and last images of a Slimbox gallery when there is more than one image to display."
 msgstr "Esta opción permite al usuario navegar entre la primera y última imagen de una galería Slimbox, cuando haya más de una imagen que mostrar."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:104
+#: adminpage.php:104
 msgid "Overlay Opacity"
 msgstr "Opacidad de superimposición"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:111
+#: adminpage.php:111
 #, fuzzy
 msgid "This option allows the user to adjust the opacity of the background overlay. 1 is completely opaque, 0 is completely transparent."
 msgstr "Esta opción permite al usuario ajustar la opacidad del fondo superimpuesto; 1 es opaco, 0 es completamente transparente."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:116
+#: adminpage.php:116
 msgid "Overlay Color"
 msgstr "Color de superimposición"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:122
+#: adminpage.php:122
 msgid "This option allows the user to set the color of the overlay by selecting your hue from the circle and color gradient from the square. Alternatively you may manually enter a valid HTML color code. The color of the entry field will change to reflect your selected color. Default is #000000."
-msgstr ""
+msgstr "Esta opción permite seleccionar el color de la superimposición: seleccione el tinte de color deseado en el círculo, y el degradado de color correspondiente en el cuadrado. Como alternativa, puede también introducir un código de color HTML válido. El color del campo de entrada cambiará para mostrar el color seleccionado. Por defecto, el color tendrá un valor de #000000."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:127
+#: adminpage.php:127
 msgid "Overlay Fade Duration"
-msgstr "Duración de transición a superimposición"
+msgstr "Duración de transición en superimposición"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:134
+#: adminpage.php:134
 #, fuzzy
 msgid "This option allows the user to adjust the duration of the overlay fade-in and fade-out animations, in milliseconds."
 msgstr "Esta opción permite al usuario ajustar la duración del fundido de entrada y salida del fondo superimpuesto, en milisegundos. El valor 1 desactiva los efectos de fundido."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:139
+#: adminpage.php:139
 msgid "Resize Duration"
 msgstr "Duración del ajuste de tamaño"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:146
+#: adminpage.php:146
 #, fuzzy
 msgid "This option allows the user to adjust the duration of the resize animation for width and height, in milliseconds."
 msgstr "Esta opción permite al usuario ajustar la duración de la transición de tamaño de ancho y alto, en milisegundos. El valor 1 desactiva los efectos de transición."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:151
+#: adminpage.php:151
 msgid "Resize Easing"
 msgstr "Efecto del reajuste de tamaño"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:158
+#: adminpage.php:158
 msgid "This option allows the user to adjust the name of the easing effect that you want to use for the resize animation (jQuery Easing Plugin required). Many easings require a longer execution time to look good, so you should adjust the resizeDuration option above as well."
 msgstr "Esta opción permite al usuario elegir el efecto de transición de tamaño que desee usar para la imagen (es obligatorio el plugin jQuery Easing). Muchos efectos de transición requieren más tiempo de ejecución para dar una apariencia óptima, por lo que debería también ajustar la opción de Duración del ajuste de tamaño."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:163
+#: adminpage.php:163
 msgid "Initial Width"
 msgstr "Anchura inicial"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:168
+#: adminpage.php:168
 msgid "This option allows the user to adjust the initial width of the box, in pixels."
 msgstr "Esta opción permite al usuario indicar la anchura inicial, en píxeles, de la caja de imagen."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:173
+#: adminpage.php:173
 msgid "Initial Height"
 msgstr "Altura inicial"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:178
+#: adminpage.php:178
 msgid "This option allows the user to adjust the initial height of the box, in pixels."
 msgstr "Esta opción permite al usuario indicar la altura inicial, en píxeles, de la caja de imagen."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:182
+#: adminpage.php:182
 msgid "Image Fade Duration"
 msgstr "Duración de fundido de imagen"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:189
+#: adminpage.php:189
 #, fuzzy
 msgid "This option allows the user to adjust the duration of the image fade-in animation, in milliseconds. Disabling this effect will make the image appear instantly."
 msgstr "Esta opción permite al usuario indicar la duración del efecto de fundido de entrada de imagen, en milisegundos. El valor 1 desactiva este efecto, y hace que la imagen aparezca de inmediato."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:194
+#: adminpage.php:194
 msgid "Caption Animation Duration"
 msgstr "Duración de la transición de leyenda"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:201
+#: adminpage.php:201
 #, fuzzy
 msgid "This option allows the user to adjust the duration of the caption animation, in milliseconds. Disabling this effect will make the caption appear instantly."
 msgstr "Esta opción permite al usuario modificar la duración, en milisegundos, del efecto de transición de la leyenda de imagen. El valor 1 lo desactiva y hace que la leyenda aparezca de inmediato."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:205
+#: adminpage.php:205
 msgid "Counter Text"
 msgstr "Texto del contador"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:210
+#: adminpage.php:210
 msgid "This option allows the user to customize, translate or disable the counter text which appears in the captions when multiple images are shown. Inside the text, {x} will be replaced by the current image index, and {y} will be replaced by the total number of images. Set it to false (boolean value, without quotes) or \"\" to disable the counter display. Default is \"Image {x} of {y}\"."
 msgstr "Esta opción permite al usuario modificar, traducir o desactivar el texto del contador de imágenes que aparece en la leyenda, cuando se muestren múltiples imágenes. En ese texto, {x} será sustituido por el índice actual de imágenes; {y} será sustituido por el número total de imágenes. Con el valor 'false' (valor booleano, sin comillas) o \"\" el contador no será mostrado. El valor por defecto es \"Imagen {x} de {y}\"."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:214
+#: adminpage.php:214
 msgid "Close Keys"
 msgstr "Teclas para cerrar"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:219
+#: adminpage.php:219
 msgid "These options allow the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> representing the keys to press to close or navigate to the next or previous images.</p><p>Just select the corresponding text box and press the keys you would like to use. Alternately check the box below to manually enter or clear key codes.</p><p>Default close values are [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67).</p><p>Default next values are [37, 80] which means Left arrow (37) and \"p\" (80).</p><p>Default previous values are [39, 78] which means Right arrow (39) and \"n\" (78)."
-msgstr ""
+msgstr "Estas opciones permiten al usuario especificar una matriz de <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">códigos de teclas</a> que representan las teclas por pulsar para cerrar o navegar a la anterior o próxima imagen.</p><p>Simplemente seleccione la casilla de texto correspondiente, y pulse la tecla que prefiere usar. Como alternativa, puede también consultar la tabla abajo, para introducir o borrar manualmente los códigos de tecla.</p><p>Los valores por defecto para 'Cerrar' son: [27, 88, 67] lo que significa Esc (27), \"x\" (88) y \"c\" (67).</p><p>Los valores por defecto para 'Próximo' son: [39, 80] lo que significa la Flecha derecha (39) y \"p\" (80).</p><p>Los valores por defecto para 'Anterior' son: [37, 65] lo que significa la Flecha izquierda (39) y \"a\" (65)."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:220
+#: adminpage.php:220
 msgid "Enable Manual Key Code Entry?"
-msgstr ""
+msgstr "¿Habilitar la introducción manual de códigos de teclas?"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:220
+#: adminpage.php:220
 msgid "That key has already been defined."
-msgstr ""
+msgstr "Aquella tecla ya se ha definido."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:224
+#: adminpage.php:224
 msgid "Previous Keys"
 msgstr "Teclas 'Anterior'"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:230
+#: adminpage.php:230
 msgid "Next Keys"
 msgstr "Teclas 'Próxima'"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:236
+#: adminpage.php:236
 msgid "Maintenance mode"
 msgstr "Modo de mantenimiento"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:241
+#: adminpage.php:241
 #, fuzzy
 msgid "This option enables a maintenance mode for testing purposes. When enabled slimbox will be disabled until you enable it by appending ?slimbox=on to a url. It will then remain on until you disable it by appending ?slimbox=off to a url, you clear your cookies, or in certain cases you clear your browser cache. This setting only impacts things at a vistor level, not a site wide level."
 msgstr "Esta opción activa el modo de mantenimiento, para realizar pruebas. Cuando está seleccionada, Slimbox estará desactivada hasta que se active de nuevo agregando ?slimbox=on a un URL. Entonces, permanecerá activado, hasta que se desactive al agregar ?slimbox=off a un URL, ó al eliminar los cookie en su navegador, ó - en determinados casos - al limpiar el caché de su navegador. Esta opción sólo afecta a nivel del visitante - no la totalidad de su sitio."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/adminpage.php:249
+#: adminpage.php:249
 msgid "Update Options"
 msgstr "Actualizar opciones"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/javascript/slimbox2_autoload.js.php:47
+#: javascript/slimbox2_autoload.js.php:47
 msgid "default/prevlabel.gif"
 msgstr "es_ES/prevlabel-es.gif"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/javascript/slimbox2_autoload.js.php:55
+#: javascript/slimbox2_autoload.js.php:55
 msgid "default/nextlabel.gif"
 msgstr "es_ES/nextlabel-es.gif"
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/javascript/slimbox2_autoload.js.php:61
+#: javascript/slimbox2_autoload.js.php:61
 msgid "LTR"
-msgstr ""
+msgstr "Izq. a dcha."
 
-#: C:/Users/Malcalevak/Desktop/wp-slimbox2-translations/wp-slimbox2/javascript/slimbox2_autoload.js.php:68
+#: javascript/slimbox2_autoload.js.php:68
 msgid "default/closelabel.gif"
 msgstr "es_ES/closelabel-es.gif"
-
-#~ msgid ""
-#~ "This option allows the user to set the color of the overlay using a valid "
-#~ "HTML color code. Default is #000000."
-#~ msgstr ""
-#~ "Esta opción permite al usuario elegir el color del fondo superimpuesto, "
-#~ "con un código de color HTML válido. El valor por defecto es #000000."
-#~ msgid ""
-#~ "This option allows the user to specify an array of <a href=\"http://www."
-#~ "webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key "
-#~ "codes</a> of the keys to press to close Slimbox. Default is [27, 88, 67] "
-#~ "which means Esc (27), \"x\" (88) and \"c\" (67)."
-#~ msgstr ""
-#~ "Esta opción permite al usuario indicar una serie de <a href=\"http://www."
-#~ "webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">códigos "
-#~ "de tecla</a> que puede pulsar para cerrar Slimbox. El valor por defecto "
-#~ "es [27, 88, 67] que corresponde con las teclas Esc (27), \"x\" (88) y \"c"
-#~ "\" (67)."
-#~ msgid ""
-#~ "This option allows the user to specify an array of <a href=\"http://www."
-#~ "webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key "
-#~ "codes</a> of the keys to press to navigate to the previous image. Default "
-#~ "is [37, 80] which means Left arrow (37) and \"p\" (80)."
-#~ msgstr ""
-#~ "Esta opción permite al usuario indicar una serie de <a href=\"http://www."
-#~ "webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">códigos "
-#~ "de tecla</a> que puede pulsar para retroceder a la anterior imagen. El "
-#~ "valor por defecto es [37, 65] que corresponde con las teclas Flecha "
-#~ "izquierda (37) y \"a\" (65)."
-#~ msgid ""
-#~ "This option allows the user to specify an array of <a href=\"http://www."
-#~ "webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key "
-#~ "codes</a> of the keys to press to navigate to the next image. Default is "
-#~ "[39, 78] which means Right arrow (39) and \"n\" (78)."
-#~ msgstr ""
-#~ "Esta opción permite al usuario indicar una serie de <a href=\"http://www."
-#~ "webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">códigos "
-#~ "de tecla</a> que puede pulsar para avanzar a la próxima imagen. El valor "
-#~ "por defecto es [39, 80] que corresponde con las teclas Flecha derecha "
-#~ "(39) y \"p\" (78)."
 

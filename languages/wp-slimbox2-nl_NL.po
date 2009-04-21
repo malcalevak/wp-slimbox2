@@ -16,6 +16,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;__ngettext_noop:1,2;_c\n"
 "X-Poedit-Basepath: ../\n"
 "X-Poedit-SearchPath-0: .\n"
+": "
 
 #: adminmenu.php:19
 msgid "Image {x} of {y}"
@@ -94,7 +95,7 @@ msgstr "Met deze optie kunt u van de laatste naar eerste afbeelding (en terug) v
 
 #: adminpage.php:104
 msgid "Overlay Opacity"
-msgstr "Overlay-transparantie"
+msgstr "Transparantie van de overlay"
 
 #: adminpage.php:111
 #, fuzzy
@@ -103,37 +104,37 @@ msgstr "Met deze optie kunt u de transparantie instellen van de achtergrond-over
 
 #: adminpage.php:116
 msgid "Overlay Color"
-msgstr "Overlay-kleur"
+msgstr "Kleur van de overlay"
 
 #: adminpage.php:122
 msgid "This option allows the user to set the color of the overlay by selecting your hue from the circle and color gradient from the square. Alternatively you may manually enter a valid HTML color code. The color of the entry field will change to reflect your selected color. Default is #000000."
-msgstr ""
+msgstr "Met deze optie kunt u de kleur van de overlay bepalen, door het aanklikken van de gewenste tint in de cirkel, en de kleuren verloopfase in het vierkant. Als alternatief kunt u ook handmatig een geldige HTML kleurcode invoeren. De kleur van het invoerveld zal de door u gekozen kleur weergeven. De standaard waarde is #000000."
 
 #: adminpage.php:127
 msgid "Overlay Fade Duration"
-msgstr "Overlay-overgangsduur"
+msgstr "Overgangsduur van de overlay"
 
 #: adminpage.php:134
 #, fuzzy
 msgid "This option allows the user to adjust the duration of the overlay fade-in and fade-out animations, in milliseconds."
-msgstr "Met deze optie kunt u de duur van het fade-in/fade-out overvloei effect instellen van de overlay, in milliseconden. Geef 1 in voor het uitschakelen van de overgangseffecten."
+msgstr "Met deze optie kunt u de duur van het fade-in/fade-out overvloei effect instellen van de overlay, in milliseconden."
 
 #: adminpage.php:139
 msgid "Resize Duration"
-msgstr "Omvorming-duur"
+msgstr "Omvormingsduur"
 
 #: adminpage.php:146
 #, fuzzy
 msgid "This option allows the user to adjust the duration of the resize animation for width and height, in milliseconds."
-msgstr "Met deze optie kunt u de duur instellen, in milliseconden, van de omvorming-animatie voor hoogte en breedte. Geef 1 in voor uitschakeling van de omvorming animatie."
+msgstr "Met deze optie kunt u de duur instellen, in milliseconden, van het omvorming animatie-effect in hoogte en breedte."
 
 #: adminpage.php:151
 msgid "Resize Easing"
-msgstr "Omvorming effect"
+msgstr "Omvormingseffect"
 
 #: adminpage.php:158
 msgid "This option allows the user to adjust the name of the easing effect that you want to use for the resize animation (jQuery Easing Plugin required). Many easings require a longer execution time to look good, so you should adjust the resizeDuration option above as well."
-msgstr "Met deze optie kunt u het specifieke omvorming-effect invoeren dat u wilt toepassen op de afbeeldingen (de jQuery Easing-plugin is vereist). Veel effecten hebben meer tijd nodig voor uitvoering om er goed uit te zien; pas omvormingsduur optie, hierboven, dus overeenkomstig aan."
+msgstr "Met deze optie kunt u het specifieke omvormingseffect invoeren dat u wilt toepassen op de afbeeldingen (hiervoor is wel de jQuery Easing-plugin vereist). Veel effecten hebben meer tijd nodig voor hun uitvoering, om er goed uit te zien; pas dus de omvormingsduur optie, hierboven, overeenkomstig aan."
 
 #: adminpage.php:163
 msgid "Initial Width"
@@ -153,7 +154,7 @@ msgstr "Met deze optie kunt u de aanvangshoogte van de box instellen (in pixels)
 
 #: adminpage.php:182
 msgid "Image Fade Duration"
-msgstr "Overvloei-duur"
+msgstr "Duur van de overvloei"
 
 #: adminpage.php:189
 #, fuzzy
@@ -175,31 +176,31 @@ msgstr "Teller-tekst"
 
 #: adminpage.php:210
 msgid "This option allows the user to customize, translate or disable the counter text which appears in the captions when multiple images are shown. Inside the text, {x} will be replaced by the current image index, and {y} will be replaced by the total number of images. Set it to false (boolean value, without quotes) or \"\" to disable the counter display. Default is \"Image {x} of {y}\"."
-msgstr "Met deze optie kunt u de teller-text aanpassen, vertalen of uitschakelen, zoals te zien als meerdere afbeeldingen worden getoond. In die tekst wordt {x} vervangen door de huidige afbeeldingsindex (tellerstand), en {y} wordt vervangen door het totale aantal afbeeldingen. Geef de waarde 'false' (zonder aanhalingstekens!) of \"\" om de teller-tekst uit te schakelen. Standaard waarde is \"Afbeelding {x} van de {y}\"."
+msgstr "Met deze optie kunt u de teller-text aanpassen, vertalen of uitschakelen, zoals te zien als meerdere afbeeldingen worden getoond. In die tekst wordt {x} vervangen door de huidige afbeeldingsindex (de 'tellerstand'), en {y} wordt vervangen door het totale aantal afbeeldingen. Geef de waarde 'false' (zonder aanhalingstekens!) of \"\" om de teller-tekst uit te schakelen. Standaard waarde is \"Afbeelding {x} van de {y}\"."
 
 #: adminpage.php:214
 msgid "Close Keys"
-msgstr "Sluiten-waarden"
+msgstr "Toetsen voor 'Sluiten'"
 
 #: adminpage.php:219
 msgid "These options allow the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> representing the keys to press to close or navigate to the next or previous images.</p><p>Just select the corresponding text box and press the keys you would like to use. Alternately check the box below to manually enter or clear key codes.</p><p>Default close values are [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67).</p><p>Default next values are [37, 80] which means Left arrow (37) and \"p\" (80).</p><p>Default previous values are [39, 78] which means Right arrow (39) and \"n\" (78)."
-msgstr ""
+msgstr "Met deze optie kunt u een serie <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">toetsen codes</a> aangeven, en daarmee de toetsen die ingedrukt kunnen worden om de afbeelding te sluiten, of naar de volgende dan wel terug naar de vorige te gaan.</p><p>Klik eenvoudigweg in het gewenste invoerveld, en druk dan de gewenste toets in. Als alternatief kunt u ook het volgende vakje aanvinken, om handmatig de nummer-waarden in te voeren of te wissen.</p><p>De standaard waarden voor 'Sluiten' zijn: [27, 88, 83] hetgeen overeenkomt met Esc (27), \"x\" (88) en \"s\" (83).</p><p>De standaard waarden voor 'Volgende' zijn: [39, 86] hetgeen overeenkomt met Rechts-pijl (39) en \"v\" (86).</p><p>De standaard waarden voor 'Terug' zijn: [37, 84] hetgeen overeenkomt met Links-pijl (37) and \"t\" (84)."
 
 #: adminpage.php:220
 msgid "Enable Manual Key Code Entry?"
-msgstr ""
+msgstr "Handmatige invoer van toetsencodes inschakelen?"
 
 #: adminpage.php:220
 msgid "That key has already been defined."
-msgstr ""
+msgstr "Die toets is al toegewezen."
 
 #: adminpage.php:224
 msgid "Previous Keys"
-msgstr "Terug-waarden"
+msgstr "Toetsen voor 'Terug'"
 
 #: adminpage.php:230
 msgid "Next Keys"
-msgstr "Volgende-waarden"
+msgstr "Toetsen voor 'Volgende'"
 
 #: adminpage.php:236
 msgid "Maintenance mode"
@@ -229,42 +230,4 @@ msgstr "Links-naar-rechts schrift"
 #: javascript/slimbox2_autoload.js.php:68
 msgid "default/closelabel.gif"
 msgstr "nl_NL/closelabel-nl.gif"
-
-#~ msgid ""
-#~ "This option allows the user to set the color of the overlay using a valid "
-#~ "HTML color code. Default is #000000."
-#~ msgstr ""
-#~ "Met deze optie kunt u de kleur van de overlay instellen, d.m.v. een "
-#~ "geldige HTML-kleurcode. Standaard: #000000."
-#~ msgid ""
-#~ "This option allows the user to specify an array of <a href=\"http://www."
-#~ "webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key "
-#~ "codes</a> of the keys to press to close Slimbox. Default is [27, 88, 67] "
-#~ "which means Esc (27), \"x\" (88) and \"c\" (67)."
-#~ msgstr ""
-#~ "Met deze optie kunt u een aantal <a href=\"http://www.webonweboff.com/"
-#~ "tips/js/event_key_codes.aspx\" TARGET=\"_blank\">toets-waarden</a> "
-#~ "instellen die ingedrukt kunnen worden om Slimbox te sluiten. Standaard "
-#~ "waarde is [27, 88, 83] hetgeen overeenkomt met Esc (27), \"x\" (88) and "
-#~ "\"s\" (83)."
-#~ msgid ""
-#~ "This option allows the user to specify an array of <a href=\"http://www."
-#~ "webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key "
-#~ "codes</a> of the keys to press to navigate to the previous image. Default "
-#~ "is [37, 80] which means Left arrow (37) and \"p\" (80)."
-#~ msgstr ""
-#~ "Met deze optie kunt u een aantal <a href=\"http://www.webonweboff.com/"
-#~ "tips/js/event_key_codes.aspx\" TARGET=\"_blank\">toets-waarden</a> "
-#~ "instellen om terug te gaan naar de vorige afbeelding. Standaard waarde is "
-#~ "[37, 84] hetgeen overeenkomt met Links-pijl (37) en \"t\" (84)."
-#~ msgid ""
-#~ "This option allows the user to specify an array of <a href=\"http://www."
-#~ "webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key "
-#~ "codes</a> of the keys to press to navigate to the next image. Default is "
-#~ "[39, 78] which means Right arrow (39) and \"n\" (78)."
-#~ msgstr ""
-#~ "Met deze optie kunt u een aantal <a href=\"http://www.webonweboff.com/"
-#~ "tips/js/event_key_codes.aspx\" TARGET=\"_blank\">toets-waarden</a> "
-#~ "instellen om naar de volgende afbeelding te gaan. Standaard waarde is "
-#~ "[39, 86] hetgeen overeenkomt met Rechts-pijl (39) en \"v\" (86)."
 
