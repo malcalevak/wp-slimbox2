@@ -61,12 +61,10 @@ msgid "This option allows the user to automatically activate Slimbox on all link
 msgstr "Esta opción permite al usuario activar automáticamente Slimbox en todo enlace a archivos \".jpg\" o \".png\" o \".gif\". Todos los enlaces a imágenes contenidas en el mismo bloque ó párrafo (siempre que pertenezcan al mismo elemento) serán agrupados automáticamente en una galería. Si no activa esta opción, tendrá que añadir manualmente 'rel=\"lightbox\"' para imágenes individuales, o 'rel=\"lightbox-nombredelgrupo\"' para los grupos en cuyos enlaces desee usar Slimbox."
 
 #: adminpage.php:74
-#, fuzzy
 msgid "Enable Picasaweb Integration?"
 msgstr "¿Activar integración con Picasaweb?"
 
 #: adminpage.php:79
-#, fuzzy
 msgid "This option allows the user to automatically add the Slimbox effect to Picasaweb links when provided an appropriate thumbnail (this is separate from the autoload script which only functions on image links)."
 msgstr "Esta opción permite al usuario añadir automáticamente el efecto Lightbox a enlaces desde Picasaweb, cuando se provee una miniatura apropiada (esto va aparte de la opción de carga automática, que sólo funciona con enlaces a imágenes)."
 
@@ -75,7 +73,6 @@ msgid "Enable Flickr Integration?"
 msgstr "¿Activar integración con Flickr?"
 
 #: adminpage.php:89
-#, fuzzy
 msgid "This option allows the user to automatically add the Slimbox effect to Flickr links when provided an appropriate thumbnail (this is separate from the autoload script which only functions on image links)."
 msgstr "Esta opción permite al usuario añadir automáticamente el efecto Lightbox a enlaces desde Flickr, cuando se provee una miniatura apropiada (esto va aparte de la opción de carga automática, que sólo funciona con enlaces a imágenes)."
 
@@ -84,7 +81,6 @@ msgid "Loop?"
 msgstr "¿Bucle?"
 
 #: adminpage.php:99
-#, fuzzy
 msgid "This option allows the user to navigate between the first and last images of a Slimbox gallery when there is more than one image to display."
 msgstr "Esta opción permite al usuario navegar entre la primera y última imagen de una galería Slimbox, cuando haya más de una imagen que mostrar."
 
@@ -93,7 +89,6 @@ msgid "Overlay Opacity"
 msgstr "Opacidad de superimposición"
 
 #: adminpage.php:111
-#, fuzzy
 msgid "This option allows the user to adjust the opacity of the background overlay. 1 is completely opaque, 0 is completely transparent."
 msgstr "Esta opción permite al usuario ajustar la opacidad del fondo superimpuesto; 1 es opaco, 0 es completamente transparente."
 
@@ -110,7 +105,6 @@ msgid "Overlay Fade Duration"
 msgstr "Duración de transición en superimposición"
 
 #: adminpage.php:134
-#, fuzzy
 msgid "This option allows the user to adjust the duration of the overlay fade-in and fade-out animations, in milliseconds."
 msgstr "Esta opción permite al usuario ajustar la duración del fundido de entrada y salida del fondo superimpuesto, en milisegundos. El valor 1 desactiva los efectos de fundido."
 
@@ -119,7 +113,6 @@ msgid "Resize Duration"
 msgstr "Duración del ajuste de tamaño"
 
 #: adminpage.php:146
-#, fuzzy
 msgid "This option allows the user to adjust the duration of the resize animation for width and height, in milliseconds."
 msgstr "Esta opción permite al usuario ajustar la duración de la transición de tamaño de ancho y alto, en milisegundos. El valor 1 desactiva los efectos de transición."
 
@@ -152,7 +145,6 @@ msgid "Image Fade Duration"
 msgstr "Duración de fundido de imagen"
 
 #: adminpage.php:189
-#, fuzzy
 msgid "This option allows the user to adjust the duration of the image fade-in animation, in milliseconds. Disabling this effect will make the image appear instantly."
 msgstr "Esta opción permite al usuario indicar la duración del efecto de fundido de entrada de imagen, en milisegundos. El valor 1 desactiva este efecto, y hace que la imagen aparezca de inmediato."
 
@@ -161,7 +153,6 @@ msgid "Caption Animation Duration"
 msgstr "Duración de la transición de leyenda"
 
 #: adminpage.php:201
-#, fuzzy
 msgid "This option allows the user to adjust the duration of the caption animation, in milliseconds. Disabling this effect will make the caption appear instantly."
 msgstr "Esta opción permite al usuario modificar la duración, en milisegundos, del efecto de transición de la leyenda de imagen. El valor 1 lo desactiva y hace que la leyenda aparezca de inmediato."
 
@@ -202,7 +193,6 @@ msgid "Maintenance mode"
 msgstr "Modo de mantenimiento"
 
 #: adminpage.php:241
-#, fuzzy
 msgid "This option enables a maintenance mode for testing purposes. When enabled slimbox will be disabled until you enable it by appending ?slimbox=on to a url. It will then remain on until you disable it by appending ?slimbox=off to a url, you clear your cookies, or in certain cases you clear your browser cache. This setting only impacts things at a vistor level, not a site wide level."
 msgstr "Esta opción activa el modo de mantenimiento, para realizar pruebas. Cuando está seleccionada, Slimbox estará desactivada hasta que se active de nuevo agregando ?slimbox=on a un URL. Entonces, permanecerá activado, hasta que se desactive al agregar ?slimbox=off a un URL, ó al eliminar los cookie en su navegador, ó - en determinados casos - al limpiar el caché de su navegador. Esta opción sólo afecta a nivel del visitante - no la totalidad de su sitio."
 

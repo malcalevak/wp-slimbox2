@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WP-Slimbox2 v0.9.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-20 19:04-0500\n"
-"PO-Revision-Date: 2009-04-21 11:09-0500\n"
+"PO-Revision-Date: 2009-04-21 11:37-0500\n"
 "Last-Translator: Greg Yingling <malcalevak@yahoo.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -63,12 +63,10 @@ msgid "This option allows the user to automatically activate Slimbox on all link
 msgstr "Met deze optie kunt u Slimbox automatisch activeren voor alle links die naar \".jpg\" of \".png\" of \".gif\" verwijzen. Alle links naar afbeeldingen in hetzelfde blok of paragraaf (in hetzelfde element) zullen automatisch in een galerij gegroepeerd worden. Als deze optie niet is aangevinkt, moet u handmatig voor individuele afbeeldingen 'rel=\"lightbox\"' of voor groepen 'rel=\"lightbox-imagesetname\"' aangeven voor all links waarvoor u Slimbox wilt toepassen."
 
 #: adminpage.php:74
-#, fuzzy
 msgid "Enable Picasaweb Integration?"
 msgstr "Picasaweb-integratie inschakelen?"
 
 #: adminpage.php:79
-#, fuzzy
 msgid "This option allows the user to automatically add the Slimbox effect to Picasaweb links when provided an appropriate thumbnail (this is separate from the autoload script which only functions on image links)."
 msgstr "Met deze optie kunt u automatisch het lightbox-effect toepassen op alle Picasaweb links, mits een geschikte miniatuur voorhanden is (dit is onafhankelijk van het automatisch laden script dat alleen werkt op links naar 'losse' afbeeldingen)"
 
@@ -77,7 +75,6 @@ msgid "Enable Flickr Integration?"
 msgstr "Flickr-integratie inschakelen?"
 
 #: adminpage.php:89
-#, fuzzy
 msgid "This option allows the user to automatically add the Slimbox effect to Flickr links when provided an appropriate thumbnail (this is separate from the autoload script which only functions on image links)."
 msgstr "Met deze optie kunt u automatisch het lightbox-effect toepassen op alle Flickr links, mits een geschikte miniatuur voorhanden is (dit is onafhankelijk van het automatisch laden script dat alleen werkt op links naar 'losse' afbeeldingen)"
 
@@ -86,7 +83,6 @@ msgid "Loop?"
 msgstr "Lussen?"
 
 #: adminpage.php:99
-#, fuzzy
 msgid "This option allows the user to navigate between the first and last images of a Slimbox gallery when there is more than one image to display."
 msgstr "Met deze optie kunt u van de laatste naar eerste afbeelding (en terug) van een Slimbox-galerij navigeren, mits er meer dan 1 afbeelding is."
 
@@ -95,7 +91,6 @@ msgid "Overlay Opacity"
 msgstr "Transparantie van de overlay"
 
 #: adminpage.php:111
-#, fuzzy
 msgid "This option allows the user to adjust the opacity of the background overlay. 1 is completely opaque, 0 is completely transparent."
 msgstr "Met deze optie kunt u de transparantie instellen van de achtergrond-overlay: 1 is geheel ondoorzichtig, 0 is geheel transparant."
 
@@ -112,7 +107,6 @@ msgid "Overlay Fade Duration"
 msgstr "Overgangsduur van de overlay"
 
 #: adminpage.php:134
-#, fuzzy
 msgid "This option allows the user to adjust the duration of the overlay fade-in and fade-out animations, in milliseconds."
 msgstr "Met deze optie kunt u de duur van het fade-in/fade-out overvloei effect instellen van de overlay, in milliseconden."
 
@@ -121,7 +115,6 @@ msgid "Resize Duration"
 msgstr "Omvormingsduur"
 
 #: adminpage.php:146
-#, fuzzy
 msgid "This option allows the user to adjust the duration of the resize animation for width and height, in milliseconds."
 msgstr "Met deze optie kunt u de duur instellen, in milliseconden, van het omvorming animatie-effect in hoogte en breedte."
 
@@ -154,7 +147,6 @@ msgid "Image Fade Duration"
 msgstr "Duur van de overvloei"
 
 #: adminpage.php:189
-#, fuzzy
 msgid "This option allows the user to adjust the duration of the image fade-in animation, in milliseconds. Disabling this effect will make the image appear instantly."
 msgstr "Met deze optie kunt u de duur van de overvloei-animatie instellen, in milliseconden. Geef 1 in voor uitschakeling van dit effect, waardoor de afbeelding direct wordt getoond."
 
@@ -163,7 +155,6 @@ msgid "Caption Animation Duration"
 msgstr "Animatie-duur van bijschrift"
 
 #: adminpage.php:201
-#, fuzzy
 msgid "This option allows the user to adjust the duration of the caption animation, in milliseconds. Disabling this effect will make the caption appear instantly."
 msgstr "Met deze optie kunt u de animatie-duur instellen voor het bijschrift, in milliseconden. Geef 1 in om het uit te schakelen, waardoor het bijschrift meteen wordt getoond."
 
@@ -204,7 +195,6 @@ msgid "Maintenance mode"
 msgstr "Onderhoud-modus"
 
 #: adminpage.php:241
-#, fuzzy
 msgid "This option enables a maintenance mode for testing purposes. When enabled slimbox will be disabled until you enable it by appending ?slimbox=on to a url. It will then remain on until you disable it by appending ?slimbox=off to a url, you clear your cookies, or in certain cases you clear your browser cache. This setting only impacts things at a vistor level, not a site wide level."
 msgstr "Met deze optie kunt u de onderhouds-modus aanzetten. Daarmee wordt Slimbox uitgeschakeld, totdat het weer wordt aangezet door ?slimbox=on aan een url toe te voegen. Daarna blijft het aanstaan, totdat u aan een url ?slimbox=off toevoegt, ofwel u uw cookies wist, of - in bepaalde gevallen - uw browser-cache leegt. Deze instelling is alleen op bezoekers van toepassing; niet over de gehele site."
 
