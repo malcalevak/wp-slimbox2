@@ -4,7 +4,7 @@ Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.6
 Tested up to: 2.7.1
-Stable Tag: 0.9.7
+Stable Tag: 0.9.7.1
 
 An WordPress implementation of the Slimbox2 javascript.
 
@@ -21,7 +21,8 @@ Planned Features:<br />
 2. Option to control which pages to load the script on.<br />
 3. Expanded and easier to use settings management.<br />
 
-Recent Changes in v0.9.7:<br />
+Recent Changes in v0.9.7.1:<br />
+0. 	Emergency Quickfix for some users.<br />
 1. 	Addition of farbtastic overlay color select.<br />
 2. 	Automatic key code recognition.<br />
 3. 	Addition of French/Français and Dutch/Nederlandse languages.<br />
@@ -78,12 +79,12 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 
 == History ==
 Version 0.9.7 Beta - Apr-21-2009:<br />
-	Addition of farbtastic overlay color select.<br />
-	Automatic key code recognition.<br />
-	Addition of French/Fran&ccedil;ais and Dutch/Nederlandse languages.<br />
-	Options transferred to WPlize class, less database calls.<br />
-	Flickr and Picasaweb images now properly load Slimbox settings.<br />
-	Minor typographical corrections.<br />
+	Addition of farbtastic overlay color select.
+	Automatic key code recognition.
+	Addition of French/Fran&ccedil;ais and Dutch/Nederlandse languages.
+	Options transferred to WPlize class, less database calls.
+	Flickr and Picasaweb images now properly load Slimbox settings.
+	Minor typographical corrections.
 Version 0.9.6 Beta - Feb-19-2009:<br />
 	Added rudimentary German/Deutsch translation - thanks Laws<br />
 	Tiling Next/Prev Links in Safari Fix - thanks monodistortion<br />
