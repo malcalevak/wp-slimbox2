@@ -34,7 +34,7 @@ if (!defined('WP_PLUGIN_URL')) {define('WP_PLUGIN_URL',WP_CONTENT_URL.'/plugins'
 wp_register_script('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/javascript/slimbox2.js',array('jquery'), '2.02');
 wp_register_script('slimbox2_autoload', WP_PLUGIN_URL.'/wp-slimbox2/javascript/slimbox2_autoload.js.php',array('slimbox2'),$options->get_option('cache'));//add option for version number, update with each save
 wp_register_script('jquery_easing', WP_PLUGIN_URL.'/wp-slimbox2/javascript/jquery.easing.1.3.packed.js',array('jquery'), '1.3');
-wp_register_script('jquery_farbtastic', WP_PLUGIN_URL.'/wp-slimbox2/javascript/farbtastic/farbtastic.js',array('jquery'), '1.2');
+wp_register_script('jquery_farbtastic', WP_PLUGIN_URL.'/wp-slimbox2/javascript/farbtastic/farbtastic.js',array('jquery'), '1.2');//WP 2.7+ has it built in, add a check for it
 wp_register_script('load_farbtastic', WP_PLUGIN_URL.'/wp-slimbox2/javascript/farbtastic/load_farbtastic.js',array('jquery_farbtastic'), '1.0');
 wp_register_script('load_keypress', WP_PLUGIN_URL.'/wp-slimbox2/javascript/keypress.js',array('jquery'), '1.0');
 
