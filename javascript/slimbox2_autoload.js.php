@@ -15,7 +15,7 @@ header('Content-Type: text/javascript; charset='.$options->get_option('blog_char
 
 if ($options->get_option('autoload') == 'on') 
 $autoLoad = '$("a[href]").filter(function() {
-		return /\.(jpg|png|gif)(\?[\d\w=&]*)?$/i.test(this.href);
+		return /\.(jpeg|bmp|jpg|png|gif)(\?[\d\w=&]*)?$/i.test(this.href);
 	}).slimbox(options, null, function(el) {
 		return (this == el) || ($(this).parents("div.post, div#page")[0] && ($(this).parents("div.post, div#page")[0] == $(el).parents("div.post, div#page")[0]));
 	});';
