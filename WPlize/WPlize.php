@@ -145,17 +145,17 @@ class WPlize {
 		
 		if (is_array(get_option($this->multi_option)) === true) {
 			$update = array_merge(
-														get_option($this->multi_option),
-														$data
-													 );
+						get_option($this->multi_option),
+						$data
+					);
 		} else {
 			$update = $data;
 		}
 		
 		update_option(
-									$this->multi_option,
-									$update
-								 );
+			$this->multi_option,
+			$update
+		);
 	}
 }
 ?>

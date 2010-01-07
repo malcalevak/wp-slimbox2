@@ -2,6 +2,7 @@
 load_plugin_textdomain ('wp-slimbox2', PLUGINDIR.'/'.dirname(plugin_basename(__FILE__)) . '/languages', dirname(plugin_basename(__FILE__)) . '/languages');
 $page = add_options_page('WP-Slimbox2 Options', 'WP-Slimbox2', 8, 'slimbox2options', 'slimbox_options');
 add_action( "admin_print_scripts-$page", 'slimbox_adminhead' );
+add_action( "admin_print_styles-$page", 'slimbox_admin_styles' );
 
 if((get_option('wp_slimbox_autoload')=='')?true:false) {
 	$options = new WPlize('wp_slimbox',array(
@@ -23,7 +24,8 @@ if((get_option('wp_slimbox_autoload')=='')?true:false) {
 		'picasaweb' => 'off',
 		'flickr'   => 'off',
 		'maintenance' => 'off',
-		'cache'   => time()
+		'cache'   => time(),
+		'disable_css' => 'off'
 	));
 } else {
 	$options = new WPlize('wp_slimbox',array(
@@ -45,7 +47,8 @@ if((get_option('wp_slimbox_autoload')=='')?true:false) {
 		'picasaweb' => get_option('wp_slimbox_picasaweb'),
 		'flickr'   => get_option('wp_slimbox_flickr'),
 		'maintenance' => get_option('wp_slimbox_maintenance'),
-		'cache'   => get_option('wp_slimbox_cache')
+		'cache'   => get_option('wp_slimbox_cache'),
+		'disable_css' => 'off'
 	));
 	delete_option('wp_slimbox_autoload');
 	delete_option('wp_slimbox_loop');
