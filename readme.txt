@@ -3,7 +3,7 @@ Contributors: malcalevak
 Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.6
-Tested up to: 2.7.1
+Tested up to: 2.9
 Stable Tag: 0.9.7.1
 
 An WordPress implementation of the Slimbox2 javascript.
