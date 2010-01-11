@@ -1,5 +1,4 @@
 <?php
-load_plugin_textdomain ('wp-slimbox2', PLUGINDIR.'/'.dirname(plugin_basename(__FILE__)) . '/languages', dirname(plugin_basename(__FILE__)) . '/languages');
 $page = add_options_page('WP-Slimbox2 Options', 'WP-Slimbox2', 8, 'slimbox2options', 'slimbox_options');
 add_action( "admin_print_scripts-$page", 'slimbox_adminhead' );
 add_action( "admin_print_styles-$page", 'slimbox_admin_styles' );

@@ -28,14 +28,12 @@ if ( !class_exists('WPlize') ) {
 }
 $options = new WPlize('wp_slimbox');
 
-if (!defined( 'WP_CONTENT_URL')) {define('WP_CONTENT_URL',get_option('siteurl').'/wp-content');}
-if (!defined('WP_PLUGIN_URL')) {define('WP_PLUGIN_URL',WP_CONTENT_URL.'/plugins');}
-
+load_plugin_textdomain ('wp-slimbox2', WP_PLUGIN_DIR.'/wp-slimbox2/languages', '/wp-slimbox2/languages');
 add_action('wp_print_scripts', 'wp_slimbox_scripts');
 add_action('wp_print_styles', 'wp_slimbox_styles');
 
 function wp_slimbox_styles() {
-	$options = new WPlize('wp_slimbox');
+	global $options;
 	wp_register_style('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/slimbox2.css','','1.0','screen');
 	wp_enqueue_style('slimbox2');
 	wp_register_script('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/javascript/slimbox2.js',array('jquery'), '2.02');
@@ -79,3 +77,9 @@ function slimbox_adminhead() {
 	wp_enqueue_script('load_farbtastic');
 	wp_enqueue_script('load_keypress');
 }
+
+function get_slimbox_options() {
+	echo json_encode(array(get_option('wp_slimbox'),array(WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/prevlabel.gif', 'wp-slimbox2'),WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/nextlabel.gif', 'wp-slimbox2'),WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/closelabel.gif', 'wp-slimbox2'),__('LTR', 'wp-slimbox2') == 'RTL')));
+	die();
+}
+add_action( 'wp_ajax_nopriv_get_slimbox_options', 'get_slimbox_options' );

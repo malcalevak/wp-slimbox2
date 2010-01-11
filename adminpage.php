@@ -3,6 +3,8 @@
 	$overlayOpacity = array(0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1);
 	$msArray = array(1,100,200,300,400,500,600,700,800,900,1000);
 	$options = new WPlize('wp_slimbox');
+	//add donate link
+	//add class selection for auto-select div
 ?>
 <div class="wrap">
 	<form method="post" action="<?php echo $_SERVER['PHP_SELF']?>?page=slimbox2options" id="options"><?php	echo wp_nonce_field('update-options','wp_slimbox_wpnonce'); ?><h2><?php _e('WP Slimbox2 Plugin', 'wp-slimbox2'); ?></h2>
