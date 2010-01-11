@@ -5,6 +5,7 @@
 	$options = new WPlize('wp_slimbox');
 	//add donate link
 	//add class selection for auto-select div
+	//choose caption source
 ?>
 <div class="wrap">
 	<form method="post" action="<?php echo $_SERVER['PHP_SELF']?>?page=slimbox2options" id="options"><?php	echo wp_nonce_field('update-options','wp_slimbox_wpnonce'); ?><h2><?php _e('WP Slimbox2 Plugin', 'wp-slimbox2'); ?></h2>
@@ -106,7 +107,7 @@
 				<td class='name'><?php _e('Overlay Opacity', 'wp-slimbox2'); ?></td>
 				<th scope='row' class='check-column'>
 					<select name="wp_slimbox_overlayOpacity">
-					<?php selectionGen($options->get_option('overlayOpacity'),&$overlayOpacity); ?>
+					<?php selectionGen($options->get_option('overlayOpacity'),$overlayOpacity); ?>
 					</select>
 				</th>
 				<td class='desc'>
