@@ -83,3 +83,4 @@ function get_slimbox_options() {
 	die();
 }
 add_action( 'wp_ajax_nopriv_get_slimbox_options', 'get_slimbox_options' );
+add_action( 'wp_ajax_get_slimbox_options', 'get_slimbox_options' );
