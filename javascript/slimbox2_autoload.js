@@ -1,6 +1,7 @@
 //accomodate infinite scroll...clear and reset slimbox function
+//if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigator.userAgent)) {
 jQuery(function($) {
-	$.post("wp-admin/admin-ajax.php",{ action: 'get_slimbox_options',_ajax_nonce: 'wp_slimbox2'},load_slimbox, "json");
+	$.post("wp-admin/admin-ajax.php",{ action: 'get_slimbox_options'},load_slimbox, "json");
 	function load_slimbox(wp_slimbox_options) {
 		$("#lbOverlay").css("background-color",String(wp_slimbox_options[0]['overlayColor']));
 		
@@ -19,6 +20,14 @@ jQuery(function($) {
 					previousKeys: wp_slimbox_options[0]['previousKeys'],
 					nextKeys: wp_slimbox_options[0]['nextKeys'],
 				}
+
+		if(wp_slimbox_options[1][3]=="RTL") {
+			$("#lbPrevLink").addClass("next");
+			$("#lbNextLink").addClass("prev");
+			$(".next").attr("id", "lbNextLink");
+			$(".prev").attr("id", "lbPrevLink");
+		}
+
 		$("#lbPrevLink").hover(
 			function () {
 				$(this).css("background-image","url("+wp_slimbox_options[1][0]+")");
@@ -36,13 +45,6 @@ jQuery(function($) {
 			}
 		);
 		$("#lbCloseLink").css("background","transparent url("+wp_slimbox_options[1][2]+") no-repeat center");
-
-		if(wp_slimbox_options[1][3]=="RTL") {
-			$("#lbPrevLink").addClass("next");
-			$("#lbNextLink").addClass("prev");
-			$(".next").attr("id", "lbNextLink");
-			$(".prev").attr("id", "lbPrevLink");
-		}
 
 		if(wp_slimbox_options[0]['autoload']=="on") {
 			$("a[href]").filter(function() {
