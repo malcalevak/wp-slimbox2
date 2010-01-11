@@ -8,17 +8,17 @@ jQuery(function($) {
 		var options = {
 					loop: (wp_slimbox_options[0]['loop'] == 'on')?'true':'false',
 					overlayOpacity: wp_slimbox_options[0]['overlayOpacity'],
-					overlayFadeDuration: wp_slimbox_options[0]['overlayFadeDuration'],
-					resizeDuration: wp_slimbox_options[0]['resizeDuration'],
-					resizeEasing: wp_slimbox_options[0]['resizeEasing'],
-					initialWidth: wp_slimbox_options[0]['initialWidth'],
-					initialHeight: wp_slimbox_options[0]['initialHeight'],
-					imageFadeDuration: wp_slimbox_options[0]['imageFadeDuration'],
-					captionAnimationDuration: wp_slimbox_options[0]['captionAnimationDuration'],
-					counterText: wp_slimbox_options[0]['counterText'],
-					closeKeys: wp_slimbox_options[0]['closeKeys'],
-					previousKeys: wp_slimbox_options[0]['previousKeys'],
-					nextKeys: wp_slimbox_options[0]['nextKeys'],
+					overlayFadeDuration: parseInt(wp_slimbox_options[0]['overlayFadeDuration']),
+					resizeDuration: parseInt(wp_slimbox_options[0]['resizeDuration']),
+					resizeEasing: String(wp_slimbox_options[0]['resizeEasing']),
+					initialWidth: parseInt(wp_slimbox_options[0]['initialWidth']),
+					initialHeight: parseInt(wp_slimbox_options[0]['initialHeight']),
+					imageFadeDuration: parseInt(wp_slimbox_options[0]['imageFadeDuration']),
+					captionAnimationDuration: parseInt(wp_slimbox_options[0]['captionAnimationDuration']),
+					counterText: String(wp_slimbox_options[0]['counterText']),
+					closeKeys: wp_slimbox_options[0]['closeKeys'].split(',').map(Number),
+					previousKeys: wp_slimbox_options[0]['previousKeys'].split(',').map(Number),
+					nextKeys: wp_slimbox_options[0]['nextKeys'].split(',').map(Number) 
 				}
 
 		if(wp_slimbox_options[1][3]=="RTL") {
