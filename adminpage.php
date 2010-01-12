@@ -7,7 +7,6 @@
 	//add class selection for auto-select div
 	//choose caption source
 	//combine selection of lightbox and any non-lightboxed images into single selector
-	//fix break regarding admin-ajax.php location...
 ?>
 <div class="wrap">
 	<form method="post" action="<?php echo $_SERVER['PHP_SELF']?>?page=slimbox2options" id="options"><?php	echo wp_nonce_field('update-options','wp_slimbox_wpnonce'); ?><h2><?php _e('WP Slimbox2 Plugin', 'wp-slimbox2'); ?></h2>

@@ -50,7 +50,33 @@ function wp_slimbox_scripts() {
 		}
 		if($options->get_option('resizeEasing') != 'swing') wp_enqueue_script('jquery_easing');
 		wp_enqueue_script('slimbox2_autoload');
-	}
+		wp_localize_script( 'slimbox2_autoload', 'slimbox2_options', array(
+			'autoload' => $options->get_option('autoload'),
+			'overlayColor' => $options->get_option('overlayColor'),
+			'loop' => (($options->get_option('loop') == 'on')?true:false),
+			'overlayOpacity' => $options->get_option('overlayOpacity'),
+			'overlayFadeDuration' => $options->get_option('overlayFadeDuration'),
+			'resizeDuration' => $options->get_option('resizeDuration'),
+			'resizeEasing' => $options->get_option('resizeEasing'),
+			'initialWidth' => $options->get_option('initialWidth'),
+			'initialHeight' => $options->get_option('initialHeight'),
+			'imageFadeDuration' => $options->get_option('imageFadeDuration'),
+			'captionAnimationDuration' => $options->get_option('captionAnimationDuration'),
+			'counterText' => $options->get_option('counterText'),
+			'closeKeys' => $options->get_option('closeKeys'),
+			'previousKeys' => $options->get_option('previousKeys'),
+			'nextKeys' => $options->get_option('nextKeys'),
+			'prev' => WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/prevlabel.gif', 'wp-slimbox2'),
+			'next' => WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/nextlabel.gif', 'wp-slimbox2'),
+			'close' => WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/closelabel.gif', 'wp-slimbox2'),
+			'LTR' => __('LTR', 'wp-slimbox2'),
+			'picasaweb' => $options->get_option('picasaweb'),
+			'flickr' => $options->get_option('flickr'),
+			'mobile' => false
+		));
+
+
+		}
 }
 
 add_action('admin_menu', 'show_slimbox_options');
@@ -82,5 +108,6 @@ function get_slimbox_options() {
 	echo json_encode(array(get_option('wp_slimbox'),array(WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/prevlabel.gif', 'wp-slimbox2'),WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/nextlabel.gif', 'wp-slimbox2'),WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/closelabel.gif', 'wp-slimbox2'),__('LTR', 'wp-slimbox2') == 'RTL')));
 	die();
 }
-add_action( 'wp_ajax_nopriv_get_slimbox_options', 'get_slimbox_options' );
-add_action( 'wp_ajax_get_slimbox_options', 'get_slimbox_options' );
+add_action( 'wp_ajax_get_slimbox_options', 'get_slimbox_options',1 );
+add_action( 'wp_ajax_nopriv_get_slimbox_options', 'get_slimbox_options',1 );
+

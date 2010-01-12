@@ -1,27 +1,15 @@
 //accomodate infinite scroll...clear and reset slimbox function
-//if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigator.userAgent)) {
-jQuery(function($) {
-	$.post("wp-admin/admin-ajax.php",{ action: 'get_slimbox_options'},load_slimbox, "json");
-	function load_slimbox(wp_slimbox_options) {
-		$("#lbOverlay").css("background-color",String(wp_slimbox_options[0]['overlayColor']));
-		
-		var options = {
-					loop: (wp_slimbox_options[0]['loop'] == 'on')?'true':'false',
-					overlayOpacity: wp_slimbox_options[0]['overlayOpacity'],
-					overlayFadeDuration: parseInt(wp_slimbox_options[0]['overlayFadeDuration']),
-					resizeDuration: parseInt(wp_slimbox_options[0]['resizeDuration']),
-					resizeEasing: String(wp_slimbox_options[0]['resizeEasing']),
-					initialWidth: parseInt(wp_slimbox_options[0]['initialWidth']),
-					initialHeight: parseInt(wp_slimbox_options[0]['initialHeight']),
-					imageFadeDuration: parseInt(wp_slimbox_options[0]['imageFadeDuration']),
-					captionAnimationDuration: parseInt(wp_slimbox_options[0]['captionAnimationDuration']),
-					counterText: String(wp_slimbox_options[0]['counterText']),
-					closeKeys: wp_slimbox_options[0]['closeKeys'].split(',').map(Number),
-					previousKeys: wp_slimbox_options[0]['previousKeys'].split(',').map(Number),
-					nextKeys: wp_slimbox_options[0]['nextKeys'].split(',').map(Number) 
-				}
+//add support to trigger on links?
+jQuery(document).ready(function($) {
+	if(slimbox2_options['mobile'] || !/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigator.userAgent)){
+		slimbox_CSS();
+		load_slimbox();
+	}
 
-		if(wp_slimbox_options[1][3]=="RTL") {
+	function slimbox_CSS() {
+		$("#lbOverlay").css("background-color",String(slimbox2_options['overlayColor']));
+
+		if(slimbox2_options['LTR']=="RTL") {
 			$("#lbPrevLink").addClass("next");
 			$("#lbNextLink").addClass("prev");
 			$(".next").attr("id", "lbNextLink");
@@ -30,7 +18,7 @@ jQuery(function($) {
 
 		$("#lbPrevLink").hover(
 			function () {
-				$(this).css("background-image","url("+wp_slimbox_options[1][0]+")");
+				$(this).css("background-image","url("+slimbox2_options["prev"]+")");
 			},
 			function () {
 				$(this).css("background-image","");
@@ -38,15 +26,33 @@ jQuery(function($) {
 		);
 		$("#lbNextLink").hover(
 			function () {
-				$(this).css("background-image","url("+wp_slimbox_options[1][1]+")");
+				$(this).css("background-image","url("+slimbox2_options["next"]+")");
 			},
 			function () {
 				$(this).css("background-image","");
 			}
 		);
-		$("#lbCloseLink").css("background","transparent url("+wp_slimbox_options[1][2]+") no-repeat center");
+		$("#lbCloseLink").css("background","transparent url("+slimbox2_options["close"]+") no-repeat center");
+	}
 
-		if(wp_slimbox_options[0]['autoload']=="on") {
+	function load_slimbox() {
+		var options = {
+					loop: slimbox2_options['loop'],
+					overlayOpacity: slimbox2_options['overlayOpacity'],
+					overlayFadeDuration: parseInt(slimbox2_options['overlayFadeDuration']),
+					resizeDuration: parseInt(slimbox2_options['resizeDuration']),
+					resizeEasing: String(slimbox2_options['resizeEasing']),
+					initialWidth: parseInt(slimbox2_options['initialWidth']),
+					initialHeight: parseInt(slimbox2_options['initialHeight']),
+					imageFadeDuration: parseInt(slimbox2_options['imageFadeDuration']),
+					captionAnimationDuration: parseInt(slimbox2_options['captionAnimationDuration']),
+					counterText: String(slimbox2_options['counterText']),
+					closeKeys: slimbox2_options['closeKeys'].split(',').map(Number),
+					previousKeys: slimbox2_options['previousKeys'].split(',').map(Number),
+					nextKeys: slimbox2_options['nextKeys'].split(',').map(Number) 
+				}
+
+		if(slimbox2_options['autoload']=="on") {
 			$("a[href]").filter(function() {
 					return /\.(jpeg|bmp|jpg|png|gif)(\?[\d\w=&]*)?$/i.test(this.href);
 				}).slimbox(options, null, function(el) {
@@ -57,13 +63,13 @@ jQuery(function($) {
 				return (this == el) || ((this.rel.length > 8) && (this.rel == el.rel));
 			});
 		}
-		if(wp_slimbox_options[0]['picasaweb']=="on") {
+		if(slimbox2_options['picasaweb']=="on") {
 			$("a[href^='http://picasaweb.google.'] > img:first-child[src]").parent().slimbox(options, function(el) {
 				return [el.firstChild.src.replace(/\/s\d+(?:\-c)?\/([^\/]+)$/, "/s640/$2"),
 					(el.title || el.firstChild.alt) + '<br /><a href="' + el.href + '">Picasa Web Albums page</a>'];
 			});
 		}
-		if(wp_slimbox_options[0]['flickr']=="on") {
+		if(slimbox2_options['flickr']=="on") {
 			$("a[href^='http://www.flickr.com/photos/'] > img:first-child[src]").parent().slimbox(options, function(el) {
 				return [el.firstChild.src.replace(/_[mts]\.(\w+)$/, ".$1"),
 					(el.title || el.firstChild.alt) + '<br /><a href="' + el.href + '">Flickr page</a>'];
