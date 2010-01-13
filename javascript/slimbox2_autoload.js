@@ -1,13 +1,13 @@
-//accomodate infinite scroll...clear and reset slimbox function
-//add support to trigger on links?
+//pack for final release
 jQuery(document).ready(function($) {
 	if(slimbox2_options['mobile'] || !/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigator.userAgent)){
 		slimbox_CSS();
 		load_slimbox();
 	}
-
+});
 	function slimbox_CSS() {
-		$("#lbOverlay").css("background-color",String(slimbox2_options['overlayColor']));
+	jQuery(function($) {
+		$("#lbOverlay").css("background-color",slimbox2_options['overlayColor']);
 
 		if(slimbox2_options['LTR']=="RTL") {
 			$("#lbPrevLink").addClass("next");
@@ -33,47 +33,51 @@ jQuery(document).ready(function($) {
 			}
 		);
 		$("#lbCloseLink").css("background","transparent url("+slimbox2_options["close"]+") no-repeat center");
-	}
+	})};
 
 	function load_slimbox() {
+	jQuery(function($) {
 		var options = {
 					loop: slimbox2_options['loop'],
 					overlayOpacity: slimbox2_options['overlayOpacity'],
 					overlayFadeDuration: parseInt(slimbox2_options['overlayFadeDuration']),
 					resizeDuration: parseInt(slimbox2_options['resizeDuration']),
-					resizeEasing: String(slimbox2_options['resizeEasing']),
+					resizeEasing: slimbox2_options['resizeEasing'],
 					initialWidth: parseInt(slimbox2_options['initialWidth']),
 					initialHeight: parseInt(slimbox2_options['initialHeight']),
 					imageFadeDuration: parseInt(slimbox2_options['imageFadeDuration']),
 					captionAnimationDuration: parseInt(slimbox2_options['captionAnimationDuration']),
-					counterText: String(slimbox2_options['counterText']),
+					counterText: slimbox2_options['counterText'],
 					closeKeys: slimbox2_options['closeKeys'].split(',').map(Number),
 					previousKeys: slimbox2_options['previousKeys'].split(',').map(Number),
 					nextKeys: slimbox2_options['nextKeys'].split(',').map(Number) 
 				}
 
-		if(slimbox2_options['autoload']=="on") {
+		if(slimbox2_options['autoload']) {
 			$("a[href]").filter(function() {
 					return /\.(jpeg|bmp|jpg|png|gif)(\?[\d\w=&]*)?$/i.test(this.href);
-				}).slimbox(options, null, function(el) {
-					return (this == el) || ($(this).parents("div.post, div#page")[0] && ($(this).parents("div.post, div#page")[0] == $(el).parents("div.post, div#page")[0]));
+				}).unbind("click").slimbox(options, function(el) {
+						return [el.href, (slimbox2_options['url'])?'<a href="' + el.href + '">'+el.title+'</a>':el.title];
+					}, function(el) {
+						return (this == el) || ($(this).parents("div.post, div#page")[0] && ($(this).parents("div.post, div#page")[0] == $(el).parents("div.post, div#page")[0]));
 				});
 		} else {
-			$("a[rel^='lightbox']").slimbox(options, null, function(el) {
+			$("a[rel^='lightbox']").unbind("click").slimbox(options, function(el) {
+						return [el.href, (slimbox2_options['url'])?'<a href="' + el.href + '">'+el.title+'</a>':el.title];
+					}, function(el) {
 				return (this == el) || ((this.rel.length > 8) && (this.rel == el.rel));
 			});
 		}
-		if(slimbox2_options['picasaweb']=="on") {
-			$("a[href^='http://picasaweb.google.'] > img:first-child[src]").parent().slimbox(options, function(el) {
+		if(slimbox2_options['picasaweb']) {
+			$("a[href^='http://picasaweb.google.'] > img:first-child[src]").parent().unbind("click").slimbox(options, function(el) {
 				return [el.firstChild.src.replace(/\/s\d+(?:\-c)?\/([^\/]+)$/, "/s640/$2"),
 					(el.title || el.firstChild.alt) + '<br /><a href="' + el.href + '">Picasa Web Albums page</a>'];
 			});
 		}
-		if(slimbox2_options['flickr']=="on") {
-			$("a[href^='http://www.flickr.com/photos/'] > img:first-child[src]").parent().slimbox(options, function(el) {
+		if(slimbox2_options['flickr']) {
+			$("a[href^='http://www.flickr.com/photos/'] > img:first-child[src]").parent().unbind("click").slimbox(options, function(el) {
 				return [el.firstChild.src.replace(/_[mts]\.(\w+)$/, ".$1"),
 					(el.title || el.firstChild.alt) + '<br /><a href="' + el.href + '">Flickr page</a>'];
 			});
 		}
-	}
-});
+	})};

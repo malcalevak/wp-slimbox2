@@ -2,8 +2,8 @@
 	$easingArray = array(swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce);
 	$overlayOpacity = array(0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1);
 	$msArray = array(1,100,200,300,400,500,600,700,800,900,1000);
-	$options = new WPlize('wp_slimbox');
-	//add donate link
+	$caption = array('a-title','img-alt','img-title','None');
+	global $options;
 	//add class selection for auto-select div
 	//choose caption source
 	//combine selection of lightbox and any non-lightboxed images into single selector
@@ -31,6 +31,12 @@
 				'nextKeys'   =>  $_POST['wp_slimbox_nextKeys'],
 				'picasaweb' => $_POST['wp_slimbox_picasaweb'],
 				'flickr'   => $_POST['wp_slimbox_flickr'],
+				'caption1' => $_POST['wp_slimbox_caption1'],
+				'caption2' => $_POST['wp_slimbox_caption2'],
+				'caption3' => $_POST['wp_slimbox_caption3'],
+				'caption4' => $_POST['wp_slimbox_caption4'],
+				'url' => $_POST['wp_slimbox_url'],
+				'mobile' => $_POST['wp_slimbox_mobile'],
 				'maintenance' => $_POST['wp_slimbox_maintenance'],
 				'cache'   => $_POST['wp_slimbox_cache']
 			)
@@ -47,12 +53,12 @@
 	}
 ?>
 	<div style="clear:both;padding-top:5px;"></div>
-		<h2><?php _e('Settings', 'wp-slimbox2'); ?></h2>
+		<h2><?php _e('Settings', 'wp-slimbox2');?></h2>
 		<table class="widefat" cellspacing="0" id="inactive-plugins-table">
 			<thead>
 			<tr>
 				<th scope="col" colspan="2"><?php _e('Setting', 'wp-slimbox2'); ?></th>
-				<th scope="col"><?php _e('Description', 'wp-slimbox2'); ?></th>
+				<th scope="col"><?php _e('caption', 'wp-slimbox2'); ?></th>
 			</tr>
 			</thead>
 
@@ -159,7 +165,7 @@
 					</select>
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to adjust the name of the easing effect that you want to use for the resize animation (jQuery Easing Plugin required). Many easings require a longer execution time to look good, so you should adjust the resizeDuration option above as well.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to adjust the easing effect that you want to use for the resize animation (this loads an additional jQuery Easing Plugin). Many easings require a longer execution time to look good, so you should adjust the resizeDuration option above as well.', 'wp-slimbox2'); ?>
 					</p>
 				</td>
 			</tr>
@@ -206,6 +212,36 @@
 					</p>
 			</tr>
 			<tr class='inactive'>
+				<td class='name'><?php _e('Image Caption Source Order', 'wp-slimbox2'); ?></td>
+				<th scope='row' class='check-column'>
+					<select name="wp_slimbox_caption1">
+					<?php selectionGen($options->get_option('caption1'),$caption); ?>
+					</select>
+					<select name="wp_slimbox_caption2">
+					<?php selectionGen($options->get_option('caption2'),$caption); ?>
+					</select>
+					<select name="wp_slimbox_caption3">
+					<?php selectionGen($options->get_option('caption3'),$caption); ?>
+					</select>
+					<select name="wp_slimbox_caption4">
+					<?php selectionGen($options->get_option('caption4'),$caption); ?>
+					</select>
+				</th>
+				<td class='desc'>
+					<p> <?php _e('This option allows the user to select the order in which to search for the caption text. The default is a-title, followed by img-alt, img-title, and None.', 'wp-slimbox2'); ?>
+					</p>
+				</td>
+			</tr>
+			<tr class='inactive'>
+				<td class='name'><?php _e('URL in Caption', 'wp-slimbox2'); ?></td>
+				<th scope='row' class='check-column'>
+					<input type="checkbox" name="wp_slimbox_url"<?php if ($options->get_option('url') == 'on') echo ' checked="yes"';?> />
+				</th>
+				<td class='desc'>
+					<p> <?php _e('This option will render the caption as a hyperlink to the image file. This is enabled by default.', 'wp-slimbox2'); ?>
+					</p>
+			</tr>
+			<tr class='inactive'>
 				<td class='name'><?php _e('Counter Text', 'wp-slimbox2'); ?></td>
 				<th scope='row' class='check-column'>
 					<input type="text" name="wp_slimbox_counterText" value="<?php echo $options->get_option('counterText'); ?>" />
@@ -237,6 +273,15 @@
 				</th>
 			</tr>
 			<tr class='inactive'>
+				<td class='name'><?php _e('Enable on mobiles?', 'wp-slimbox2'); ?></td>
+				<th scope='row' class='check-column'>
+					<input type="checkbox" name="wp_slimbox_mobile"<?php if ($options->get_option('mobile') == 'on') echo ' checked="yes"';?> />
+				</th>
+				<td class='desc'>
+					<p> <?php _e('This option enables Slimbox on mobile phones. By default this feature is disabled.', 'wp-slimbox2'); ?>
+					</p>
+			</tr>
+			<tr class='inactive'>
 				<td class='name'><?php _e('Maintenance mode', 'wp-slimbox2'); ?></td>
 				<th scope='row' class='check-column'>
 					<input type="checkbox" name="wp_slimbox_maintenance"<?php if ($options->get_option('maintenance') == 'on') echo ' checked="yes"';?> />
@@ -253,4 +298,13 @@
 		<p class="submit"><input type="submit" name="Submit" value="<?php _e('Update Options','wp-slimbox2'); ?>" /></p>
 		<div style="clear:both;padding-top:20px;"></div>
 	</form>
+	<div align="center">
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="<?php _e('11145898">
+			<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		</form>
+        <p><b style="font-size:11px;">Support this plugin!','wp-slimbox2'); ?></b></p>
+	</div>
 </div>

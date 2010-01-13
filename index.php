@@ -51,7 +51,7 @@ function wp_slimbox_scripts() {
 		if($options->get_option('resizeEasing') != 'swing') wp_enqueue_script('jquery_easing');
 		wp_enqueue_script('slimbox2_autoload');
 		wp_localize_script( 'slimbox2_autoload', 'slimbox2_options', array(
-			'autoload' => $options->get_option('autoload'),
+			'autoload' => (($options->get_option('autoload') == 'on')?true:false),
 			'overlayColor' => $options->get_option('overlayColor'),
 			'loop' => (($options->get_option('loop') == 'on')?true:false),
 			'overlayOpacity' => $options->get_option('overlayOpacity'),
@@ -62,6 +62,11 @@ function wp_slimbox_scripts() {
 			'initialHeight' => $options->get_option('initialHeight'),
 			'imageFadeDuration' => $options->get_option('imageFadeDuration'),
 			'captionAnimationDuration' => $options->get_option('captionAnimationDuration'),
+			'caption1' => $options->get_option('caption1'),
+			'caption2' => $options->get_option('caption2'),
+			'caption3' => $options->get_option('caption3'),
+			'caption4' => $options->get_option('caption4'),
+			'url' => (($options->get_option('url') == 'on')?true:false),
 			'counterText' => $options->get_option('counterText'),
 			'closeKeys' => $options->get_option('closeKeys'),
 			'previousKeys' => $options->get_option('previousKeys'),
@@ -70,9 +75,9 @@ function wp_slimbox_scripts() {
 			'next' => WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/nextlabel.gif', 'wp-slimbox2'),
 			'close' => WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/closelabel.gif', 'wp-slimbox2'),
 			'LTR' => __('LTR', 'wp-slimbox2'),
-			'picasaweb' => $options->get_option('picasaweb'),
-			'flickr' => $options->get_option('flickr'),
-			'mobile' => false
+			'picasaweb' => (($options->get_option('picasaweb') == 'on')?true:false),
+			'flickr' => (($options->get_option('flickr') == 'on')?true:false),
+			'mobile' => (($options->get_option('mobile') == 'on')?true:false)
 		));
 
 
