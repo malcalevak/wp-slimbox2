@@ -2,29 +2,12 @@
 	$easingArray = array(swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce);
 	$overlayOpacity = array(0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1);
 	$msArray = array(1,100,200,300,400,500,600,700,800,900,1000);
-	$caption = array('a-title','img-alt','img-title','None');
+	$captions = array('a-title','img-alt','img-title','None');
 	global $options;
 	//add class selection for auto-select div
 	//choose caption source
 	//combine selection of lightbox and any non-lightboxed images into single selector
 	/*http://striderweb.com/nerdaphernalia/2008/07/consolidate-options-with-arrays/
-	$caption = '';
-for ($i = 0; $i<4; $i++) {
-	switch (slimbox2_options['caption'][$i]) {
-		case 'a-title':
-			$caption .= 'el.title';
-			break;
-		case 'img-alt':
-			$caption .= 'el.firstChild.alt';
-			break;
-		case 'img-title':
-			$caption .= 'el.firstChild.title';
-			break;
-		default:
-			$caption .= '';
-	}
-	if($i < 3) $caption .= ' || ';
-}
 	*/
 ?>
 <div class="wrap">
@@ -57,9 +40,9 @@ for ($i = 0; $i<4; $i++) {
 				'cache'   => $_POST['wp_slimbox_cache']
 			)
 		);
-		
 		echo '<div id="message" class="updated fade"><p><strong>Settings saved.</strong></p></div>';
 	}
+	$caption = $options->get_option('caption');
 	
 	function selectionGen(&$option,&$array) {
 		foreach($array as $key=> $ms) {
@@ -231,16 +214,16 @@ for ($i = 0; $i<4; $i++) {
 				<td class='name'><?php _e('Image Caption Source Order', 'wp-slimbox2'); ?></td>
 				<th scope='row' class='check-column'>
 					<select name="wp_slimbox_caption1">
-					<?php print_r($options->get_option('caption'));// selectionGen($options->get_option('caption')[0],$caption); ?>
+					<?php selectionGen($caption[0],$captions); ?>
 					</select>
 					<select name="wp_slimbox_caption2">
-					<?php// selectionGen($options->get_option('caption')[1],$caption); ?>
+					<?php selectionGen($caption[1],$captions); ?>
 					</select>
 					<select name="wp_slimbox_caption3">
-					<?php //selectionGen($options->get_option('caption')[2],$caption); ?>
+					<?php selectionGen($caption[2],$captions); ?>
 					</select>
 					<select name="wp_slimbox_caption4">
-					<?php// selectionGen($options->get_option('caption')[3],$caption); ?>
+					<?php selectionGen($caption[3],$captions); ?>
 					</select>
 				</th>
 				<td class='desc'>

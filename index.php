@@ -26,6 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 if ( !class_exists('WPlize') ) {
 	require_once('WPlize/WPlize.php');
 }
+
 $options = new WPlize('wp_slimbox');
 
 load_plugin_textdomain ('wp-slimbox2', WP_PLUGIN_DIR.'/wp-slimbox2/languages', '/wp-slimbox2/languages');
@@ -50,6 +51,25 @@ function wp_slimbox_scripts() {
 		}
 		if($options->get_option('resizeEasing') != 'swing') wp_enqueue_script('jquery_easing');
 		wp_enqueue_script('slimbox2_autoload');
+		$captions = $options->get_option('caption');
+		$caption = '';
+		for ($i = 0; $i<4; $i++) {
+			switch ($captions[$i]) {
+				case 'a-title':
+					$caption .= 'el.title';
+					break;
+				case 'img-alt':
+					$caption .= 'el.firstChild.alt';
+					break;
+				case 'img-title':
+					$caption .= 'el.firstChild.title';
+					break;
+				default:
+					$caption .= 'el.href';
+			}
+			$caption .= ' || ';
+		}
+		$caption .= 'el.href';
 		wp_localize_script( 'slimbox2_autoload', 'slimbox2_options', array(
 			'autoload' => (($options->get_option('autoload') == 'on')?true:false),
 			'overlayColor' => $options->get_option('overlayColor'),
@@ -62,10 +82,7 @@ function wp_slimbox_scripts() {
 			'initialHeight' => $options->get_option('initialHeight'),
 			'imageFadeDuration' => $options->get_option('imageFadeDuration'),
 			'captionAnimationDuration' => $options->get_option('captionAnimationDuration'),
-			'caption1' => $options->get_option('caption1'),
-			'caption2' => $options->get_option('caption2'),
-			'caption3' => $options->get_option('caption3'),
-			'caption4' => $options->get_option('caption4'),
+			'caption' => $caption,
 			'url' => (($options->get_option('url') == 'on')?true:false),
 			'counterText' => $options->get_option('counterText'),
 			'closeKeys' => $options->get_option('closeKeys'),

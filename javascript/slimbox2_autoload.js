@@ -52,26 +52,17 @@ jQuery(document).ready(function($) {
 					previousKeys: slimbox2_options['previousKeys'].split(',').map(Number),
 					nextKeys: slimbox2_options['nextKeys'].split(',').map(Number) 
 				}
-
 		if(slimbox2_options['autoload']) {
 			$("a[href]").filter(function() {
 					return /\.(jpeg|bmp|jpg|png|gif)(\?[\d\w=&]*)?$/i.test(this.href);
 				}).unbind("click").slimbox(options, function(el) {
-			var caption = (slimbox2_options['caption1']=='a-title')?el.title:(slimbox2_options['caption1']=='img-alt')?el.firstChild.alt:(slimbox2_options['caption1']=='img-title')?:'' ||
-			(slimbox2_options['caption2']=='a-title')?el.title:(slimbox2_options['caption2']=='img-alt')?el.firstChild.alt:(slimbox2_options['caption2']=='img-title')?:'' ||
-			(slimbox2_options['caption3']=='a-title')?el.title:(slimbox2_options['caption3']=='img-alt')?el.firstChild.alt:(slimbox2_options['caption3']=='img-title')?:'' ||
-			(slimbox2_options['caption4']=='a-title')?el.title:(slimbox2_options['caption4']=='img-alt')?el.firstChild.alt:(slimbox2_options['caption4']=='img-title')?:'' || ''
-						return [el.href, (slimbox2_options['url'])?'<a href="' + el.href + '">'+caption+'</a>':+caption];
+						return [el.href, (slimbox2_options['url'])?'<a href="' + el.href + '">'+eval(slimbox2_options['caption'])+'</a>':eval(slimbox2_options['caption'])];
 					}, function(el) {
 						return (this == el) || ($(this).parents("div.post, div#page")[0] && ($(this).parents("div.post, div#page")[0] == $(el).parents("div.post, div#page")[0]));
 				});
 		} else {
 			$("a[rel^='lightbox']").unbind("click").slimbox(options, function(el) {
-			var caption = (slimbox2_options['caption1']=='a-title')?el.title:(slimbox2_options['caption1']=='img-alt')?el.firstChild.alt:(slimbox2_options['caption1']=='img-title')?:'' ||
-			(slimbox2_options['caption2']=='a-title')?el.title:(slimbox2_options['caption2']=='img-alt')?el.firstChild.alt:(slimbox2_options['caption2']=='img-title')?:'' ||
-			(slimbox2_options['caption3']=='a-title')?el.title:(slimbox2_options['caption3']=='img-alt')?el.firstChild.alt:(slimbox2_options['caption3']=='img-title')?:'' ||
-			(slimbox2_options['caption4']=='a-title')?el.title:(slimbox2_options['caption4']=='img-alt')?el.firstChild.alt:(slimbox2_options['caption4']=='img-title')?:'' || '')
-						return [el.href, (slimbox2_options['url'])?'<a href="' + el.href + '">'+caption+'</a>'+caption];
+						return [el.href, (slimbox2_options['url'])?'<a href="' + el.href + '">'+eval(slimbox2_options['caption'])+'</a>':eval(slimbox2_options['caption'])];
 					}, function(el) {
 				return (this == el) || ((this.rel.length > 8) && (this.rel == el.rel));
 			});

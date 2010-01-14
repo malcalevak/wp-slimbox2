@@ -75,6 +75,7 @@ if(get_option('wp_slimbox_autoload')) {//if we're using a really old version of 
 		'cache'   => time()
 	));
 }
+//THIS SECTION DOESN"T APPEAR TO WORK CORRECTLY!
 if (!$options->get_option('caption')){
 	$options->init_option(array(
 		'caption' => array('a-title','img-alt','img-title','None'),
@@ -82,10 +83,4 @@ if (!$options->get_option('caption')){
 		'mobile' => 'off'
 	));
 }
-	$options->init_option(array(
-		'caption' => array('a-title','img-alt','img-title','None'),
-		'url' => 'on',
-		'mobile' => 'off'
-	));
-	print_r ($options->get_option('caption'));
 ?>
