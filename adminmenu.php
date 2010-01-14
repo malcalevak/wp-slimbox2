@@ -18,10 +18,7 @@ if(get_option('wp_slimbox_autoload')) {//if we're using a really old version of 
 		'initialHeight'   => get_option('wp_slimbox_initialHeight'),
 		'imageFadeDuration' => get_option('wp_slimbox_imageFadeDuration'),
 		'captionAnimationDuration'   => get_option('wp_slimbox_captionAnimationDuration'),
-		'caption1' => 'a-title',
-		'caption2' => 'img-alt',
-		'caption3' => 'img-title',
-		'caption4' => 'None',
+		'caption' => array('a-title','img-alt','img-title','None'),
 		'url' => 'on',
 		'counterText' => get_option('wp_slimbox_counterText'),
 		'closeKeys'   => get_option('wp_slimbox_closeKeys'),
@@ -65,10 +62,7 @@ if(get_option('wp_slimbox_autoload')) {//if we're using a really old version of 
 		'initialHeight'   => '250',
 		'imageFadeDuration' => '400',
 		'captionAnimationDuration'   => '400',
-		'caption1' => 'a-title',
-		'caption2' => 'img-alt',
-		'caption3' => 'img-title',
-		'caption4' => 'None',
+		'caption' => array('a-title','img-alt','img-title','None'),
 		'url' => 'on',
 		'counterText' => __('Image {x} of {y}', 'wp-slimbox2'),
 		'closeKeys'   => __('27,88,67', 'wp-slimbox2'),
@@ -81,14 +75,17 @@ if(get_option('wp_slimbox_autoload')) {//if we're using a really old version of 
 		'cache'   => time()
 	));
 }
-if (!$options->get_option('caption1')){
+if (!$options->get_option('caption')){
 	$options->init_option(array(
-		'caption1' => 'a-title',
-		'caption2' => 'img-alt',
-		'caption3' => 'img-title',
-		'caption4' => 'None',
+		'caption' => array('a-title','img-alt','img-title','None'),
 		'url' => 'on',
 		'mobile' => 'off'
 	));
 }
+	$options->init_option(array(
+		'caption' => array('a-title','img-alt','img-title','None'),
+		'url' => 'on',
+		'mobile' => 'off'
+	));
+	print_r ($options->get_option('caption'));
 ?>
