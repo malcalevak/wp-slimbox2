@@ -58,7 +58,7 @@ jQuery(document).ready(function($) {
 				}).unbind("click").slimbox(options, function(el) {
 						return [el.href, (slimbox2_options['url'])?'<a href="' + el.href + '">'+eval(slimbox2_options['caption'])+'</a>':eval(slimbox2_options['caption'])];
 					}, function(el) {
-						return (this == el) || ($(this).parents("div.post, div#page")[0] && ($(this).parents("div.post, div#page")[0] == $(el).parents("div.post, div#page")[0]));
+						return (this == el) || ($(this).parents(slimbox2_options['selector'])[0] && ($(this).parents(slimbox2_options['selector'])[0] == $(el).parents(slimbox2_options['selector'])[0]));
 				});
 		} else {
 			$("a[rel^='lightbox']").unbind("click").slimbox(options, function(el) {

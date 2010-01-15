@@ -64,8 +64,11 @@ function wp_slimbox_scripts() {
 				case 'img-title':
 					$caption .= 'el.firstChild.title';
 					break;
-				default:
+				case 'href':
 					$caption .= 'el.href';
+					break;
+				default:
+					$caption .= "' '";
 			}
 			$caption .= ' || ';
 		}
@@ -84,6 +87,7 @@ function wp_slimbox_scripts() {
 			'captionAnimationDuration' => $options->get_option('captionAnimationDuration'),
 			'caption' => $caption,
 			'url' => (($options->get_option('url') == 'on')?true:false),
+			'selector' => $options->get_option('selector'),
 			'counterText' => $options->get_option('counterText'),
 			'closeKeys' => $options->get_option('closeKeys'),
 			'previousKeys' => $options->get_option('previousKeys'),
@@ -96,9 +100,7 @@ function wp_slimbox_scripts() {
 			'flickr' => (($options->get_option('flickr') == 'on')?true:false),
 			'mobile' => (($options->get_option('mobile') == 'on')?true:false)
 		));
-
-
-		}
+	}
 }
 
 add_action('admin_menu', 'show_slimbox_options');

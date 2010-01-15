@@ -2,13 +2,9 @@
 	$easingArray = array(swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce);
 	$overlayOpacity = array(0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1);
 	$msArray = array(1,100,200,300,400,500,600,700,800,900,1000);
-	$captions = array('a-title','img-alt','img-title','None');
+	$captions = array('a-title','img-alt','img-title','href','None');
 	global $options;
-	//add class selection for auto-select div
-	//choose caption source
 	//combine selection of lightbox and any non-lightboxed images into single selector
-	/*http://striderweb.com/nerdaphernalia/2008/07/consolidate-options-with-arrays/
-	*/
 ?>
 <div class="wrap">
 	<form method="post" action="<?php echo $_SERVER['PHP_SELF']?>?page=slimbox2options" id="options"><?php	echo wp_nonce_field('update-options','wp_slimbox_wpnonce'); ?><h2><?php _e('WP Slimbox2 Plugin', 'wp-slimbox2'); ?></h2>
@@ -27,14 +23,15 @@
 				'initialHeight'   => $_POST['wp_slimbox_initialHeight'],
 				'imageFadeDuration' => $_POST['wp_slimbox_imageFadeDuration'],
 				'captionAnimationDuration'   => $_POST['wp_slimbox_captionAnimationDuration'],
+				'caption' => array($_POST['wp_slimbox_caption1'],$_POST['wp_slimbox_caption2'],$_POST['wp_slimbox_caption3'],$_POST['wp_slimbox_caption4']),
+				'url' => $_POST['wp_slimbox_url'],
+				'selector' => $_POST['wp_slimbox_selector'],
 				'counterText' => $_POST['wp_slimbox_counterText'],
 				'closeKeys'   => $_POST['wp_slimbox_closeKeys'],
 				'previousKeys' => $_POST['wp_slimbox_previousKeys'],
 				'nextKeys'   =>  $_POST['wp_slimbox_nextKeys'],
 				'picasaweb' => $_POST['wp_slimbox_picasaweb'],
 				'flickr'   => $_POST['wp_slimbox_flickr'],
-				'caption' => array($_POST['wp_slimbox_caption1'],$_POST['wp_slimbox_caption2'],$_POST['wp_slimbox_caption3'],$_POST['wp_slimbox_caption4']),
-				'url' => $_POST['wp_slimbox_url'],
 				'mobile' => $_POST['wp_slimbox_mobile'],
 				'maintenance' => $_POST['wp_slimbox_maintenance'],
 				'cache'   => $_POST['wp_slimbox_cache']
@@ -75,7 +72,7 @@
 					<input type="checkbox" name="wp_slimbox_autoload"<?php if ($options->get_option('autoload') == 'on') echo ' checked="yes"';?> />
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to automatically activate Slimbox on all links pointing to ".jpg" or ".png" or ".gif". All image links contained in the same block or paragraph (having the same parent element) will automatically be grouped together in a gallery. If this isn\'t activated you will need to manually add \'rel="lightbox"\' for individual images or \'rel="lightbox-imagesetname"\' for groups on all links you wish to use Slimbox.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to automatically activate Slimbox on all links pointing to ".jpg" or ".png" or ".gif". All image links will automatically be grouped together in a gallery according to the selector chosen below. If this isn\'t activated you will need to manually add \'rel="lightbox"\' for individual images or \'rel="lightbox-imagesetname"\' for groups on all links you wish to use Slimbox.', 'wp-slimbox2'); ?>
 					</p>
 				</td>
 			</tr>
@@ -227,18 +224,28 @@
 					</select>
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to select the order in which to search for the caption text. The default is a-title, followed by img-alt, img-title, and None.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to select the order in which to search various locations for the caption text. If you\'d like no caption just select "None" in the first block. You can also leave out an option by replacing it with "None", but be sure to place any option you\'d like to search in front of it. If a caption can\'t be found, and "None" wasn\t selected, it will default to the URL ("href"). The default is "a-title", followed by "img-alt", "img-title", and "href".', 'wp-slimbox2'); ?>
 					</p>
 				</td>
 			</tr>
 			<tr class='inactive'>
-				<td class='name'><?php _e('URL in Caption', 'wp-slimbox2'); ?></td>
+				<td class='name'><?php _e('Caption is URL', 'wp-slimbox2'); ?></td>
 				<th scope='row' class='check-column'>
 					<input type="checkbox" name="wp_slimbox_url"<?php if ($options->get_option('url') == 'on') echo ' checked="yes"';?> />
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option will render the caption as a hyperlink to the image file. This is enabled by default.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option will render the caption as a hyperlink. This is enabled by default.', 'wp-slimbox2'); ?>
 					</p>
+			</tr>
+			<tr class='inactive'>
+				<td class='name'><?php _e('Autoload Selector', 'wp-slimbox2'); ?></td>
+				<th scope='row' class='check-column'>
+					<input type="text" name="wp_slimbox_selector" value="<?php echo $options->get_option('selector'); ?>" />
+				</th>
+				<td class='desc'>
+					<p> <?php _e('This option allows the user to change how images are grouped when autoload is enabled. It uses jQuery selectors, as described <a href="http://api.jquery.com/category/selectors/">here</a>. The default is "div.entry-content, div.gallery, div.entry, div.post, div#page, body", which works in most themes by searching for a common post, gallery, or page that contains the images.', 'wp-slimbox2'); ?>
+					</p>
+				</td>
 			</tr>
 			<tr class='inactive'>
 				<td class='name'><?php _e('Counter Text', 'wp-slimbox2'); ?></td>
