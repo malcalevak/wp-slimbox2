@@ -39,7 +39,7 @@ function wp_slimbox_styles() {
 	wp_enqueue_style('slimbox2');
 	wp_register_script('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/javascript/slimbox2.js',array('jquery'), '2.02');
 	wp_register_script('slimbox2_autoload', WP_PLUGIN_URL.'/wp-slimbox2/javascript/slimbox2_autoload.js',array('slimbox2'),$options->get_option('cache'));//add option for version number, update with each save
-	wp_register_script('jquery_easing', WP_PLUGIN_URL.'/wp-slimbox2/javascript/jquery.easing.1.3.packed.js',array('jquery'), '1.3');
+	wp_register_script('jquery_easing', WP_PLUGIN_URL.'/wp-slimbox2/javascript/jquery.easing.1.3.js',array('jquery'), '1.3');
 }
 function wp_slimbox_scripts() {
 	global $options;
