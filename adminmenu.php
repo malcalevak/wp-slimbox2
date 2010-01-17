@@ -50,7 +50,7 @@ if(get_option('wp_slimbox_autoload')) {//if we're using a really old version of 
 	delete_option('wp_slimbox_flickr');
 	delete_option('wp_slimbox_maintenance');
 	delete_option('wp_slimbox_cache');
-} else if (!$options->get_option('autoload')){
+} else if (!$options->get_option('autoload')){// new plugin users get all defaults loaded
 	$options->init_option(array(
 		'autoload'   => 'off',
 		'loop' => 'off',
@@ -77,8 +77,7 @@ if(get_option('wp_slimbox_autoload')) {//if we're using a really old version of 
 		'cache'   => time()
 	));
 }
-//THIS SECTION DOESN"T APPEAR TO WORK CORRECTLY!
-if (!$options->get_option('caption')){
+if (!$options->get_option('caption')){//upgraders get the new options and defaults added
 	$options->update_option(array(
 		'caption' => array('a-title','img-alt','img-title','href'),
 		'url' => 'on',
