@@ -1,10 +1,10 @@
 <?php
+//modify translation files, add all defaults to settings
 	$easingArray = array(swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce);
 	$overlayOpacity = array(0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1);
 	$msArray = array(1,100,200,300,400,500,600,700,800,900,1000);
 	$captions = array('a-title','img-alt','img-title','href','None');
 	global $options;
-	//combine selection of lightbox and any non-lightboxed images into single selector
 ?>
 <div class="wrap">
 	<form method="post" action="<?php echo $_SERVER['PHP_SELF']?>?page=slimbox2options" id="options"><?php	echo wp_nonce_field('update-options','wp_slimbox_wpnonce'); ?><h2><?php _e('WP Slimbox2 Plugin', 'wp-slimbox2'); ?></h2>
@@ -37,14 +37,14 @@
 				'cache'   => $_POST['wp_slimbox_cache']
 			)
 		);
-		echo '<div id="message" class="updated fade"><p><strong>Settings saved.</strong></p></div>';
+		echo '<div id="message" class="updated fade"><p><strong>'.__('Settings Saved', 'wp-slimbox2').'.</strong></p></div>';
 	}
 	$caption = $options->get_option('caption');
 	
 	function selectionGen(&$option,&$array) {
 		foreach($array as $key=> $ms) {
 			$selected = ($option != $ms)? '' : ' selected';
-			echo "<option value='$ms'$selected>".(($ms=='1'&&$array[0]!='0')?'Disabled':$ms)."</option>\n";
+			echo "<option value='$ms'$selected>".(($ms=='1'&&$array[0]!='0')?__('Disabled', 'wp-slimbox2'):$ms)."</option>\n";
 		}
 	}
 ?>
@@ -72,7 +72,7 @@
 					<input type="checkbox" name="wp_slimbox_autoload"<?php if ($options->get_option('autoload') == 'on') echo ' checked="yes"';?> />
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to automatically activate Slimbox on all links pointing to ".jpg" or ".png" or ".gif". All image links will automatically be grouped together in a gallery according to the selector chosen below. If this isn\'t activated you will need to manually add \'rel="lightbox"\' for individual images or \'rel="lightbox-imagesetname"\' for groups on all links you wish to use Slimbox.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to automatically activate Slimbox on all links pointing to ".jpg", ".jpeg", ".png", ".bmp" or ".gif". All image links will automatically be grouped together in a gallery according to the selector chosen below. If this isn\'t activated you will need to manually add \'rel="lightbox"\' for individual images or \'rel="lightbox-imagesetname"\' for groups on all links you wish to use the Slimbox effect. Default is DISABLED.', 'wp-slimbox2'); ?>
 					</p>
 				</td>
 			</tr>
@@ -82,7 +82,7 @@
 					<input type="checkbox" name="wp_slimbox_picasaweb"<?php if ($options->get_option('picasaweb') == 'on') echo ' checked="yes"';?> />
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to automatically add the Slimbox effect to Picasaweb links when provided an appropriate thumbnail (this is separate from the autoload script which only functions on image links).', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to automatically add the Slimbox effect to Picasaweb links when provided an appropriate url (this is separate from the autoload script which only functions on direct image links). Default is DISABLED.', 'wp-slimbox2'); ?>
 					</p>
 				</td>
 			</tr>
@@ -92,7 +92,7 @@
 					<input type="checkbox" name="wp_slimbox_flickr"<?php if ($options->get_option('flickr') == 'on') echo ' checked="yes"';?> />
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to automatically add the Slimbox effect to Flickr links when provided an appropriate thumbnail (this is separate from the autoload script which only functions on image links).', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to automatically add the Slimbox effect to Flickr links when provided an appropriate url (this is separate from the autoload script which only functions on direct image links). Default is DISABLED.', 'wp-slimbox2'); ?>
 					</p>
 				</td>
 			</tr>
@@ -102,7 +102,7 @@
 					<input type="checkbox" name="wp_slimbox_loop"<?php if ($options->get_option('loop') == 'on') echo ' checked="yes"';?> />
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to navigate between the first and last images of a Slimbox gallery when there is more than one image to display.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to navigate between the first and last images of a Slimbox gallery group when there is more than one image to display. Default is DISABLED.', 'wp-slimbox2'); ?>
 					</p>
 				</td>
 			</tr>
@@ -114,7 +114,7 @@
 					</select>
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to adjust the opacity of the background overlay. 1 is completely opaque, 0 is completely transparent.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to adjust the opacity of the background overlay. 1 is completely opaque, 0 is completely transparent. Default is 0.8.', 'wp-slimbox2'); ?>
 					</p>
 				</td>
 			</tr>
@@ -137,7 +137,7 @@
 					</select>
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to adjust the duration of the overlay fade-in and fade-out animations, in milliseconds.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to adjust the duration of the overlay fade-in and fade-out animations, in milliseconds. Default is 400.', 'wp-slimbox2'); ?>
 					</p>
 				</td>
 			</tr>
@@ -149,7 +149,7 @@
 					</select>
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to adjust the duration of the resize animation for width and height, in milliseconds.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to adjust the duration of the resize animation for width and height, in milliseconds. Default is 400.', 'wp-slimbox2'); ?>
 					</p>
 				</td>
 			</tr>
@@ -161,7 +161,7 @@
 					</select>
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to adjust the easing effect that you want to use for the resize animation (this loads an additional jQuery Easing Plugin). Many easings require a longer execution time to look good, so you should adjust the resizeDuration option above as well.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to adjust the easing effect that you want to use for the resize animation (easings other than swing load an additional jQuery Easing Plugin). Many easings require a longer execution time to look good, so you should adjust the resizeDuration option above as well. Default is swing.', 'wp-slimbox2'); ?>
 					</p>
 				</td>
 			</tr>
@@ -171,7 +171,7 @@
 					<input type="text" name="wp_slimbox_initialWidth" value="<?php echo $options->get_option('initialWidth'); ?>" />
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to adjust the initial width of the box, in pixels.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to adjust the initial width of the box, in pixels. Default is 250.', 'wp-slimbox2'); ?>
 					</p>
 				</td>
 			</tr>
@@ -181,7 +181,7 @@
 					<input type="text" name="wp_slimbox_initialHeight" value="<?php echo $options->get_option('initialHeight'); ?>" />
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to adjust the initial height of the box, in pixels.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to adjust the initial height of the box, in pixels. Default is 250.', 'wp-slimbox2'); ?>
 					</p>
 			</tr>
 			<tr class='inactive'>
@@ -192,7 +192,7 @@
 					</select>
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to adjust the duration of the image fade-in animation, in milliseconds. Disabling this effect will make the image appear instantly.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to adjust the duration of the image fade-in animation, in milliseconds. Disabling this effect will make the image appear instantly. Default is 400.', 'wp-slimbox2'); ?>
 					</p>
 				</td>
 			</tr>
@@ -204,7 +204,7 @@
 					</select>
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to adjust the duration of the caption animation, in milliseconds. Disabling this effect will make the caption appear instantly.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to adjust the duration of the caption animation, in milliseconds. Disabling this effect will make the caption appear instantly. Default is 400.', 'wp-slimbox2'); ?>
 					</p>
 			</tr>
 			<tr class='inactive'>
@@ -224,7 +224,7 @@
 					</select>
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to select the order in which to search various locations for the caption text. If you\'d like no caption just select "None" in the first block. You can also leave out an option by replacing it with "None", but be sure to place any option you\'d like to search in front of it. If a caption can\'t be found, and "None" wasn\t selected, it will default to the URL ("href"). The default is "a-title", followed by "img-alt", "img-title", and "href".', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to select the order in which to search various locations for the caption text. If you\'d like no caption just select "None" in the first block. You can also leave out an option by replacing it with "None", but be sure to place any option you\'d like to search in front of it. If a caption can\'t be found, and "None" wasn\t selected, it will default to the URL ("href"). Default is "a-title", followed by "img-alt", "img-title", and "href".', 'wp-slimbox2'); ?>
 					</p>
 				</td>
 			</tr>
@@ -234,7 +234,7 @@
 					<input type="checkbox" name="wp_slimbox_url"<?php if ($options->get_option('url') == 'on') echo ' checked="yes"';?> />
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option will render the caption as a hyperlink. This is enabled by default.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option will render the caption as a hyperlink.  Default is Enabled.', 'wp-slimbox2'); ?>
 					</p>
 			</tr>
 			<tr class='inactive'>
@@ -243,7 +243,7 @@
 					<input type="text" name="wp_slimbox_selector" value="<?php echo $options->get_option('selector'); ?>" />
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to change how images are grouped when autoload is enabled. It uses jQuery selectors, as described <a href="http://api.jquery.com/category/selectors/">here</a>. The default is "div.entry-content, div.gallery, div.entry, div.post, div#page, body", which works in most themes by searching for a common post, gallery, or page that contains the images.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to change how images are grouped when autoload is enabled. It uses jQuery selectors, as described <a href="http://api.jquery.com/category/selectors/">here</a>. Default is "div.entry-content, div.gallery, div.entry, div.post, div#page, body", which works in most themes by searching for a common post, gallery, or page that contains the images.', 'wp-slimbox2'); ?>
 					</p>
 				</td>
 			</tr>
@@ -253,7 +253,7 @@
 					<input type="text" name="wp_slimbox_counterText" value="<?php echo $options->get_option('counterText'); ?>" />
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option allows the user to customize, translate or disable the counter text which appears in the captions when multiple images are shown. Inside the text, {x} will be replaced by the current image index, and {y} will be replaced by the total number of images. Set it to false (boolean value, without quotes) or "" to disable the counter display. Default is "Image {x} of {y}".', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option allows the user to customize, translate or disable the counter text which appears in the captions when multiple images are shown. Inside the text, {x} will be replaced by the current image index, and {y} will be replaced by the total number of images in the group. Set it to false (boolean value, without quotes) or "" to disable the counter display. Default is "Image {x} of {y}".', 'wp-slimbox2'); ?>
 					</p>
 			</tr>
 			<tr class='inactive'>
@@ -293,7 +293,7 @@
 					<input type="checkbox" name="wp_slimbox_maintenance"<?php if ($options->get_option('maintenance') == 'on') echo ' checked="yes"';?> />
 				</th>
 				<td class='desc'>
-					<p> <?php _e('This option enables a maintenance mode for testing purposes. When enabled slimbox will be disabled until you enable it by appending ?slimbox=on to a url. It will then remain on until you disable it by appending ?slimbox=off to a url, you clear your cookies, or in certain cases you clear your browser cache. This setting only impacts things at a vistor level, not a site wide level.', 'wp-slimbox2'); ?>
+					<p> <?php _e('This option enables a maintenance mode for testing purposes. When enabled slimbox will be disabled until you enable it by appending ?slimbox=on to a url. It will then remain on until you disable it by appending ?slimbox=off to a url, you clear your cookies, or in certain cases you clear your browser cache. This setting only impacts things at an individual vistor level, not a site wide level. Default is Disabled.', 'wp-slimbox2'); ?>
 					</p>
 			</tr>
 			<input type="hidden" name="wp_slimbox_cache" value="<?php echo time(); ?>" />
@@ -304,7 +304,22 @@
 		<p class="submit"><input type="submit" name="Submit" value="<?php _e('Update Options','wp-slimbox2'); ?>" /></p>
 		<div style="clear:both;padding-top:20px;"></div>
 	</form>
-	<div align="center">
+	<div class="clear"></div>
+	<h2><?php _e('Notes', 'wp-slimbox2');?></h2>
+	<table class="widefat" cellspacing="0" id="active-plugins-table">
+		<tfoot>
+		<tr>
+			<th scope="col"></th>
+		</tr>
+
+		</tfoot>
+		<tbody class="plugins">
+			<tr class="inactive">
+				<td class="desc">
+					<p>Check out the <a href="http://transientmonkey.com/wp-slimbox2-user-guide">WP-Slimbox2 User Guide</a>!</p>
+					<p>Support is graciously being hosted at <a href="http://pixopoint.com/forum/index.php?board=6.0">PixoPoint.com</a> I'll make an effort to stay apprised of any questions that may arise.</p>
+					<p>The plugin webpage can be found at <a href="http://transientmonkey.com/wp-slimbox2">TransientMonkey.com</a>, feel free to leave comments, but don't post support questions, that's what the forum is for! Stay tuned in to all new Transient Monkey projects!</p>
+					<p>If you'd like to add or update a translation to WP-Slimbox2, please visit <a href="http://pixopoint.com/forum/index.php?topic=1383.0">this forum</a>. The more people who can easily use this plugin the better!</p>
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 			<input type="hidden" name="cmd" value="_s-xclick">
 			<input type="hidden" name="hosted_button_id" value="<?php _e('11145898">
@@ -312,5 +327,9 @@
 			<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
 		</form>
         <p><b style="font-size:11px;">Support this plugin!','wp-slimbox2'); ?></b></p>
-	</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
 </div>
