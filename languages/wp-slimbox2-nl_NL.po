@@ -13,208 +13,360 @@ msgstr ""
 "X-Poedit-Language: Dutch\n"
 "X-Poedit-Country: NETHERLANDS\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;__ngettext_noop:1,2;_c\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
 "X-Poedit-Basepath: ../\n"
-": \n"
+"X-Poedit-Bookmarks: \n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
 
-#: adminmenu.php:19
+#: adminmenu.php:69
+#@ wp-slimbox2
 msgid "Image {x} of {y}"
 msgstr "Afbeelding {x} van de {y}"
 
-#: adminmenu.php:20
+#: adminmenu.php:70
+#@ wp-slimbox2
 msgid "27,88,67"
 msgstr "27,88,83"
 
-#: adminmenu.php:21
+#: adminmenu.php:71
+#@ wp-slimbox2
 msgid "37,80"
 msgstr "37,84"
 
-#: adminmenu.php:22
+#: adminmenu.php:72
+#@ wp-slimbox2
 msgid "39,78"
 msgstr "39,86"
 
-#: adminpage.php:8
+#: adminpage.php:10
+#@ wp-slimbox2
 msgid "WP Slimbox2 Plugin"
 msgstr ""
 
-#: adminpage.php:46
+#: adminpage.php:52
+#@ wp-slimbox2
 msgid "Settings"
 msgstr "Instellingen"
 
-#: adminpage.php:50
+#: adminpage.php:56
+#@ wp-slimbox2
 msgid "Setting"
 msgstr "Instelling"
 
-#: adminpage.php:51
+#: adminpage.php:57
+#@ wp-slimbox2
 msgid "Description"
 msgstr "Omschrijving"
 
-#: adminpage.php:57
+#: adminpage.php:63
+#@ wp-slimbox2
 msgid "Use the various options above to control some of the advanced settings of the plugin"
 msgstr "Met opties hierboven kunt u verscheidene geavanceerde instellingen beheren."
 
-#: adminpage.php:64
+#: adminpage.php:70
+#@ wp-slimbox2
 msgid "Autoload?"
 msgstr "Automatisch laden?"
 
-#: adminpage.php:69
-msgid "This option allows the user to automatically activate Slimbox on all links pointing to \".jpg\" or \".png\" or \".gif\". All image links contained in the same block or paragraph (having the same parent element) will automatically be grouped together in a gallery. If this isn't activated you will need to manually add 'rel=\"lightbox\"' for individual images or 'rel=\"lightbox-imagesetname\"' for groups on all links you wish to use Slimbox."
-msgstr "Met deze optie kunt u Slimbox automatisch activeren voor alle links die naar \".jpg\" of \".png\" of \".gif\" verwijzen. Alle links naar afbeeldingen in hetzelfde blok of paragraaf (in hetzelfde element) zullen automatisch in een galerij gegroepeerd worden. Als deze optie niet is aangevinkt, moet u handmatig voor individuele afbeeldingen 'rel=\"lightbox\"' of voor groepen 'rel=\"lightbox-imagesetname\"' aangeven voor all links waarvoor u Slimbox wilt toepassen."
-
-#: adminpage.php:74
+#: adminpage.php:80
+#@ wp-slimbox2
 msgid "Enable Picasaweb Integration?"
 msgstr "Picasaweb-integratie inschakelen?"
 
-#: adminpage.php:79
-msgid "This option allows the user to automatically add the Slimbox effect to Picasaweb links when provided an appropriate thumbnail (this is separate from the autoload script which only functions on image links)."
-msgstr "Met deze optie kunt u automatisch het lightbox-effect toepassen op alle Picasaweb links, mits een geschikte miniatuur voorhanden is (dit is onafhankelijk van het automatisch laden script dat alleen werkt op links naar 'losse' afbeeldingen)"
-
-#: adminpage.php:84
+#: adminpage.php:90
+#@ wp-slimbox2
 msgid "Enable Flickr Integration?"
 msgstr "Flickr-integratie inschakelen?"
 
-#: adminpage.php:89
-msgid "This option allows the user to automatically add the Slimbox effect to Flickr links when provided an appropriate thumbnail (this is separate from the autoload script which only functions on image links)."
-msgstr "Met deze optie kunt u automatisch het lightbox-effect toepassen op alle Flickr links, mits een geschikte miniatuur voorhanden is (dit is onafhankelijk van het automatisch laden script dat alleen werkt op links naar 'losse' afbeeldingen)"
-
-#: adminpage.php:94
+#: adminpage.php:100
+#@ wp-slimbox2
 msgid "Loop?"
 msgstr "Lussen?"
 
-#: adminpage.php:99
-msgid "This option allows the user to navigate between the first and last images of a Slimbox gallery when there is more than one image to display."
-msgstr "Met deze optie kunt u van de laatste naar eerste afbeelding (en terug) van een Slimbox-galerij navigeren, mits er meer dan 1 afbeelding is."
-
-#: adminpage.php:104
+#: adminpage.php:110
+#@ wp-slimbox2
 msgid "Overlay Opacity"
 msgstr "Transparantie van de overlay"
 
-#: adminpage.php:111
-msgid "This option allows the user to adjust the opacity of the background overlay. 1 is completely opaque, 0 is completely transparent."
-msgstr "Met deze optie kunt u de transparantie instellen van de achtergrond-overlay: 1 is geheel ondoorzichtig, 0 is geheel transparant."
-
-#: adminpage.php:116
+#: adminpage.php:122
+#@ wp-slimbox2
 msgid "Overlay Color"
 msgstr "Kleur van de overlay"
 
-#: adminpage.php:122
-msgid "This option allows the user to set the color of the overlay by selecting your hue from the circle and color gradient from the square. Alternatively you may manually enter a valid HTML color code. The color of the entry field will change to reflect your selected color. Default is #000000."
-msgstr "Met deze optie kunt u de kleur van de overlay bepalen, door het aanklikken van de gewenste tint in de cirkel, en de kleuren verloopfase in het vierkant. Als alternatief kunt u ook handmatig een geldige HTML kleurcode invoeren. De kleur van het invoerveld zal de door u gekozen kleur weergeven. De standaard waarde is #000000."
-
-#: adminpage.php:127
+#: adminpage.php:133
+#@ wp-slimbox2
 msgid "Overlay Fade Duration"
 msgstr "Overgangsduur van de overlay"
 
-#: adminpage.php:134
-msgid "This option allows the user to adjust the duration of the overlay fade-in and fade-out animations, in milliseconds."
-msgstr "Met deze optie kunt u de duur van het fade-in/fade-out overvloei effect instellen van de overlay, in milliseconden."
-
-#: adminpage.php:139
+#: adminpage.php:145
+#@ wp-slimbox2
 msgid "Resize Duration"
 msgstr "Omvormingsduur"
 
-#: adminpage.php:146
-msgid "This option allows the user to adjust the duration of the resize animation for width and height, in milliseconds."
-msgstr "Met deze optie kunt u de duur instellen, in milliseconden, van het omvorming animatie-effect in hoogte en breedte."
-
-#: adminpage.php:151
+#: adminpage.php:157
+#@ wp-slimbox2
 msgid "Resize Easing"
 msgstr "Omvormingseffect"
 
-#: adminpage.php:158
-msgid "This option allows the user to adjust the name of the easing effect that you want to use for the resize animation (jQuery Easing Plugin required). Many easings require a longer execution time to look good, so you should adjust the resizeDuration option above as well."
-msgstr "Met deze optie kunt u het specifieke omvormingseffect invoeren dat u wilt toepassen op de afbeeldingen (hiervoor is wel de jQuery Easing-plugin vereist). Veel effecten hebben meer tijd nodig voor hun uitvoering, om er goed uit te zien; pas dus de omvormingsduur optie, hierboven, overeenkomstig aan."
-
-#: adminpage.php:163
+#: adminpage.php:169
+#@ wp-slimbox2
 msgid "Initial Width"
 msgstr "Aanvangsbreedte"
 
-#: adminpage.php:168
-msgid "This option allows the user to adjust the initial width of the box, in pixels."
-msgstr "Met deze optie kunt u de aanvangsbreedte van de box instellen (in pixels)."
-
-#: adminpage.php:173
+#: adminpage.php:179
+#@ wp-slimbox2
 msgid "Initial Height"
 msgstr "Aanvangshoogte"
 
-#: adminpage.php:178
-msgid "This option allows the user to adjust the initial height of the box, in pixels."
-msgstr "Met deze optie kunt u de aanvangshoogte van de box instellen (in pixels)."
-
-#: adminpage.php:182
+#: adminpage.php:188
+#@ wp-slimbox2
 msgid "Image Fade Duration"
 msgstr "Duur van de overvloei"
 
-#: adminpage.php:189
-msgid "This option allows the user to adjust the duration of the image fade-in animation, in milliseconds. Disabling this effect will make the image appear instantly."
-msgstr "Met deze optie kunt u de duur van de overvloei-animatie instellen, in milliseconden. Geef 1 in voor uitschakeling van dit effect, waardoor de afbeelding direct wordt getoond."
-
-#: adminpage.php:194
+#: adminpage.php:200
+#@ wp-slimbox2
 msgid "Caption Animation Duration"
 msgstr "Animatie-duur van bijschrift"
 
-#: adminpage.php:201
-msgid "This option allows the user to adjust the duration of the caption animation, in milliseconds. Disabling this effect will make the caption appear instantly."
-msgstr "Met deze optie kunt u de animatie-duur instellen voor het bijschrift, in milliseconden. Geef 1 in om het uit te schakelen, waardoor het bijschrift meteen wordt getoond."
-
-#: adminpage.php:205
+#: adminpage.php:251
+#@ wp-slimbox2
 msgid "Counter Text"
 msgstr "Teller-tekst"
 
-#: adminpage.php:210
-msgid "This option allows the user to customize, translate or disable the counter text which appears in the captions when multiple images are shown. Inside the text, {x} will be replaced by the current image index, and {y} will be replaced by the total number of images. Set it to false (boolean value, without quotes) or \"\" to disable the counter display. Default is \"Image {x} of {y}\"."
-msgstr "Met deze optie kunt u de teller-text aanpassen, vertalen of uitschakelen, zoals te zien als meerdere afbeeldingen worden getoond. In die tekst wordt {x} vervangen door de huidige afbeeldingsindex (de 'tellerstand'), en {y} wordt vervangen door het totale aantal afbeeldingen. Geef de waarde 'false' (zonder aanhalingstekens!) of \"\" om de teller-tekst uit te schakelen. Standaard waarde is \"Afbeelding {x} van de {y}\"."
-
-#: adminpage.php:214
+#: adminpage.php:260
+#@ wp-slimbox2
 msgid "Close Keys"
 msgstr "Toetsen voor 'Sluiten'"
 
-#: adminpage.php:219
-msgid "These options allow the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> representing the keys to press to close or navigate to the next or previous images.</p><p>Just select the corresponding text box and press the keys you would like to use. Alternately check the box below to manually enter or clear key codes.</p><p>Default close values are [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67).</p><p>Default previous values are [37, 80] which means Left arrow (37) and \"p\" (80).</p><p>Default next values are [39, 78] which means Right arrow (39) and \"n\" (78)."
-msgstr "Met deze optie kunt u een serie <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">toetsen codes</a> aangeven, en daarmee de toetsen die ingedrukt kunnen worden om de afbeelding te sluiten, of naar de volgende dan wel terug naar de vorige te gaan.</p><p>Klik eenvoudigweg in het gewenste invoerveld, en druk dan de gewenste toets in. Als alternatief kunt u ook het volgende vakje aanvinken, om handmatig de nummer-waarden in te voeren of te wissen.</p><p>De standaard waarden voor 'Sluiten' zijn: [27, 88, 83] hetgeen overeenkomt met Esc (27), \"x\" (88) en \"s\" (83).</p><p>De standaard waarden voor 'Volgende' zijn: [39, 86] hetgeen overeenkomt met Rechts-pijl (39) en \"v\" (86).</p><p>De standaard waarden voor 'Terug' zijn: [37, 84] hetgeen overeenkomt met Links-pijl (37) and \"t\" (84)."
-
-#: adminpage.php:220
+#: adminpage.php:266
+#@ wp-slimbox2
 msgid "Enable Manual Key Code Entry?"
 msgstr "Handmatige invoer van toetsencodes inschakelen?"
 
-#: adminpage.php:220
+#: adminpage.php:266
+#@ wp-slimbox2
 msgid "That key has already been defined."
 msgstr "Die toets is al toegewezen."
 
-#: adminpage.php:224
+#: adminpage.php:270
+#@ wp-slimbox2
 msgid "Previous Keys"
 msgstr "Toetsen voor 'Terug'"
 
-#: adminpage.php:230
+#: adminpage.php:276
+#@ wp-slimbox2
 msgid "Next Keys"
 msgstr "Toetsen voor 'Volgende'"
 
-#: adminpage.php:236
+#: adminpage.php:291
+#@ wp-slimbox2
 msgid "Maintenance mode"
 msgstr "Onderhoud-modus"
 
-#: adminpage.php:241
-msgid "This option enables a maintenance mode for testing purposes. When enabled slimbox will be disabled until you enable it by appending ?slimbox=on to a url. It will then remain on until you disable it by appending ?slimbox=off to a url, you clear your cookies, or in certain cases you clear your browser cache. This setting only impacts things at a vistor level, not a site wide level."
-msgstr "Met deze optie kunt u de onderhouds-modus aanzetten. Daarmee wordt Slimbox uitgeschakeld, totdat het weer wordt aangezet door ?slimbox=on aan een url toe te voegen. Daarna blijft het aanstaan, totdat u aan een url ?slimbox=off toevoegt, ofwel u uw cookies wist, of - in bepaalde gevallen - uw browser-cache leegt. Deze instelling is alleen op bezoekers van toepassing; niet over de gehele site."
-
-#: adminpage.php:249
+#: adminpage.php:304
+#@ wp-slimbox2
 msgid "Update Options"
 msgstr "Instellingen aanpassen"
 
-#: javascript/slimbox2_autoload.js.php:47
+#: index.php:95
+#: index.php:132
+#@ wp-slimbox2
 msgid "default/prevlabel.gif"
 msgstr "nl_NL/prevlabel-nl.gif"
 
-#: javascript/slimbox2_autoload.js.php:55
+#: index.php:96
+#: index.php:132
+#@ wp-slimbox2
 msgid "default/nextlabel.gif"
 msgstr "nl_NL/nextlabel-nl.gif"
 
-#: javascript/slimbox2_autoload.js.php:61
+#: index.php:98
+#: index.php:132
+#@ wp-slimbox2
 msgid "LTR"
 msgstr ""
 
-#: javascript/slimbox2_autoload.js.php:68
+#: index.php:97
+#: index.php:132
+#@ wp-slimbox2
 msgid "default/closelabel.gif"
 msgstr "nl_NL/closelabel-nl.gif"
+
+#: adminpage.php:40
+#@ wp-slimbox2
+msgid "Settings Saved"
+msgstr ""
+
+#: adminpage.php:47
+#@ wp-slimbox2
+msgid "Disabled"
+msgstr "Uitgeschakeld"
+
+#: adminpage.php:211
+#@ wp-slimbox2
+msgid "Image Caption Source Order"
+msgstr ""
+
+#: adminpage.php:232
+#@ wp-slimbox2
+msgid "Caption is URL"
+msgstr ""
+
+#: adminpage.php:241
+#@ wp-slimbox2
+msgid "Autoload Selector"
+msgstr ""
+
+#: adminpage.php:282
+#@ wp-slimbox2
+msgid "Enable on mobiles?"
+msgstr ""
+
+#: adminpage.php:308
+#@ wp-slimbox2
+msgid "Notes"
+msgstr ""
+
+#: adminpage.php:319
+#@ wp-slimbox2
+msgid "Check out the <a href=\"http://transientmonkey.com/wp-slimbox2-user-guide\">WP-Slimbox2 User Guide</a>!"
+msgstr ""
+
+#: adminpage.php:320
+#@ wp-slimbox2
+msgid "Support is graciously being hosted at <a href=\"http://pixopoint.com/forum/index.php?board=6.0\">PixoPoint.com</a> I'll make an effort to stay apprised of any questions that may arise."
+msgstr ""
+
+#: adminpage.php:321
+#@ wp-slimbox2
+msgid "The plugin webpage can be found at <a href=\"http://transientmonkey.com/wp-slimbox2\">TransientMonkey.com</a>, feel free to leave comments, but don't post support questions, that's what the forum is for! Stay tuned in to all new Transient Monkey projects!"
+msgstr ""
+
+#: adminpage.php:322
+#@ wp-slimbox2
+msgid "If you'd like to add or update a translation to WP-Slimbox2, please visit <a href=\"http://pixopoint.com/forum/index.php?topic=1383.0\">this forum</a>. The more people who can easily use this plugin the better!"
+msgstr ""
+
+#: adminpage.php:325
+#@ wp-slimbox2
+msgid "11145898"
+msgstr "11145854"
+
+#: adminpage.php:326
+#@ wp-slimbox2
+msgid "en_US"
+msgstr "nl_NL/NL"
+
+#: adminpage.php:326
+#@ wp-slimbox2
+msgid "The safer, easier way to pay online!"
+msgstr "PayPal, de veilige en complete manier van online betalen."
+
+#: adminpage.php:329
+#@ wp-slimbox2
+msgid "Support this plugin!"
+msgstr ""
+
+#: adminpage.php:117
+#@ wp-slimbox2
+msgid "This option allows the user to adjust the opacity of the background overlay. 1 is completely opaque, 0 is completely transparent. <b>Default is 0.8.</b>"
+msgstr "Met deze optie kunt u de transparantie instellen van de achtergrond-overlay: 1 is geheel ondoorzichtig, 0 is geheel transparant."
+
+#: adminpage.php:128
+#@ wp-slimbox2
+msgid "This option allows the user to set the color of the overlay by selecting your hue from the circle and color gradient from the square. Alternatively you may manually enter a valid HTML color code. The color of the entry field will change to reflect your selected color. <b>Default is #000000.</b>"
+msgstr "Met deze optie kunt u de kleur van de overlay bepalen, door het aanklikken van de gewenste tint in de cirkel, en de kleuren verloopfase in het vierkant. Als alternatief kunt u ook handmatig een geldige HTML kleurcode invoeren. De kleur van het invoerveld zal de door u gekozen kleur weergeven. <b>De standaard waarde is #000000.</b>"
+
+#: adminpage.php:140
+#@ wp-slimbox2
+msgid "This option allows the user to adjust the duration of the overlay fade-in and fade-out animations, in milliseconds. <b>Default is 400.</b>"
+msgstr "Met deze optie kunt u de duur van het fade-in/fade-out overvloei effect instellen van de overlay, in milliseconden."
+
+#: adminpage.php:152
+#@ wp-slimbox2
+msgid "This option allows the user to adjust the duration of the resize animation for width and height, in milliseconds. <b>Default is 400.</b>"
+msgstr "Met deze optie kunt u de duur instellen, in milliseconden, van het omvorming animatie-effect in hoogte en breedte."
+
+#: adminpage.php:164
+#@ wp-slimbox2
+msgid "This option allows the user to adjust the easing effect that you want to use for the resize animation (easings other than swing load an additional jQuery Easing Plugin). Many easings require a longer execution time to look good, so you should adjust the resizeDuration option above as well. <b>Default is swing.</b>"
+msgstr "Met deze optie kunt u het specifieke omvormingseffect invoeren dat u wilt toepassen op de afbeeldingen (hiervoor is wel de jQuery Easing-plugin vereist). Veel effecten hebben meer tijd nodig voor hun uitvoering, om er goed uit te zien; pas dus de omvormingsduur optie, hierboven, overeenkomstig aan."
+
+#: adminpage.php:174
+#@ wp-slimbox2
+msgid "This option allows the user to adjust the initial width of the box, in pixels. <b>Default is 250.</b>"
+msgstr "Met deze optie kunt u de aanvangsbreedte van de box instellen (in pixels)."
+
+#: adminpage.php:184
+#@ wp-slimbox2
+msgid "This option allows the user to adjust the initial height of the box, in pixels. <b>Default is 250.</b>"
+msgstr "Met deze optie kunt u de aanvangshoogte van de box instellen (in pixels)."
+
+#: adminpage.php:195
+#@ wp-slimbox2
+msgid "This option allows the user to adjust the duration of the image fade-in animation, in milliseconds. Disabling this effect will make the image appear instantly. <b>Default is 400.</b>"
+msgstr "Met deze optie kunt u de duur van de overvloei-animatie instellen, in milliseconden. Geef 1 in voor uitschakeling van dit effect, waardoor de afbeelding direct wordt getoond."
+
+#: adminpage.php:207
+#@ wp-slimbox2
+msgid "This option allows the user to adjust the duration of the caption animation, in milliseconds. Disabling this effect will make the caption appear instantly. <b>Default is 400.</b>"
+msgstr "Met deze optie kunt u de animatie-duur instellen voor het bijschrift, in milliseconden. Geef 1 in om het uit te schakelen, waardoor het bijschrift meteen wordt getoond."
+
+#: adminpage.php:227
+#@ wp-slimbox2
+msgid "This option allows the user to select the order in which to search various locations for the caption text. If you'd like no caption just select \"None\" in the first block. You can also leave out an option by replacing it with \"None\", but be sure to place any option you'd like to search in front of it. If a caption can't be found, and \"None\" wasn't selected, it will default to the URL (\"href\"). <b>Default is \"a-title\", followed by \"img-alt\", \"img-title\", and \"href\".</b>"
+msgstr ""
+
+#: adminpage.php:237
+#@ wp-slimbox2
+msgid "This option will render the caption as a hyperlink.  <b>Default is Enabled.</b>"
+msgstr ""
+
+#: adminpage.php:246
+#@ wp-slimbox2
+msgid "This option allows the user to change how images are grouped when autoload is enabled. It uses jQuery selectors, as described <a href=\"http://api.jquery.com/category/selectors/\">here</a>. <b>Default is \"div.entry-content, div.gallery, div.entry, div.post, div#page, body\".</b>"
+msgstr ""
+
+#: adminpage.php:256
+#@ wp-slimbox2
+msgid "This option allows the user to customize, translate or disable the counter text which appears in the captions when multiple images are shown. Inside the text, {x} will be replaced by the current image index, and {y} will be replaced by the total number of images in the group. Set it to false (boolean value, without quotes) or \"\" to disable the counter display. <b>Default is \"Image {x} of {y}\".</b>"
+msgstr "Met deze optie kunt u de teller-text aanpassen, vertalen of uitschakelen, zoals te zien als meerdere afbeeldingen worden getoond. In die tekst wordt {x} vervangen door de huidige afbeeldingsindex (de 'tellerstand'), en {y} wordt vervangen door het totale aantal afbeeldingen. Geef de waarde 'false' (zonder aanhalingstekens!) of \"\" om de teller-tekst uit te schakelen. <b>Standaard waarde is \"Afbeelding {x} van de {y}\".</b>"
+
+#: adminpage.php:265
+#@ wp-slimbox2
+msgid "These options allow the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> representing the keys to press to close or navigate to the next or previous images.</p><p>Just select the corresponding text box and press the keys you would like to use. Alternately check the box below to manually enter or clear key codes.</p><b><p>Default close values are [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67).</p><p>Default previous values are [37, 80] which means Left arrow (37) and \"p\" (80).</p><p>Default next values are [39, 78] which means Right arrow (39) and \"n\" (78)."
+msgstr "Met deze optie kunt u een serie <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">toetsen codes</a> aangeven, en daarmee de toetsen die ingedrukt kunnen worden om de afbeelding te sluiten, of naar de volgende dan wel terug naar de vorige te gaan.</p><p>Klik eenvoudigweg in het gewenste invoerveld, en druk dan de gewenste toets in. Als alternatief kunt u ook het volgende vakje aanvinken, om handmatig de nummer-waarden in te voeren of te wissen.</p><b><p>De standaard waarden voor 'Sluiten' zijn: [27, 88, 83] hetgeen overeenkomt met Esc (27), \"x\" (88) en \"s\" (83).</p><p>De standaard waarden voor 'Volgende' zijn: [39, 86] hetgeen overeenkomt met Rechts-pijl (39) en \"v\" (86).</p><p>De standaard waarden voor 'Terug' zijn: [37, 84] hetgeen overeenkomt met Links-pijl (37) and \"t\" (84)."
+
+#: adminpage.php:287
+#@ wp-slimbox2
+msgid "This option enables Slimbox on mobile phones. <b>Default is Disabled.</b>"
+msgstr ""
+
+#: adminpage.php:296
+#@ wp-slimbox2
+msgid "This option enables a maintenance mode for testing purposes. When enabled slimbox will be disabled until you enable it by appending <b><code>?slimbox=on</code></b> to a url. It will then remain on until you disable it by appending <b><code>?slimbox=off</code></b> to a url, you clear your cookies, or in certain cases you clear your browser cache. This setting only impacts things at an individual vistor level, not a site wide level. <b>Default is Disabled.</b>"
+msgstr "Met deze optie kunt u de onderhouds-modus aanzetten. Daarmee wordt Slimbox uitgeschakeld, totdat het weer wordt aangezet door ?slimbox=on aan een url toe te voegen. Daarna blijft het aanstaan, totdat u aan een url ?slimbox=off toevoegt, ofwel u uw cookies wist, of - in bepaalde gevallen - uw browser-cache leegt. Deze instelling is alleen op bezoekers van toepassing; niet over de gehele site."
+
+#: adminpage.php:75
+#@ wp-slimbox2
+msgid "This option allows the user to automatically activate Slimbox on all links pointing to \".jpg\", \".jpeg\", \".png\", \".bmp\" or \".gif\". All image links will automatically be grouped together in a gallery according to the selector chosen below. If this isn't activated you will need to manually add <b><code>rel=\"lightbox\"</code></b> for individual images or <b><code>rel=\"lightbox-imagesetname\"</code></b> for groups on all links you wish to use the Slimbox effect. <b>Default is Disabled.</b>"
+msgstr "Met deze optie kunt u Slimbox automatisch activeren voor alle links die naar \".jpg\", \".jpeg\", \".png\", \".bmp\" or \".gif\" verwijzen. Alle links naar afbeeldingen in hetzelfde blok of paragraaf (in hetzelfde element) zullen automatisch in een galerij gegroepeerd worden. Als deze optie niet is aangevinkt, moet u handmatig voor individuele afbeeldingen <b><code>rel=\"lightbox\"</code></b> of voor groepen <b><code>rel=\"lightbox-imagesetname\"</code></b> aangeven voor all links waarvoor u Slimbox wilt toepassen."
+
+#: adminpage.php:85
+#@ wp-slimbox2
+msgid "This option allows the user to automatically add the Slimbox effect to Picasaweb links when provided an appropriate url (this is separate from the autoload script which only functions on direct image links). <b>Default is Disabled.</b>"
+msgstr ""
+"his option allows the user to automatically add the Slimbox effect to Picasaweb links when provided an appropriate thumbnail (this is separate from the autoload script which only functions on image links).\\\"\n"
+"msgstr \\\"Met deze optie kunt u automatisch het lightbox-effect toepassen op alle Picasaweb links, mits een geschikte miniatuur voorhanden is (dit is onafhankelijk van het automatisch laden script dat alleen werkt op links naar 'losse' afbeeldingen)"
+
+#: adminpage.php:95
+#@ wp-slimbox2
+msgid "This option allows the user to automatically add the Slimbox effect to Flickr links when provided an appropriate url (this is separate from the autoload script which only functions on direct image links). <b>Default is Disabled.</b>"
+msgstr "Met deze optie kunt u automatisch het lightbox-effect toepassen op alle Flickr links, mits een geschikte miniatuur voorhanden is (dit is onafhankelijk van het automatisch laden script dat alleen werkt op links naar 'losse' afbeeldingen)"
+
+#: adminpage.php:105
+#@ wp-slimbox2
+msgid "This option allows the user to navigate between the first and last images of a Slimbox gallery group when there is more than one image to display. <b>Default is Disabled.</b>"
+msgstr "Met deze optie kunt u van de laatste naar eerste afbeelding (en terug) van een Slimbox-galerij navigeren, mits er meer dan 1 afbeelding is."
 

@@ -3,8 +3,8 @@ Contributors: malcalevak
 Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.6
-Tested up to: 2.9
-Stable Tag: 0.9.7.1
+Tested up to: 2.9.1
+Stable Tag: 1.0
 
 An WordPress implementation of the Slimbox2 javascript.
 
@@ -21,14 +21,11 @@ Planned Features:<br />
 2. Option to control which pages to load the script on.<br />
 3. Expanded and easier to use settings management.<br />
 
-Recent Changes in v0.9.7.1:<br />
-0. 	Emergency Quickfix for some users.<br />
-1. 	Addition of farbtastic overlay color select.<br />
-2. 	Automatic key code recognition.<br />
-3. 	Addition of French/Français and Dutch/Nederlandse languages.<br />
-4. 	Options transferred to WPlize class, less database calls.<br />
-5. 	Flickr and Picasaweb images now properly load Slimbox settings.<br />
-6. 	Minor typographical corrections.<br />
+Recent Changes in v1.0:<br />
+1.  Addition of options to select caption source, render the caption as a hyperlink to the image, control autoload grouping element, and disable the effect on mobile phones.<br />
+2.  Initialization is now encapsulated within a function (usable in Infinite Scroll plugin, etc)<br />
+3.  All Javascript is now static, no more dynamic files.<br />
+4.  All Javascript and CSS compressed using YUI Compressor.<br />
 
 == Installation ==
 
@@ -61,8 +58,7 @@ Either the Javascript doesn't support it, or I haven't gotten around to adding i
 I only know English, but as of v.0.9.4 the plugin supports localization using PO and MO files, just like WordPress.<br />
 A copy of the POT file to use in your translations can be found in the languages directory as wp-slimbox2.pot.<br />
 If you're willing to provide a translation I'd be more than happy to include it. The NEXT, PREV, and Close buttons can be translated as well.<br />
-If you've translated the plugin please let me know by posting on our <a href="http://pixopoint.com/forum/index.php?board=6.0">support forums</a>.<br />
-A note to those using a translation - YOU MUST UPDATE YOUR SETTINGS after setting your locale or your local images will not update.<br />
+If you've translated the plugin or would like to find out more please let me know by posting on our <a href="http://pixopoint.com/forum/index.php?topic=1383.0">support forums</a>.<br />
 
 = Why should I use this plugin? =
 
@@ -78,6 +74,11 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 2. Overlay effect.
 
 == History ==
+Version 1.0 Beta - Jan-19-2010:<br />
+	Addition of options to select caption source, render the caption as a hyperlink to the image, control autoload grouping element, and disable the effect on mobile phones.<br />
+	Initialization is now encapsulated within a function (usable in Infinite Scroll plugin, etc)<br />
+	All Javascript is now static, no more dynamic files.<br />
+	All Javascript and CSS compressed using YUI Compressor.<br />
 Version 0.9.7 Beta - Apr-21-2009:<br />
 	Addition of farbtastic overlay color select.
 	Automatic key code recognition.
