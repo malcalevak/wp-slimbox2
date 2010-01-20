@@ -3,8 +3,6 @@ $page = add_options_page('WP-Slimbox2 Options', 'WP-Slimbox2', 8, 'slimbox2optio
 add_action( "admin_print_scripts-$page", 'slimbox_adminhead' );
 add_action( "admin_print_styles-$page", 'slimbox_admin_styles' );
 
-global $options;
-
 if(get_option('wp_slimbox_autoload')) {//if we're using a really old version of the plugin, transfer the settings, then delete them
 	$options->init_option(array(
 		'autoload'   => get_option('wp_slimbox_autoload'),

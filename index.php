@@ -27,14 +27,13 @@ if ( !class_exists('WPlize') ) {
 	require_once('WPlize/WPlize.php');
 }
 
-$options = new WPlize('wp_slimbox');
 
 load_plugin_textdomain ('wp-slimbox2', WP_PLUGIN_DIR.'/wp-slimbox2/languages', '/wp-slimbox2/languages');
 add_action('wp_print_scripts', 'wp_slimbox_scripts');
 add_action('wp_print_styles', 'wp_slimbox_styles');
 
 function wp_slimbox_styles() {
-	global $options;
+	$options = new WPlize('wp_slimbox');
 	wp_register_style('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/slimbox2.css','','1.0','screen');
 	wp_enqueue_style('slimbox2');
 	wp_register_script('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/javascript/slimbox2.js',array('jquery'), '2.02');
@@ -42,7 +41,7 @@ function wp_slimbox_styles() {
 	wp_register_script('jquery_easing', WP_PLUGIN_URL.'/wp-slimbox2/javascript/jquery.easing.1.3.js',array('jquery'), '1.3');
 }
 function wp_slimbox_scripts() {
-	global $options;
+	$options = new WPlize('wp_slimbox');
 	if (!is_admin())
 	{
 		if($options->get_option('maintenance') == 'on') {
@@ -106,9 +105,13 @@ function wp_slimbox_scripts() {
 add_action('admin_menu', 'show_slimbox_options');
 add_action('admin_init', 'slimbox_admin_init');
 
-function show_slimbox_options() {require('adminmenu.php');}
+function show_slimbox_options() {
+	$options = new WPlize('wp_slimbox');
+	require('adminmenu.php');
+}
 
 function slimbox_options() {
+	$options = new WPlize('wp_slimbox');
 	require('adminpage.php');
 }
 

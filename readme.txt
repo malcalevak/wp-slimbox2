@@ -2,9 +2,9 @@
 Contributors: malcalevak
 Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
-Requires at least: 2.6
+Requires at least: 2.8
 Tested up to: 2.9.1
-Stable Tag: 1.0
+Stable Tag: 1.0.1
 
 An WordPress implementation of the Slimbox2 javascript.
 
@@ -21,6 +21,9 @@ Planned Features:<br />
 2. Option to control which pages to load the script on.<br />
 3. Expanded and easier to use settings management.<br />
 
+Recent Changes in v1.0.1:<br />
+1.  To accomodate some installs the global options variable was removed.
+2.  To repair a small issue regarding selectors, .closest was used instead of .parents, bumping the jQuery requirement to 1.3, in turn bumping the WP requirement to 2.8. (If you insist on using an older version of WP, you can either manually upgrade jQuery, or switch back to using .parents, and specifically choose the selector value you want to use).
 Recent Changes in v1.0:<br />
 1.  Addition of options to select caption source, render the caption as a hyperlink to the image, control autoload grouping element, and disable the effect on mobile phones.<br />
 2.  Initialization is now encapsulated within a function (usable in Infinite Scroll plugin, etc)<br />
@@ -45,9 +48,9 @@ No. As stated in the script creators FAQ, Slimbox was designed to display images
 = What kind of grouping does autoload utilize? =
 Autoload has been modified to group all images in a Wordpress post if the theme places posts inside a div with class="post". If the images are instead on a page they will all be grouped together. If you want individual group sets it is recommend you instead manually insert 'rel="lightbox-groupname"' inside your hyperlinks to specify your groups.
 
-= Why do I need WordPress 2.6+? =
+= Why do I need WordPress 2.8+? =
 
-The Javascript requires jQuery 1.2.6+ which wasn't included in WordPress until 2.6. If you're using something to override the included jQuery with a newer version (a feature I may add at a later date) it should be compatible from 2.1+ since I believe that was when wp_enqueue_script() was implemented.<br />
+The Javascript requires jQuery 1.3+ which wasn't included in WordPress until 2.8. If you're using something to override the included jQuery with a newer version (a feature I may add at a later date) it should be compatible from 2.1+ since I believe that was when wp_enqueue_script() was implemented.<br />
 
 = Why can't the plugin do X, Y or Z? =
 
