@@ -305,12 +305,6 @@
 	<div class="clear"></div>
 	<h2><?php _e('Notes', 'wp-slimbox2');?></h2>
 	<table class="widefat" cellspacing="0" id="active-plugins-table">
-		<tfoot>
-		<tr>
-			<th scope="col"></th>
-		</tr>
-
-		</tfoot>
 		<tbody class="plugins">
 			<tr class="inactive">
 				<td class="desc">
