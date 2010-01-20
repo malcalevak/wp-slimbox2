@@ -22,8 +22,8 @@ Planned Features:<br />
 3. Expanded and easier to use settings management.<br />
 
 Recent Changes in v1.0.1:<br />
-1.  To accomodate some installs the global options variable was removed.
-2.  To repair a small issue regarding selectors, .closest was used instead of .parents, bumping the jQuery requirement to 1.3, in turn bumping the WP requirement to 2.8. (If you insist on using an older version of WP, you can either manually upgrade jQuery, or switch back to using .parents, and specifically choose the selector value you want to use).
+1.  To accomodate some installs the global options variable was removed.<br />
+2.  To repair a small issue regarding selectors, .closest was used instead of .parents, bumping the jQuery requirement to 1.3, in turn bumping the WP requirement to 2.8. (If you insist on using an older version of WP, you can either manually upgrade jQuery, or switch back to using .parents, and specifically choose the selector value you want to use).<br /><br />
 Recent Changes in v1.0:<br />
 1.  Addition of options to select caption source, render the caption as a hyperlink to the image, control autoload grouping element, and disable the effect on mobile phones.<br />
 2.  Initialization is now encapsulated within a function (usable in Infinite Scroll plugin, etc)<br />
