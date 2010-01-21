@@ -1,7 +1,12 @@
-//pack for final release
 jQuery(document).ready(function($) {
 	if(slimbox2_options['mobile'] || !/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigator.userAgent)){
 		slimbox_CSS();
+		closeKeys = slimbox2_options['closeKeys'].split(',');
+		previousKeys = slimbox2_options['previousKeys'].split(',');
+		nextKeys = slimbox2_options['nextKeys'].split(',');
+		for ( var i in closeKeys) closeKeys[i] = parseInt(closeKeys[i]);
+		for ( var i in previousKeys) previousKeys[i] = parseInt(previousKeys[i]);
+		for ( var i in nextKeys) nextKeys[i] = parseInt(nextKeys[i]);
 		load_slimbox();
 	}
 });
@@ -48,9 +53,9 @@ jQuery(document).ready(function($) {
 					imageFadeDuration: parseInt(slimbox2_options['imageFadeDuration']),
 					captionAnimationDuration: parseInt(slimbox2_options['captionAnimationDuration']),
 					counterText: slimbox2_options['counterText'],
-					closeKeys: slimbox2_options['closeKeys'].split(',').map(Number),
-					previousKeys: slimbox2_options['previousKeys'].split(',').map(Number),
-					nextKeys: slimbox2_options['nextKeys'].split(',').map(Number) 
+					closeKeys: closeKeys,
+					previousKeys: previousKeys,
+					nextKeys: nextKeys
 				}
 		if(slimbox2_options['autoload']) {
 			$("a[href]").filter(function() {

@@ -3,9 +3,10 @@
 	$overlayOpacity = array(0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1);
 	$msArray = array(1,100,200,300,400,500,600,700,800,900,1000);
 	$captions = array('a-title','img-alt','img-title','href','None');
-?>
+
+	?>
 <div class="wrap">
-	<form method="post" action="<?php echo $_SERVER['PHP_SELF']?>?page=slimbox2options" id="options"><?php	echo wp_nonce_field('update-options','wp_slimbox_wpnonce'); ?><h2><?php _e('WP Slimbox2 Plugin', 'wp-slimbox2'); ?></h2>
+	<form method="post" action="" id="options"><?php	echo wp_nonce_field('update-options','wp_slimbox_wpnonce'); ?><h2><?php _e('WP Slimbox2 Plugin', 'wp-slimbox2'); ?></h2>
 <?php
 	if(isset($_POST['action']) && wp_verify_nonce($_POST['wp_slimbox_wpnonce'], 'update-options')) {
 		$options->update_option(
@@ -305,6 +306,12 @@
 	<div class="clear"></div>
 	<h2><?php _e('Notes', 'wp-slimbox2');?></h2>
 	<table class="widefat" cellspacing="0" id="active-plugins-table">
+		<tfoot>
+		<tr>
+			<th scope="col"></th>
+		</tr>
+
+		</tfoot>
 		<tbody class="plugins">
 			<tr class="inactive">
 				<td class="desc">
@@ -323,5 +330,4 @@
 			</tr>
 		</tbody>
 	</table>
-
 </div>
