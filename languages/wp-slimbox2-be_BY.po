@@ -1,0 +1,277 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SB2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-slimbox2\n"
+"POT-Creation-Date: 2010-01-19 20:46+0000\n"
+"PO-Revision-Date: 2010-04-10 00:02+0300\n"
+"Last-Translator: FatCow <zhr@tut.by>\n"
+"Language-Team: Marcis G. <by.marcis@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Belarusian\n"
+"X-Poedit-Country: BELARUS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: adminmenu.php:69
+msgid "Image {x} of {y}"
+msgstr "Малюнак {x} на {y}"
+
+#: adminmenu.php:70
+msgid "27,88,67"
+msgstr "27,88,67"
+
+#: adminmenu.php:71
+msgid "37,80"
+msgstr "37,80"
+
+#: adminmenu.php:72
+msgid "39,78"
+msgstr "39,78"
+
+#: adminpage.php:10
+msgid "WP Slimbox2 Plugin"
+msgstr "WP Slimbox2 убудова"
+
+#: adminpage.php:40
+msgid "Settings Saved"
+msgstr "Налады захаваны"
+
+#: adminpage.php:47
+msgid "Disabled"
+msgstr "Адключана"
+
+#: adminpage.php:52
+msgid "Settings"
+msgstr "Налады"
+
+#: adminpage.php:56
+msgid "Setting"
+msgstr "Налада"
+
+#: adminpage.php:57
+msgid "Description"
+msgstr "Апісанне"
+
+#: adminpage.php:63
+msgid "Use the various options above to control some of the advanced settings of the plugin"
+msgstr "Выкарыстанне розных опцый для кантролю некаторых пашыраныя налад убудовы"
+
+#: adminpage.php:70
+msgid "Autoload?"
+msgstr "Аўтазагрузка?"
+
+#: adminpage.php:75
+msgid "This option allows the user to automatically activate Slimbox on all links pointing to \".jpg\", \".jpeg\", \".png\", \".bmp\" or \".gif\". All image links will automatically be grouped together in a gallery according to the selector chosen below. If this isn't activated you will need to manually add 'rel=\"lightbox\"' for individual images or 'rel=\"lightbox-imagesetname\"' for groups on all links you wish to use the Slimbox effect. Default is DISABLED."
+msgstr "Гэта опцыя дазваляе аўтаматычна актываваць Slimbox на ўсе спасылкі, якія паказваюць на \".jpg\" or \".png\" or \".gif\".Усе графічныя спасылкі, якія змяшчаюцца ў тым жа блоку ці ў пункце (з таго ж элемента з бацькоў) будуць аўтаматычна аб'яднаны ў галерэю. Калі гэта не актыўная, трэба будзе ўручную дадаць 'rel=\"lightbox\"' для асобных малюнкаў ці 'rel=\"lightbox-imagesetname\"' для груп па ўсіх спасылках вы жадаеце выкарыстоўваць Slimbox. "
+
+#: adminpage.php:80
+msgid "Enable Picasaweb Integration?"
+msgstr "Уключыць інтэграцыю з Picasaweb?"
+
+#: adminpage.php:85
+msgid "This option allows the user to automatically add the Slimbox effect to Picasaweb links when provided an appropriate url (this is separate from the autoload script which only functions on direct image links). Default is DISABLED."
+msgstr "Гэта опцыя дазваляе карыстачу аўтаматычна дадаць эфект Slimbox да Picasaweb спасылкі, калі гэта прадугледжана адпаведнымі мініяцюрамі (асобна ад аўтазагрузкі скрыпту, які працуе толькі ў спасылках з малюнкаў). "
+
+#: adminpage.php:90
+msgid "Enable Flickr Integration?"
+msgstr "Уключыць інтэграцыю з Flickr?"
+
+#: adminpage.php:95
+msgid "This option allows the user to automatically add the Slimbox effect to Flickr links when provided an appropriate url (this is separate from the autoload script which only functions on direct image links). Default is DISABLED."
+msgstr "Гэта опцыя дазваляе карыстачу аўтаматычна дадаць эфект Slimbox на Flickr спасылкі, калі гэта прадугледжана адпаведнымі мініяцюрамі (асобна ад аўтазагрузкі скрыпту, які працуе толькі ў спасылках з малюнкаў). "
+
+#: adminpage.php:100
+msgid "Loop?"
+msgstr "Луп?"
+
+#: adminpage.php:105
+msgid "This option allows the user to navigate between the first and last images of a Slimbox gallery group when there is more than one image to display. Default is DISABLED."
+msgstr "Гэта опцыя дазваляе карыстачу перасоўвацца паміж першым і апошнім малюнкамі галерэя Slimbox пры наяўнасці больш за аднаго малюнка. "
+
+#: adminpage.php:110
+msgid "Overlay Opacity"
+msgstr "Накладанне непразрыстасці"
+
+#: adminpage.php:117
+msgid "This option allows the user to adjust the opacity of the background overlay. 1 is completely opaque, 0 is completely transparent. Default is 0.8."
+msgstr "Гэта опцыя дазваляе карыстачу рэгуляваць празрыстасць фону накладання. 1 - цалкам непразрысты, 0 - з'яўляецца цалкам празрыстым. "
+
+#: adminpage.php:122
+msgid "Overlay Color"
+msgstr "Колер накладання"
+
+#: adminpage.php:128
+msgid "This option allows the user to set the color of the overlay by selecting your hue from the circle and color gradient from the square. Alternatively you may manually enter a valid HTML color code. The color of the entry field will change to reflect your selected color. Default is #000000."
+msgstr "Гэта опцыя дазваляе карыстачу наладзіць колер накладання, абраўшы колер з круга і колер градыенту ад пляца. Ці вы можаце ўручную ўвесці сапраўдны колер HTML-код. Колер поля ўводу будзе змяняцца з улікам абранага колеру. Па змаўчанні: # 000000."
+
+#: adminpage.php:133
+msgid "Overlay Fade Duration"
+msgstr "Працягласць знікнення накладання"
+
+#: adminpage.php:140
+msgid "This option allows the user to adjust the duration of the overlay fade-in and fade-out animations, in milliseconds. Default is 400."
+msgstr "Гэта опцыя дазваляе карыстачу рэгуляваць працягласць плыўнага з'яўлення накладання і паступовае знікненне анімацыі ў мілісекундах."
+
+#: adminpage.php:145
+msgid "Resize Duration"
+msgstr "Працягласць змены памеру"
+
+#: adminpage.php:152
+msgid "This option allows the user to adjust the duration of the resize animation for width and height, in milliseconds. Default is 400."
+msgstr "Гэта опцыя дазваляе карыстачу рэгуляваць працягласць анімацыі змены памеру для шырыні і вышыні, у мілісекундах. "
+
+#: adminpage.php:157
+msgid "Resize Easing"
+msgstr " Паслабленне змены памеру"
+
+#: adminpage.php:164
+msgid "This option allows the user to adjust the easing effect that you want to use for the resize animation (easings other than swing load an additional jQuery Easing Plugin). Many easings require a longer execution time to look good, so you should adjust the resizeDuration option above as well. Default is swing."
+msgstr "Гэта опцыя дазваляе карыстачу наладзіць імя паслабленне эфект, які вы жадаеце выкарыстоўваць для змены памеру анімацыя (JQuery убудова Паслабленне патрабуецца). Шматлікія easings запатрабавацца больш часу выканання, каб добра выглядаць, таму вы павінны наладзіць resizeDuration варыянт вышэй, а. "
+
+#: adminpage.php:169
+msgid "Initial Width"
+msgstr "Пачатковая шырыня"
+
+#: adminpage.php:174
+msgid "This option allows the user to adjust the initial width of the box, in pixels. Default is 250."
+msgstr "Гэта опцыя дазваляе карыстачу наладзіць пачатковую шырыню акна ў пікселях."
+
+#: adminpage.php:179
+msgid "Initial Height"
+msgstr "Пачатковая вышыня"
+
+#: adminpage.php:184
+msgid "This option allows the user to adjust the initial height of the box, in pixels. Default is 250."
+msgstr "Гэта опцыя дазваляе карыстачу наладзіць першапачатковай вышыні акна ў пікселях."
+
+#: adminpage.php:188
+msgid "Image Fade Duration"
+msgstr "Працягласць згасання малюнка"
+
+#: adminpage.php:195
+msgid "This option allows the user to adjust the duration of the image fade-in animation, in milliseconds. Disabling this effect will make the image appear instantly. Default is 400."
+msgstr "Гэта опцыя дазваляе карыстачу рэгуляваць працягласць плыўны малюнак у анімацыі, у мілісекундах. Адключэнне гэты эфект будзе зрабіць малюнак з'явіцца імгненна. "
+
+#: adminpage.php:200
+msgid "Caption Animation Duration"
+msgstr "Працягласць анімацыі захопу"
+
+#: adminpage.php:207
+msgid "This option allows the user to adjust the duration of the caption animation, in milliseconds. Disabling this effect will make the caption appear instantly. Default is 400."
+msgstr "Гэта опцыя дазваляе карыстачу рэгуляваць працягласць подпіс анімацыі ў мілісекундах. Адключэнне гэты эфект будзе рабіць надпісы з'яўляюцца імгненна. "
+
+#: adminpage.php:211
+msgid "Image Caption Source Order"
+msgstr "Захоп малюнка - парадак зыходнікаў"
+
+#: adminpage.php:227
+msgid "This option allows the user to select the order in which to search various locations for the caption text. If you'd like no caption just select \"None\" in the first block. You can also leave out an option by replacing it with \"None\", but be sure to place any option you'd like to search in front of it. If a caption can't be found, and \"None\" wasn\\t selected, it will default to the URL (\"href\"). Default is \"a-title\", followed by \"img-alt\", \"img-title\", and \"href\"."
+msgstr "Гэта опцыя дазваляе карыстачу абраць парадак, у якім для пошуку розных месцаў для тэксту подпісу. Калі вы жадаеце не толькі селектыўна подпіс t \"Не\" у першым блоку.Вы таксама можаце пакінуць па-за найстрек, замяніўшы яго\"None\", але не забудзьцеся паставіць любую з налад, якую трэба шукаць у перад ёй. Калі загаловак не можа быць знойдзены, і \"Не\" не абрана,будзе стандартны URL (\"href\"). Default is \"a-title\", кіроўны да \"img-alt\", \"img-title\", і \"href\"."
+
+#: adminpage.php:232
+msgid "Caption is URL"
+msgstr "Загаловак з'яўляецца спасылкай"
+
+#: adminpage.php:237
+msgid "This option will render the caption as a hyperlink.  Default is Enabled."
+msgstr "Гэта опцыя дазволіць зрабіць подпіс у выглядзе гіперспасылкі. Па змаўчанні ўключана."
+
+#: adminpage.php:241
+msgid "Autoload Selector"
+msgstr "Аўтазагрузка?"
+
+#: adminpage.php:246
+msgid "This option allows the user to change how images are grouped when autoload is enabled. It uses jQuery selectors, as described <a href=\"http://api.jquery.com/category/selectors/\">here</a>. Default is \"div.entry-content, div.gallery, div.entry, div.post, div#page, body\", which works in most themes by searching for a common post, gallery, or page that contains the images."
+msgstr "Гэта опцыя дазваляе карыстачу змяняць як малюнкі згрупаваны, калі аўтазагрузкі ўключана. Выкарыстоўваюцца Jquery селектары, як апісана <a href=\"http://api.jquery.com/category/selectors/\">тут</a>. Па змаўчанні \"div.entry-content, div.gallery, div.entry, div.post, div#page, body\", , якая працуе ў большасці тым шляхам пошуку агульных пост, галерэя, ці на старонку, якая змяшчае малюнкі."
+
+#: adminpage.php:251
+msgid "Counter Text"
+msgstr "Лічыльнік тэксту"
+
+#: adminpage.php:256
+msgid "This option allows the user to customize, translate or disable the counter text which appears in the captions when multiple images are shown. Inside the text, {x} will be replaced by the current image index, and {y} will be replaced by the total number of images in the group. Set it to false (boolean value, without quotes) or \"\" to disable the counter display. Default is \"Image {x} of {y}\"."
+msgstr "Гэта опцыя дазваляе карыстачу змяняць, перакладаць ці адключыць лічыльнік тэкст, які адлюстроўваецца ў подпісы, калі некалькі малюнкаў паказана на малюнку. Усярэдзіне тэксту,{x}будуць заменены на бягучы індэкс малюнка, а{y} будуць заменены на агульную колькасць малюнкаў. Усталюеце яго на лжывы (лагічнае значэнне, без двукоссяў) ці \"\" Каб адключыць дысплей лічыльніка. Па змаўчанні\"Image {x} на {y}\". "
+
+#: adminpage.php:260
+msgid "Close Keys"
+msgstr "Кнопкі зачынення"
+
+#: adminpage.php:265
+msgid "These options allow the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> representing the keys to press to close or navigate to the next or previous images.</p><p>Just select the corresponding text box and press the keys you would like to use. Alternately check the box below to manually enter or clear key codes.</p><p>Default close values are [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67).</p><p>Default previous values are [37, 80] which means Left arrow (37) and \"p\" (80).</p><p>Default next values are [39, 78] which means Right arrow (39) and \"n\" (78)."
+msgstr "Гэтыя опцыі дазваляюць карыстачу задаць масіў <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> уяўлялых клавіш націсніце, каб зачыніць ці перайсці да наступнай ці папярэдняй малюнкаў.</p><p>Проста абярыце адпаведнае тэкставае поле і націсніце кнопкі, якія жадалі б выкарыстоўваць. Сябар усталюеце сцяжок унізе, каб уручную ўвесці ці зняць коды клавіш.</p><p>Па змаўчанні значэння [27, 88, 67] гэта азначае, Esc (27), \"x\" (88) і \"c\" (67).</p><p>Па змаўчанні папярэднія значэнні [37, 80], э.зн. стрэлка налева (37) and \"p\" (80).</p><p>Па змаўчанні наступнага значэння [39, 78], э.зн. стрэлка направа  (39) і \"n\" (78)."
+
+#: adminpage.php:266
+msgid "Enable Manual Key Code Entry?"
+msgstr "Уключыць самастойнае прызначэнне кнопак?"
+
+#: adminpage.php:266
+msgid "That key has already been defined."
+msgstr "Гэта кнопка ўжо вызначана."
+
+#: adminpage.php:270
+msgid "Previous Keys"
+msgstr "Папярэднія кнопкі"
+
+#: adminpage.php:276
+msgid "Next Keys"
+msgstr "Наступныя кнопкі"
+
+#: adminpage.php:282
+msgid "Enable on mobiles?"
+msgstr "Даступна на мабільных прыладах?"
+
+#: adminpage.php:287
+msgid "This option enables Slimbox on mobile phones. By default this feature is disabled."
+msgstr "Гэта опцыя дазваляе Slimbox на мабільных тэлефонах. Па змаўчанні гэта функцыя адключана."
+
+#: adminpage.php:291
+msgid "Maintenance mode"
+msgstr "Галоўны рэжым"
+
+#: adminpage.php:296
+msgid "This option enables a maintenance mode for testing purposes. When enabled slimbox will be disabled until you enable it by appending ?slimbox=on to a url. It will then remain on until you disable it by appending ?slimbox=off to a url, you clear your cookies, or in certain cases you clear your browser cache. This setting only impacts things at an individual vistor level, not a site wide level. Default is Disabled."
+msgstr "Гэта опцыя ўключае рэжым абслугоўвання ў мэтах тэставання. Пры ўключэнні Slimbox будзе адключаны пакуль вы не ўключыце яго, дадаўшы? Slimbox = да спасылкі. Ён будзе заставацца, пакуль вы не адключыце яго, дадаўшы? Slimbox = OFF, каб URL, вы ачысціце куки, ці ў некаторых выпадках вам ачысціць кэш браўзара. Гэты параметр уплывае толькі на рэчы vistor узроўні, а не сайт шырокі ўзроўні."
+
+#: adminpage.php:304
+msgid "Update Options"
+msgstr "Абнавіць опцыі"
+
+#: adminpage.php:308
+msgid "Notes"
+msgstr "Нататкі"
+
+#: adminpage.php:325
+msgid ""
+"11145898\">\r\n"
+"\t\t\t<input type=\"image\" src=\"https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">\r\n"
+"\t\t\t<img alt=\"\" border=\"0\" src=\"https://www.paypal.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">\r\n"
+"\t\t</form>\r\n"
+"        <p><b style=\"font-size:11px;\">Support this plugin!"
+msgstr ""
+"11145898\">\r\n"
+"\t\t\t<input type=\"image\" src=\"https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">\r\n"
+"\t\t\t<img alt=\"\" border=\"0\" src=\"https://www.paypal.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">\r\n"
+"\t\t</form>\r\n"
+"        <p><b style=\"font-size:11px;\">Падтрымка гэтай убудовы!"
+
+#: index.php:95
+#: index.php:132
+msgid "default/prevlabel.gif"
+msgstr "default/prevlabel.gif"
+
+#: index.php:96
+#: index.php:132
+msgid "default/nextlabel.gif"
+msgstr "default/nextlabel.gif"
+
+#: index.php:97
+#: index.php:132
+msgid "default/closelabel.gif"
+msgstr "default/closelabel.gif"
+
+#: index.php:98
+#: index.php:132
+msgid "LTR"
+msgstr "LTR"
+
