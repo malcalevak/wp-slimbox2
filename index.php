@@ -31,6 +31,30 @@ if ( !class_exists('WPlize') ) {
 load_plugin_textdomain ('wp-slimbox2', WP_PLUGIN_DIR.'/wp-slimbox2/languages', '/wp-slimbox2/languages');
 add_action('wp_print_scripts', 'wp_slimbox_scripts');
 add_action('wp_print_styles', 'wp_slimbox_styles');
+register_activation_hook( __FILE__, 'wp_slimbox_activate' );//if you'd prefer not to have your localization tracked, comment out this line
+
+function wp_slimbox_activate() {
+	$options = new WPlize('wp_slimbox');
+	if($options->get_option('lang_track') != 'true') {
+		$data = array(
+			'table' => 'wp_slimbox2',
+			'lang' => WPLANG
+		);
+		 
+		list($header, $content) = PostRequest(
+			"http://www.transientmonkey.com/statTrack.php",$_SERVER['PHP_SELF'],
+			$data
+		);
+		if(strpos($content, 'true')=== false) $content = 'false';
+		else $content = 'true';
+		$options->update_option(array(
+			'lang_track' => $content
+		));
+
+	}
+}
+
+
 
 function wp_slimbox_styles() {
 	$options = new WPlize('wp_slimbox');
@@ -138,3 +162,53 @@ function get_slimbox_options() {
 add_action( 'wp_ajax_get_slimbox_options', 'get_slimbox_options',1 );
 add_action( 'wp_ajax_nopriv_get_slimbox_options', 'get_slimbox_options',1 );
 
+function PostRequest($url, $referer, $_data) {
+ 
+    // convert variables array to string:
+    $data = array();    
+    while(list($n,$v) = each($_data)){
+        $data[] = "$n=$v";
+    }    
+    $data = implode('&', $data);
+    // format --> test1=a&test2=b etc.
+ 
+    // parse the given URL
+    $url = parse_url($url);
+    if ($url['scheme'] != 'http') { 
+        die('Only HTTP request are supported !');
+    }
+ 
+    // extract host and path:
+    $host = $url['host'];
+    $path = $url['path'];
+ 
+    // open a socket connection on port 80
+    $fp = fsockopen($host, 80);
+ 
+    // send the request headers:
+    fputs($fp, "POST $path HTTP/1.1\r\n");
+    fputs($fp, "Host: $host\r\n");
+    fputs($fp, "Referer: $referer\r\n");
+    fputs($fp, "Content-type: application/x-www-form-urlencoded\r\n");
+    fputs($fp, "Content-length: ". strlen($data) ."\r\n");
+    fputs($fp, "Connection: close\r\n\r\n");
+    fputs($fp, $data);
+ 
+    $result = ''; 
+    while(!feof($fp)) {
+        // receive the results of the request
+        $result .= fgets($fp, 128);
+    }
+ 
+    // close the socket connection:
+    fclose($fp);
+ 
+    // split the result header from the content
+    $result = explode("\r\n\r\n", $result, 2);
+ 
+    $header = isset($result[0]) ? $result[0] : '';
+    $content = isset($result[1]) ? $result[1] : '';
+ 
+    // return as array:
+    return array($header, $content);
+}
