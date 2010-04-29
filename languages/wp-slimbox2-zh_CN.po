@@ -348,19 +348,19 @@ msgstr "支援此插件<p>本插件中文由<a href=\"http://easespot.com\" titl
 #: index.php:135
 #@ wp-slimbox2
 msgid "default/prevlabel.gif"
-msgstr ""
+msgstr "zh_CN/prevlabel.gif"
 
 #: index.php:95
 #: index.php:135
 #@ wp-slimbox2
 msgid "default/nextlabel.gif"
-msgstr ""
+msgstr "zh_CN/nextlabel.gif"
 
 #: index.php:96
 #: index.php:135
 #@ wp-slimbox2
 msgid "default/closelabel.gif"
-msgstr ""
+msgstr "zh_CN/closelabel.gif"
 
 #: index.php:97
 #: index.php:135
