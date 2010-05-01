@@ -61,13 +61,13 @@ jQuery(document).ready(function($) {
 			$("a[href]").filter(function() {
 					return /\.(jpeg|bmp|jpg|png|gif)(\?[\d\w=&]*)?$/i.test(this.href);
 				}).unbind("click").slimbox(options, function(el) {
-						return [el.href, (slimbox2_options['url'])?'<a href="' + el.href + '">'+eval(slimbox2_options['caption'])+'</a>':eval(slimbox2_options['caption'])];
+						return [encodeURI(el.href), (slimbox2_options['url'])?'<a href="' + encodeURI(el.href) + '">'+eval(slimbox2_options['caption'])+'</a>':eval(slimbox2_options['caption'])];
 					}, function(el) {
 						return (this == el) || ($(this).closest(slimbox2_options['selector'])[0] && ($(this).closest(slimbox2_options['selector'])[0] == $(el).closest(slimbox2_options['selector'])[0]));
 				});
 		} else {
 			$("a[rel^='lightbox']").unbind("click").slimbox(options, function(el) {
-						return [el.href, (slimbox2_options['url'])?'<a href="' + el.href + '">'+eval(slimbox2_options['caption'])+'</a>':eval(slimbox2_options['caption'])];
+						return [encodeURI(el.href), (slimbox2_options['url'])?'<a href="' + encodeURI(el.href) + '">'+eval(slimbox2_options['caption'])+'</a>':eval(slimbox2_options['caption'])];
 					}, function(el) {
 				return (this == el) || ((this.rel.length > 8) && (this.rel == el.rel));
 			});
@@ -75,13 +75,13 @@ jQuery(document).ready(function($) {
 		if(slimbox2_options['picasaweb']) {
 			$("a[href^='http://picasaweb.google.'] > img:first-child[src]").parent().unbind("click").slimbox(options, function(el) {
 				return [el.firstChild.src.replace(/\/s\d+(?:\-c)?\/([^\/]+)$/, "/s640/$2"),
-					(el.title || el.firstChild.alt) + '<br /><a href="' + el.href + '">Picasa Web Albums page</a>'];
+					(el.title || el.firstChild.alt) + '<br /><a href="' + encodeURI(el.href) + '">Picasa Web Albums page</a>'];
 			});
 		}
 		if(slimbox2_options['flickr']) {
 			$("a[href^='http://www.flickr.com/photos/'] > img:first-child[src]").parent().unbind("click").slimbox(options, function(el) {
 				return [el.firstChild.src.replace(/_[mts]\.(\w+)$/, ".$1"),
-					(el.title || el.firstChild.alt) + '<br /><a href="' + el.href + '">Flickr page</a>'];
+					(el.title || el.firstChild.alt) + '<br /><a href="' + encodeURI(el.href) + '">Flickr page</a>'];
 			});
 		}
 	})};

@@ -247,7 +247,7 @@ msgstr "此选项允许用户自定义，翻译或者禁用计数器文本，当
 #: adminpage.php:259
 #@ wp-slimbox2
 msgid "Close Keys"
-msgstr "退出键"
+msgstr "关闭键"
 
 #: adminpage.php:264
 #@ wp-slimbox2
