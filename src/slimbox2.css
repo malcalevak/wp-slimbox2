@@ -63,6 +63,7 @@ right: 0;
 	float: right;
 	width: 66px;
 	height: 22px;
+	background: transparent no-repeat center;
 	margin: 5px 0;
 	outline: none;
 }

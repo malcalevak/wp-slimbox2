@@ -13,14 +13,6 @@ jQuery(document).ready(function($) {
 	function slimbox_CSS() {
 	jQuery(function($) {
 		$("#lbOverlay").css("background-color",slimbox2_options['overlayColor']);
-
-		if(slimbox2_options['LTR']=="RTL") {
-			$("#lbPrevLink").addClass("next");
-			$("#lbNextLink").addClass("prev");
-			$(".next").attr("id", "lbNextLink");
-			$(".prev").attr("id", "lbPrevLink");
-		}
-
 		$("#lbPrevLink").hover(
 			function () {
 				$(this).css("background-image","url("+slimbox2_options["prev"]+")");
@@ -37,7 +29,7 @@ jQuery(document).ready(function($) {
 				$(this).css("background-image","");
 			}
 		);
-		$("#lbCloseLink").css("background","transparent url("+slimbox2_options["close"]+") no-repeat center");
+		$("#lbCloseLink").css("background-image","url("+slimbox2_options["close"]+")");
 	})};
 
 	function load_slimbox() {
