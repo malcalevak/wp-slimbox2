@@ -3,8 +3,8 @@ Contributors: malcalevak
 Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.8
-Tested up to: 2.9.1
-Stable Tag: 1.0.2
+Tested up to: 2.9.2
+Stable Tag: 1.0.3
 
 An WordPress implementation of the Slimbox2 javascript.
 
@@ -16,21 +16,16 @@ Almost, if not all, options are configurable from the administration panel. For 
 
 Support forums are generously hosted by Ryan Hellyer of PixoPoint, <a href="http://pixopoint.com/forum/index.php?board=6.0">here</a>.
 
-Recent Changes in v1.0.2, my apologies for all the recent glitches:<br />
-1.  Fixed IE Javascript issue.<br />
-2.  Fixed potential XSS vulnerability and rare inability to update.<br />
-3.  Addition of Turkish/T&uuml;rk&ccedil;e Translation.<br />
-4.  Update of French/Fran&ccedil;ais Translation.
-
-Recent Changes in v1.0.1:<br />
-1.  To accomodate some installs the global options variable was removed.<br />
-2.  To repair a small issue regarding selectors, .closest was used instead of .parents, bumping the jQuery requirement to 1.3, in turn bumping the WP requirement to 2.8. (If you insist on using an older version of WP, you can either manually upgrade jQuery, or switch back to using .parents, and specifically choose the selector value you want to use).<br /><br />
-
-Recent Changes in v1.0:<br />
-1.  Addition of options to select caption source, render the caption as a hyperlink to the image, control autoload grouping element, and disable the effect on mobile phones.<br />
-2.  Initialization is now encapsulated within a function (usable in Infinite Scroll plugin, etc)<br />
-3.  All Javascript is now static, no more dynamic files.<br />
-4.  All Javascript and CSS compressed using YUI Compressor.<br />
+Recent Changes in v1.0.3:<br />
+1.  Updated to Version 2.0.4 of Slimbox.<br />
+2.  Added encodeURI to autoload script to automatically fix URLs containing invalid characters.<br />
+3.	All "fixed" CSS moved to static CSS files, addition of RTL specific CSS.<br />
+4.  Addition of Belarusian/&#1041;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1110; Translation.<br />
+5.  Addition of Chinese/&#20013;&#25991 Translation.<br />
+6.  Update of Spanish/Espa&#241;ol and Dutch/Nederlandse Translations.<br />
+7.  Update of German/Deutsch Translation.<br />
+8.	Addition of Localization Tracking (see FAQ for details).<br />
+9.	Minor fixes/tweaks.<br />
 
 == Installation ==
 
@@ -58,7 +53,7 @@ The Javascript requires jQuery 1.3+ which wasn't included in WordPress until 2.8
 
 Either the Javascript doesn't support it, or I haven't gotten around to adding it.<br />
 
-= Why isn't the plugin in my language? Could I contribute a translation?=
+= Why isn't the plugin in my language? Could I contribute a translation? =
 
 I only know English, but as of v.0.9.4 the plugin supports localization using PO and MO files, just like WordPress.<br />
 A copy of the POT file to use in your translations can be found in the languages directory as wp-slimbox2.pot.<br />
@@ -70,7 +65,12 @@ If you've translated the plugin or would like to find out more please let me kno
 You want Lightbox or Slimbox effects using the jQuery library, and don't want any sort of "ad".<br />
 You want complete control over all the javascript settings from the admin page.<br />
 
+= What is Localization Tracking? =
+
+To satisfy my own curiosity regarding how many people are using a non-English version of the plugin I've written a small script, statTrack.php. During activiation of the plugin it submits the localization of the WordPress install to my server for recording. It will only do this once, and no other information is transmitted. To disable it, you can safely delete statTrack.php and the plugin should function normally.<br />
+
 = What if I have other questions that haven't been answered? =
+
 Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support forums</a>, and read the Slimbox creators <a href="http://code.google.com/p/slimbox/wiki/FAQ">FAQ</a>.<br />
 
 == Screenshots ==
@@ -79,6 +79,24 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 2. Overlay effect.
 
 == History ==
+Version 1.0.3 - May-02-2010:<br />
+	Updated to Version 2.0.4 of Slimbox.<br />
+	Added encodeURI to autoload script to automatically fix URLs containing invalid characters.<br />
+	All "fixed" CSS moved to static CSS files, addition of RTL specific CSS.<br />
+	Addition of Belarusian/&#1041;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1110; Translation.<br />
+	Addition of Chinese/&#20013;&#25991 Translation.<br />
+	Update of Spanish/Espa&#241;ol and Dutch/Nederlandse Translations.<br />
+	Update of German/Deutsch Translation.<br />
+	Addition of Localization Tracking (see FAQ for details).<br />
+	Minor fixes/tweaks.<br /><br />
+Version 1.0.2 - Jan-21-2010:<br />
+	Fixed IE Javascript issue.<br />
+	Fixed potential XSS vulnerability and rare inability to update.<br />
+	Addition of Turkish/T&uuml;rk&ccedil;e Translation.<br />
+	Update of French/Fran&ccedil;ais Translation.<br /><br />
+Version 1.0.1 - Jan-20-2010:<br />
+	To accomodate some installs the global options variable was removed.<br />
+	To repair a small issue regarding selectors, .closest was used instead of .parents, bumping the jQuery requirement to 1.3, in turn bumping the WP requirement to 2.8. (If you insist on using an older version of WP, you can either manually upgrade jQuery, or switch back to using .parents, and specifically choose the selector value you want to use).<br /><br />
 Version 1.0 Beta - Jan-19-2010:<br />
 	Addition of options to select caption source, render the caption as a hyperlink to the image, control autoload grouping element, and disable the effect on mobile phones.<br />
 	Initialization is now encapsulated within a function (usable in Infinite Scroll plugin, etc)<br />
@@ -126,4 +144,6 @@ Thanks to the following for help with the development of this plugin:<br />
 * monodistortion  for CSS tweaks to prevent tiling of images.<br />
 * Jandry for the French/Fran&ccedil;ais translation.
 * <a href="http://www.serhatyolacan.com">Serhat Yola&ccedil;an</a> for the Turkish/T&uuml;rk&ccedil;e translation.
+* Marcis G. for the Belarusian/&#1041;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1110; translation.
+* <a href="http://www.easespot.com">easespot</a> for the Chinese/&#20013;&#25991; translation and FunDo for additional assistance.
 * Anyone else I forgot to mention who's made a suggestion or provided me with ideas.<br />
