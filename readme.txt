@@ -144,6 +144,6 @@ Thanks to the following for help with the development of this plugin:<br />
 * monodistortion  for CSS tweaks to prevent tiling of images.<br />
 * Jandry for the French/Fran&ccedil;ais translation.
 * <a href="http://www.serhatyolacan.com">Serhat Yola&ccedil;an</a> for the Turkish/T&uuml;rk&ccedil;e translation.
-* Marcis G. for the Belarusian/&#1041;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1110; translation.
+* <a href="http://pc.de">Marcis G.</a> for the Belarusian/&#1041;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1110; translation.
 * <a href="http://www.easespot.com">easespot</a> for the Chinese/&#20013;&#25991; translation and FunDo for additional assistance.
 * Anyone else I forgot to mention who's made a suggestion or provided me with ideas.<br />
