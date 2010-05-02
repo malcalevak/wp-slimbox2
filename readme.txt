@@ -21,7 +21,7 @@ Recent Changes in v1.0.3:<br />
 2.  Added encodeURI to autoload script to automatically fix URLs containing invalid characters.<br />
 3.	All "fixed" CSS moved to static CSS files, addition of RTL specific CSS.<br />
 4.  Addition of Belarusian/&#1041;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1110; Translation.<br />
-5.  Addition of Chinese/&#20013;&#25991 Translation.<br />
+5.  Addition of Chinese/&#20013;&#25991; Translation.<br />
 6.  Update of Spanish/Espa&#241;ol and Dutch/Nederlandse Translations.<br />
 7.  Update of German/Deutsch Translation.<br />
 8.	Addition of Localization Tracking (see FAQ for details).<br />
