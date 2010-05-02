@@ -2,9 +2,9 @@
 /*
 Plugin Name: WP-Slimbox2
 Plugin URI: http://transientmonkey.com/wp-slimbox2
-Description: A Wordpress implementation of the Slimbox2 javascript, utilizing jQuery, originally written by Christophe Beyls. Requires WP 2.8+
+Description: A Wordpress implementation of the Slimbox2 javascript, utilizing jQuery, originally written by Christophe Beyls. Requires WP 2.6+
 Author: Greg Yingling (malcalevak)
-Version: 1.0.3
+Version: 1.0.2
 Author URI: http://transientmonkey.com/
 
 Copyright 2010 Transient Monkey, LLC
@@ -43,9 +43,13 @@ function wp_slimbox_activate() {
 
 function wp_slimbox_styles() {
 	$options = new WPlize('wp_slimbox');
-	wp_register_style('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/slimbox2.css','','1.0','screen');
+	wp_register_style('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/slimbox2.css','','1.1','screen');
 	wp_enqueue_style('slimbox2');
-	wp_register_script('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/javascript/slimbox2.js',array('jquery'), '2.02');
+	if(__('LTR', 'wp-slimbox2')=='RTL') {
+		wp_register_style('slimbox2-RTL', WP_PLUGIN_URL.'/wp-slimbox2/slimbox2-rtl.css','','1.0','screen');
+		wp_enqueue_style('slimbox2-RTL');
+	}
+	wp_register_script('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/javascript/slimbox2.js',array('jquery'), '2.04');
 	wp_register_script('slimbox2_autoload', WP_PLUGIN_URL.'/wp-slimbox2/javascript/slimbox2_autoload.js',array('slimbox2'),$options->get_option('cache'));//add option for version number, update with each save
 	wp_register_script('jquery_easing', WP_PLUGIN_URL.'/wp-slimbox2/javascript/jquery.easing.1.3.js',array('jquery'), '1.3');
 }
@@ -103,7 +107,6 @@ function wp_slimbox_scripts() {
 			'prev' => WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/prevlabel.gif', 'wp-slimbox2'),
 			'next' => WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/nextlabel.gif', 'wp-slimbox2'),
 			'close' => WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/closelabel.gif', 'wp-slimbox2'),
-			'LTR' => __('LTR', 'wp-slimbox2'),
 			'picasaweb' => (($options->get_option('picasaweb') == 'on')?true:false),
 			'flickr' => (($options->get_option('flickr') == 'on')?true:false),
 			'mobile' => (($options->get_option('mobile') == 'on')?true:false)
@@ -128,7 +131,7 @@ function slimbox_admin_init() {
 	wp_register_style('farbtastic', WP_PLUGIN_URL.'/wp-slimbox2/javascript/farbtastic/farbtastic.css','','1.0','screen');
 	wp_register_script('jquery_farbtastic', WP_PLUGIN_URL.'/wp-slimbox2/javascript/farbtastic/farbtastic.js',array('jquery'), '1.2');
 	wp_register_script('load_farbtastic', WP_PLUGIN_URL.'/wp-slimbox2/javascript/farbtastic/load_farbtastic.js',array('jquery_farbtastic'), '1.0');
-	wp_register_script('load_keypress', WP_PLUGIN_URL.'/wp-slimbox2/javascript/keypress.js',array('jquery'), '1.0');
+	wp_register_script('load_keypress', WP_PLUGIN_URL.'/wp-slimbox2/javascript/keypress.js',array('jquery'), '1.1');
 }
 
 function slimbox_admin_styles() {
@@ -139,11 +142,4 @@ function slimbox_adminhead() {
 	wp_enqueue_script('load_farbtastic');
 	wp_enqueue_script('load_keypress');
 }
-
-function get_slimbox_options() {
-	echo json_encode(array(get_option('wp_slimbox'),array(WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/prevlabel.gif', 'wp-slimbox2'),WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/nextlabel.gif', 'wp-slimbox2'),WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/closelabel.gif', 'wp-slimbox2'),__('LTR', 'wp-slimbox2') == 'RTL')));
-	die();
-}
-add_action( 'wp_ajax_get_slimbox_options', 'get_slimbox_options',1 );
-add_action( 'wp_ajax_nopriv_get_slimbox_options', 'get_slimbox_options',1 );
 ?>
