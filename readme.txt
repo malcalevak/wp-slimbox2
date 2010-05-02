@@ -84,7 +84,7 @@ Version 1.0.3 - May-02-2010:<br />
 	Added encodeURI to autoload script to automatically fix URLs containing invalid characters.<br />
 	All "fixed" CSS moved to static CSS files, addition of RTL specific CSS.<br />
 	Addition of Belarusian/&#1041;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1110; Translation.<br />
-	Addition of Chinese/&#20013;&#25991 Translation.<br />
+	Addition of Chinese/&#20013;&#25991; Translation.<br />
 	Update of Spanish/Espa&#241;ol and Dutch/Nederlandse Translations.<br />
 	Update of German/Deutsch Translation.<br />
 	Addition of Localization Tracking (see FAQ for details).<br />
