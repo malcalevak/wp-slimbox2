@@ -4,7 +4,7 @@ Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.8
 Tested up to: 2.9.2
-Stable Tag: 1.0.3
+Stable Tag: 1.0.3.1
 
 An WordPress implementation of the Slimbox2 javascript.
 
@@ -15,6 +15,10 @@ A WordPress implementation of the stellar Slimbox2 script by Christophe Beyls (a
 Almost, if not all, options are configurable from the administration panel. For more on the settings and what they do check out the <a href="http://www.digitalia.be/software/slimbox2/" title="Slimbox 2, the ultimate lightweight Lightbox clone for jQuery">Slimbox2</a> page.
 
 Support forums are generously hosted by Ryan Hellyer of PixoPoint, <a href="http://pixopoint.com/forum/index.php?board=6.0">here</a>.
+
+Recent Changes in v1.0.3.1:<br />
+1.  Forgot to commit one of the RTL specific changes.<br />
+
 
 Recent Changes in v1.0.3:<br />
 1.  Updated to Version 2.0.4 of Slimbox.<br />
@@ -79,6 +83,8 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 2. Overlay effect.
 
 == History ==
+Version 1.0.3.1 - May-03-2010:<br />
+	Forgot to commit one of the RTL specific changes.<br />
 Version 1.0.3 - May-02-2010:<br />
 	Updated to Version 2.0.4 of Slimbox.<br />
 	Added encodeURI to autoload script to automatically fix URLs containing invalid characters.<br />
