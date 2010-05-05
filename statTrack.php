@@ -1,7 +1,7 @@
 <?php
 function statTrack() {
 	$options = new WPlize('wp_slimbox');
-//	if($options->get_option('lang_track') != 'true') {
+	if($options->get_option('lang_track') != 'true') {
 		$data = array(
 			'table' => 'wp_slimbox2',
 			'lang' => WPLANG
@@ -17,7 +17,7 @@ function statTrack() {
 			'lang_track' => $content
 		));
 
-//	}
+	}
 }
 
 function PostRequest($url, $referer, $_data) {

@@ -33,6 +33,8 @@ add_action('wp_print_styles', 'wp_slimbox_styles');
 register_activation_hook( __FILE__, 'wp_slimbox_activate' );
 
 function wp_slimbox_activate() {
+	$options = new WPlize('wp_slimbox');
+	require('initialize.php');
 	if(file_exists( WP_PLUGIN_DIR.'/wp-slimbox2/statTrack.php')){
 		require_once('statTrack.php');
 		statTrack();
@@ -118,8 +120,9 @@ add_action('admin_menu', 'show_slimbox_options');
 add_action('admin_init', 'slimbox_admin_init');
 
 function show_slimbox_options() {
-	$options = new WPlize('wp_slimbox');
-	require('adminmenu.php');
+	$page = add_options_page('WP-Slimbox2 Options', 'WP-Slimbox2', 8, 'slimbox2options', 'slimbox_options');
+	add_action( "admin_print_scripts-$page", 'slimbox_adminhead' );
+	add_action( "admin_print_styles-$page", 'slimbox_admin_styles' );
 }
 
 function slimbox_options() {
