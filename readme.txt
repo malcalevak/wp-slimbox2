@@ -16,22 +16,22 @@ Almost, if not all, options are configurable from the administration panel. For 
 
 Support forums are generously hosted by Ryan Hellyer of PixoPoint, <a href="http://pixopoint.com/forum/index.php?board=6.0">here</a>.
 
-Recent Changes in v1.0.3.2:
-1.  Fix for defaults in new installs.
+Recent Changes in v1.0.3.2:<br />
+1.  Fix for defaults in new installs.<br /><br />
 
-Recent Changes in v1.0.3.1:
-1.  Forgot to commit one of the RTL specific changes.
+Recent Changes in v1.0.3.1:<br />
+1.  Forgot to commit one of the RTL specific changes.<br /><br />
 
-Recent Changes in v1.0.3:
-1.  Updated to Version 2.0.4 of Slimbox.
-2.  Added encodeURI to autoload script to automatically fix URLs containing invalid characters.
-3.	All "fixed" CSS moved to static CSS files, addition of RTL specific CSS.
-4.  Addition of Belarusian/&#1041;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1110; Translation.
-5.  Addition of Chinese/&#20013;&#25991; Translation.
-6.  Update of Spanish/Espa&#241;ol and Dutch/Nederlandse Translations.
-7.  Update of German/Deutsch Translation.
-8.	Addition of Localization Tracking (see FAQ for details).
-9.	Minor fixes/tweaks.
+Recent Changes in v1.0.3:<br />
+1.  Updated to Version 2.0.4 of Slimbox.<br />
+2.  Added encodeURI to autoload script to automatically fix URLs containing invalid characters.<br />
+3.	All "fixed" CSS moved to static CSS files, addition of RTL specific CSS.<br />
+4.  Addition of Belarusian/&#1041;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1110; Translation.<br />
+5.  Addition of Chinese/&#20013;&#25991; Translation.<br />
+6.  Update of Spanish/Espa&#241;ol and Dutch/Nederlandse Translations.<br />
+7.  Update of German/Deutsch Translation.<br />
+8.	Addition of Localization Tracking (see FAQ for details).<br />
+9.	Minor fixes/tweaks.<br />
 
 
 == Installation ==
