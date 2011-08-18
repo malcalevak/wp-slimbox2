@@ -3,7 +3,7 @@ Contributors: malcalevak
 Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.8
-Stable Tag: 1.0.4
+Stable Tag: 1.0.3.2
 
 An WordPress implementation of the Slimbox2 javascript.
 
@@ -15,14 +15,16 @@ Almost, if not all, options are configurable from the administration panel. For 
 
 Support forums are generously hosted by Ryan Hellyer of PixoPoint, <a href="http://pixopoint.com/forum/index.php?board=6.0">here</a>.
 
-Recent Changes in v1.0.4:<br />
+Recent Changes in Dev:<br />
 1.  Several Minor Fixes to eliminate PHP notices.<br /><br />
 2.  Removal of encodeURI to eliminate issues with images having spaces.<br /><br />
 3.  Ability to use <code>rel="nolightbox"</code> to exclude an image.<br /><br />
 4.  Ability to customize image link URLs by simply placing '/*DESIRED URL*/' in front of the caption.<br /><br />
-grouping of flickr, picasa and other images combined, autoload groups by selector, lightbox groups by rel.
-removal of WPlize in favor of built in option arrays.
-fix for settings initialization issues
+5.	Combined grouping of flickr, picasa and other images, autoload groups by selector, lightbox groups by rel.
+6.	Removal of WPlize in favor of built in option arrays.
+7.	Fixes for settings initialization issues.
+8.	Addition of Brazilian Portuguese/Português brasileiro Translation.
+9.	Addition of Italian/Italiano Translation.
 
 == Installation ==
 
@@ -156,4 +158,6 @@ Thanks to the following for help with the development of this plugin:<br />
 * <a href="http://www.serhatyolacan.com">Serhat Yola&ccedil;an</a> for the Turkish/T&uuml;rk&ccedil;e translation.
 * <a href="http://pc.de">Marcis G.</a> for the Belarusian/&#1041;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1110; translation.
 * <a href="http://www.easespot.com">easespot</a> for the Chinese/&#20013;&#25991; translation and FunDo for additional assistance.
+* <a href="http://www.easespot.com">easespot</a> for the Brazilian Portuguese/Português brasileiro translation.
+* <a href="http://www.easespot.com">easespot</a> for the Italian/Italiano translation.
 * Anyone else I forgot to mention who's made a suggestion or provided me with ideas.<br />
