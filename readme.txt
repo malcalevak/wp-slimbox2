@@ -81,66 +81,74 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 1. Administration interface in WordPress 2.7
 2. Overlay effect.
 
-== History ==
-Recent Changes in v1.0.4:<br />
-	Several Minor Fixes to eliminate PHP notices.<br />
-	Removal of encodeURI to eliminate issues with images having spaces.<br />
-	Ability to use <code>rel="nolightbox"</code> to exclude an image.<br />
-	Ability to customize image link URLs by simply placing '/*DESIRED URL*/' in front of the caption.<br />
-Version 1.0.3.2 - May-04-2010:<br />
-	Fix for defaults in new installs.<br />
-Version 1.0.3.1 - May-03-2010:<br />
-	Forgot to commit one of the RTL specific changes.<br />
-Version 1.0.3 - May-02-2010:<br />
-	Updated to Version 2.0.4 of Slimbox.<br />
-	Added encodeURI to autoload script to automatically fix URLs containing invalid characters.<br />
-	All "fixed" CSS moved to static CSS files, addition of RTL specific CSS.<br />
-	Addition of Belarusian/&#1041;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1110; Translation.<br />
-	Addition of Chinese/&#20013;&#25991; Translation.<br />
-	Update of Spanish/Espa&#241;ol and Dutch/Nederlandse Translations.<br />
-	Update of German/Deutsch Translation.<br />
-	Addition of Localization Tracking (see FAQ for details).<br />
-	Minor fixes/tweaks.<br /><br />
-Version 1.0.2 - Jan-21-2010:<br />
-	Fixed IE Javascript issue.<br />
-	Fixed potential XSS vulnerability and rare inability to update.<br />
-	Addition of Turkish/T&uuml;rk&ccedil;e Translation.<br />
-	Update of French/Fran&ccedil;ais Translation.<br /><br />
-Version 1.0.1 - Jan-20-2010:<br />
-	To accomodate some installs the global options variable was removed.<br />
-	To repair a small issue regarding selectors, .closest was used instead of .parents, bumping the jQuery requirement to 1.3, in turn bumping the WP requirement to 2.8. (If you insist on using an older version of WP, you can either manually upgrade jQuery, or switch back to using .parents, and specifically choose the selector value you want to use).<br /><br />
-Version 1.0 Beta - Jan-19-2010:<br />
-	Addition of options to select caption source, render the caption as a hyperlink to the image, control autoload grouping element, and disable the effect on mobile phones.<br />
-	Initialization is now encapsulated within a function (usable in Infinite Scroll plugin, etc)<br />
-	All Javascript is now static, no more dynamic files.<br />
-	All Javascript and CSS compressed using YUI Compressor.<br /><br />
-Version 0.9.7 Beta - Apr-21-2009:<br />
-	Addition of farbtastic overlay color select.<br />
-	Automatic key code recognition.<br />
-	Addition of French/Fran&ccedil;ais and Dutch/Nederlandse languages.<br />
-	Options transferred to WPlize class, less database calls.<br />
-	Flickr and Picasaweb images now properly load Slimbox settings.<br />
-	Minor typographical corrections.<br /><br />
-Version 0.9.6 Beta - Feb-19-2009:<br />
-	Added rudimentary German/Deutsch translation - thanks Laws<br />
-	Tiling Next/Prev Links in Safari Fix - thanks monodistortion<br />
-	Switch from wp-blog-header to wp-load, may resolve issue on certain servers that fail to properly serve dynamic JS and CSS<br /><br />
-Version 0.9.5 Beta - Feb-01-2009:<br />
-	Added minor IE6 fix to prevent tiling of next and previous images in a unique scenario.<br />
-	Espa&#241;ol/Spanish language typo correction.<br />
-	Updated to Slimbox 2.02 (and adjusted version # accordingly, see Slimbox website for more details)<br />
-	Support for RTL languages added (proper image progression and button display)<br />
-	Caching/compression reenabled on javascript - cache for one year, or until version change which occurs on option update.<br />
-	Support options on autoloaded image files (ie .jpg?w=400 now is properly detected)<br /><br />
-Version 0.9.4.1 Beta: Removed caching of autload script, for real this time. - v0.9.4.1 - Jan-24-2009<br /><br />
-Version 0.9.4 Beta: Localization support implemented. Currently only Espa&#241;ol/Spanish provided. See FAQ to contribute other languages. Removed caching of autload script, at least for now. - v0.9.4 - Jan-24-2009<br /><br />
-Version 0.9.3 Beta: Flickr and Picasaweb Integration, Slimbox 2.01, maintenance mode, autogrouping by post/page, compression and caching - Jan-14-2009<br /><br />
-Version 0.9.2.3 Beta: Bug fix. Autoload wasn't loading options. - v0.9.2.3 - Jan-08-2009<br /><br />
-Version 0.9.2.2 Beta: Emergency Admin for minor overlay opacity setting error - Jan-07-2009<br /><br />
-Version 0.9.2.1 Beta: Emergency JS Fix - Jan-07-2009<br /><br />
-Version 0.9.2 Beta: Addition of option to change the overlay color - Jan-07-2009<br /><br />
-Version 0.9.1 Beta: Addition of option to enable automatically applying to all image links (png,jpg,gif) - Jan-06-2009<br /><br />
-Version 0.9 Beta: Intial release - Jan-05-2008<br /><br />
+== Changelog ==
+= 1.0.4 - Development =
+* Several Minor Fixes to eliminate PHP notices.
+* Removal of encodeURI to eliminate issues with images having spaces.
+* Ability to use <code>rel="nolightbox"</code> to exclude an image.
+* Ability to customize image link URLs by simply placing '/*DESIRED URL*/' in front of the caption.
+= 1.0.3.2 - May-04-2010 =
+* Fix for defaults in new installs.
+= 1.0.3.1 - May-03-2010 =
+* Forgot to commit one of the RTL specific changes.
+= 1.0.3 - May-02-2010 =
+* Updated to Version 2.0.4 of Slimbox.
+* Added encodeURI to autoload script to automatically fix URLs containing invalid characters.
+* All "fixed" CSS moved to static CSS files, addition of RTL specific CSS.
+* Addition of Belarusian/&#1041;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1110; Translation.
+* Addition of Chinese/&#20013;&#25991; Translation.
+* Update of Spanish/Espa&#241;ol and Dutch/Nederlandse Translations.
+* Update of German/Deutsch Translation.
+* Addition of Localization Tracking (see FAQ for details).
+* Minor fixes/tweaks.
+= 1.0.2 - Jan-21-2010 =
+* Fixed IE Javascript issue.
+* Fixed potential XSS vulnerability and rare inability to update.
+* Addition of Turkish/T&uuml;rk&ccedil;e Translation.
+* Update of French/Fran&ccedil;ais Translation.
+= 1.0.1 - Jan-20-2010 =
+* To accomodate some installs the global options variable was removed.
+* To repair a small issue regarding selectors, .closest was used instead of .parents, bumping the jQuery requirement to 1.3, in turn bumping the WP requirement to 2.8. (If you insist on using an older version of WP, you can either manually upgrade jQuery, or switch back to using .parents, and specifically choose the selector value you want to use).
+= 1.0 Beta - Jan-19-2010 =
+* Addition of options to select caption source, render the caption as a hyperlink to the image, control autoload grouping element, and disable the effect on mobile phones.
+* Initialization is now encapsulated within a function (usable in Infinite Scroll plugin, etc)
+* All Javascript is now static, no more dynamic files.
+* All Javascript and CSS compressed using YUI Compressor.
+= 0.9.7 Beta - Apr-21-2009 =
+* Addition of farbtastic overlay color select.
+* Automatic key code recognition.
+* Addition of French/Fran&ccedil;ais and Dutch/Nederlandse languages.
+* Options transferred to WPlize class, less database calls.
+* Flickr and Picasaweb images now properly load Slimbox settings.
+* Minor typographical corrections.
+= 0.9.6 Beta - Feb-19-2009 =
+* Added rudimentary German/Deutsch translation - thanks Laws
+* Tiling Next/Prev Links in Safari Fix - thanks monodistortion
+* Switch from wp-blog-header to wp-load, may resolve issue on certain servers that fail to properly serve dynamic JS and CSS
+= 0.9.5 Beta - Feb-01-2009 =
+* Added minor IE6 fix to prevent tiling of next and previous images in a unique scenario.
+* Espa&#241;ol/Spanish language typo correction.
+* Updated to Slimbox 2.02 (and adjusted version # accordingly, see Slimbox website for more details)
+* Support for RTL languages added (proper image progression and button display)
+* Caching/compression reenabled on javascript - cache for one year, or until version change which occurs on option update.
+* Support options on autoloaded image files (ie .jpg?w=400 now is properly detected)
+= 0.9.4.1 Beta - Jan-24-2009 =
+* Removed caching of autload script, for real this time.
+= 0.9.4 Beta - Jan-24-2009 =
+* Localization support implemented. Currently only Espa&#241;ol/Spanish provided. See FAQ to contribute other languages. Removed caching of autload script, at least for now.
+= 0.9.3 Beta - Jan-14-2009 =
+* Flickr and Picasaweb Integration, Slimbox 2.01, maintenance mode, autogrouping by post/page, compression and caching
+= 0.9.2.3 Beta - Jan-08-2009 =
+* Bug fix. Autoload wasn't loading options. - v0.9.2.3
+= 0.9.2.2 Beta - Jan-07-2009 =
+* Emergency Admin for minor overlay opacity setting error
+= 0.9.2.1 Beta - Jan-07-2009 =
+* Emergency JS Fix
+= 0.9.2 Beta - Jan-07-2009 =
+* Addition of option to change the overlay color
+= 0.9.1 Beta - Jan-06-2009 =
+* Addition of option to enable automatically applying to all image links (png,jpg,gif)
+= 0.9 Beta: Intial release - Jan-05-2008 =
 
 = Credits =
 
