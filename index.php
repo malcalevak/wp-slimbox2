@@ -2,9 +2,9 @@
 /*
 Plugin Name: WP-Slimbox2
 Plugin URI: http://transientmonkey.com/wp-slimbox2
-Description: A Wordpress implementation of the Slimbox2 javascript, utilizing jQuery, originally written by Christophe Beyls. Requires WP 2.6+
+Description: A Wordpress implementation of the Slimbox2 javascript, utilizing jQuery, originally written by Christophe Beyls. Requires WP 2.8+
 Author: Greg Yingling (malcalevak)
-Version: 1.0.3.2
+Version: 1.0.4b
 Author URI: http://transientmonkey.com/
 
 Copyright 2010 Transient Monkey, LLC
@@ -23,28 +23,19 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-if ( !class_exists('WPlize') ) {
-	require_once('WPlize/WPlize.php');
-}
-
 load_plugin_textdomain ('wp-slimbox2', WP_PLUGIN_DIR.'/wp-slimbox2/languages', '/wp-slimbox2/languages');
+
+$options = wp_slimbox_validate(get_option('wp_slimbox',wp_slimbox_initialize()));
+
 add_action('wp_print_scripts', 'wp_slimbox_scripts');
 add_action('wp_print_styles', 'wp_slimbox_styles');
-register_activation_hook( __FILE__, 'wp_slimbox_activate' );
 
-function wp_slimbox_activate() {
-	$options = new WPlize('wp_slimbox');
+function wp_slimbox_initialize() {
 	require('initialize.php');
-	if(file_exists( WP_PLUGIN_DIR.'/wp-slimbox2/statTrack.php')){
-		require_once('statTrack.php');
-		statTrack();
-	}
+	return wp_slimbox_initialize_variables();
 }
 
-
-
 function wp_slimbox_styles() {
-	$options = new WPlize('wp_slimbox');
 	wp_register_style('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/slimbox2.css','','1.1','screen');
 	wp_enqueue_style('slimbox2');
 	if(__('LTR', 'wp-slimbox2')=='RTL') {
@@ -52,20 +43,22 @@ function wp_slimbox_styles() {
 		wp_enqueue_style('slimbox2-RTL');
 	}
 	wp_register_script('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/javascript/slimbox2.js',array('jquery'), '2.04');
-	wp_register_script('slimbox2_autoload', WP_PLUGIN_URL.'/wp-slimbox2/javascript/slimbox2_autoload.js',array('slimbox2'),$options->get_option('cache'));//add option for version number, update with each save
+	wp_register_script('slimbox2_autoload', WP_PLUGIN_URL.'/wp-slimbox2/javascript/slimbox2_autoload.js',array('slimbox2'),'1.0.4b');
 	wp_register_script('jquery_easing', WP_PLUGIN_URL.'/wp-slimbox2/javascript/jquery.easing.1.3.js',array('jquery'), '1.3');
 }
+
 function wp_slimbox_scripts() {
-	$options = new WPlize('wp_slimbox');
 	if (!is_admin())
 	{
-		if($options->get_option('maintenance') == 'on') {
-			if (isset($_REQUEST['slimbox'])) setcookie('slimboxC',$_REQUEST['slimbox'],0,'/');
-			if ($_REQUEST['slimbox'] == 'off' OR (!isset($_REQUEST['slimbox']) AND $_COOKIE['slimboxC'] != 'on')) return;
+		global $options;
+		if(isset($options['maintenance'])) {
+			if (isset($_REQUEST['slimbox'])) $_SESSION['slimboxC']=$_REQUEST['slimbox'];
+			else if(!isset($_SESSION['slimboxC'])) $_SESSION['slimboxC']='off';
+			if ($_SESSION['slimboxC'] != 'on') return;
 		}
-		if($options->get_option('resizeEasing') != 'swing') wp_enqueue_script('jquery_easing');
+		if($options['resizeEasing'] != 'swing') wp_enqueue_script('jquery_easing');
 		wp_enqueue_script('slimbox2_autoload');
-		$captions = $options->get_option('caption');
+		$captions = $options['caption'];
 		$caption = '';
 		for ($i = 0; $i<4; $i++) {
 			switch ($captions[$i]) {
@@ -88,30 +81,30 @@ function wp_slimbox_scripts() {
 		}
 		$caption .= 'el.href';
 		wp_localize_script( 'slimbox2_autoload', 'slimbox2_options', array(
-			'autoload' => (($options->get_option('autoload') == 'on')?true:false),
-			'overlayColor' => $options->get_option('overlayColor'),
-			'loop' => (($options->get_option('loop') == 'on')?true:false),
-			'overlayOpacity' => $options->get_option('overlayOpacity'),
-			'overlayFadeDuration' => $options->get_option('overlayFadeDuration'),
-			'resizeDuration' => $options->get_option('resizeDuration'),
-			'resizeEasing' => $options->get_option('resizeEasing'),
-			'initialWidth' => $options->get_option('initialWidth'),
-			'initialHeight' => $options->get_option('initialHeight'),
-			'imageFadeDuration' => $options->get_option('imageFadeDuration'),
-			'captionAnimationDuration' => $options->get_option('captionAnimationDuration'),
+			'autoload' => (isset($options['autoload'])?true:false),
+			'overlayColor' => $options['overlayColor'],
+			'loop' => (isset($options['loop'])?true:false),
+			'overlayOpacity' => $options['overlayOpacity'],
+			'overlayFadeDuration' => $options['overlayFadeDuration'],
+			'resizeDuration' => $options['resizeDuration'],
+			'resizeEasing' => $options['resizeEasing'],
+			'initialWidth' => $options['initialWidth'],
+			'initialHeight' => $options['initialHeight'],
+			'imageFadeDuration' => $options['imageFadeDuration'],
+			'captionAnimationDuration' => $options['captionAnimationDuration'],
 			'caption' => $caption,
-			'url' => (($options->get_option('url') == 'on')?true:false),
-			'selector' => $options->get_option('selector'),
-			'counterText' => $options->get_option('counterText'),
-			'closeKeys' => $options->get_option('closeKeys'),
-			'previousKeys' => $options->get_option('previousKeys'),
-			'nextKeys' => $options->get_option('nextKeys'),
+			'url' => (isset($options['url'])?true:false),
+			'selector' => $options['selector'],
+			'counterText' => $options['counterText'],
+			'closeKeys' => $options['closeKeys'],
+			'previousKeys' => $options['previousKeys'],
+			'nextKeys' => $options['nextKeys'],
 			'prev' => WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/prevlabel.gif', 'wp-slimbox2'),
 			'next' => WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/nextlabel.gif', 'wp-slimbox2'),
 			'close' => WP_PLUGIN_URL.'/wp-slimbox2/images/'.__('default/closelabel.gif', 'wp-slimbox2'),
-			'picasaweb' => (($options->get_option('picasaweb') == 'on')?true:false),
-			'flickr' => (($options->get_option('flickr') == 'on')?true:false),
-			'mobile' => (($options->get_option('mobile') == 'on')?true:false)
+			'picasaweb' => (isset($options['picasaweb'])?true:false),
+			'flickr' => (isset($options['flickr'])?true:false),
+			'mobile' => (isset($options['mobile'])?true:false)
 		));
 	}
 }
@@ -120,13 +113,12 @@ add_action('admin_menu', 'show_slimbox_options');
 add_action('admin_init', 'slimbox_admin_init');
 
 function show_slimbox_options() {
-	$page = add_options_page('WP-Slimbox2 Options', 'WP-Slimbox2', 8, 'slimbox2options', 'slimbox_options');
+	$page = add_options_page('WP-Slimbox2 Options', 'WP-Slimbox2', 'edit_pages', 'slimbox2options', 'slimbox_options');
 	add_action( "admin_print_scripts-$page", 'slimbox_adminhead' );
 	add_action( "admin_print_styles-$page", 'slimbox_admin_styles' );
 }
 
 function slimbox_options() {
-	$options = new WPlize('wp_slimbox');
 	require('adminpage.php');
 }
 
@@ -135,6 +127,7 @@ function slimbox_admin_init() {
 	wp_register_script('jquery_farbtastic', WP_PLUGIN_URL.'/wp-slimbox2/javascript/farbtastic/farbtastic.js',array('jquery'), '1.2');
 	wp_register_script('load_farbtastic', WP_PLUGIN_URL.'/wp-slimbox2/javascript/farbtastic/load_farbtastic.js',array('jquery_farbtastic'), '1.0');
 	wp_register_script('load_keypress', WP_PLUGIN_URL.'/wp-slimbox2/javascript/keypress.js',array('jquery'), '1.1');
+	register_setting( 'wp_slimbox_options', 'wp_slimbox', 'wp_slimbox_validate');
 }
 
 function slimbox_admin_styles() {
@@ -145,4 +138,41 @@ function slimbox_adminhead() {
 	wp_enqueue_script('load_farbtastic');
 	wp_enqueue_script('load_keypress');
 }
+
+function wp_slimbox_validate($options) {
+	$easingArray = array('swing','easeInQuad','easeOutQuad','easeInOutQuad','easeInCubic','easeOutCubic','easeInOutCubic','easeInQuart','easeOutQuart','easeInOutQuart','easeInQuint','easeOutQuint','easeInOutQuint','easeInSine','easeOutSine','easeInOutSine','easeInExpo','easeOutExpo','easeInOutExpo','easeInCirc','easeOutCirc','easeInOutCirc','easeInElastic','easeOutElastic','easeInOutElastic','easeInBack','easeOutBack','easeInOutBack','easeInBounce','easeOutBounce','easeInOutBounce');
+	$overlayOpacity = array(0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1);
+	$msArray = array(1,100,200,300,400,500,600,700,800,900,1000);
+	$captions = array('a-title','img-alt','img-title','href','None');
+	if(isset($options['autoload'])) $options['autoload'] = 'on';
+	if(isset($options['loop'])) $options['loop'] = 'on';
+	if(isset($options['url'])) $options['url'] = 'on';
+	if(isset($options['picasaweb'])) $options['picasaweb'] = 'on';
+	if(isset($options['flickr'])) $options['flickr'] = 'on';
+	if(isset($options['mobile'])) $options['mobile'] = 'on';
+	$options['overlayOpacity'] = (isset($options['overlayOpacity']) && in_array($options['overlayOpacity'],$overlayOpacity))? $options['overlayOpacity']:'0.8';
+	$options['overlayFadeDuration'] = (isset($options['overlayFadeDuration']) && in_array($options['overlayFadeDuration'],$msArray))? $options['overlayFadeDuration']:'400';
+	$options['resizeDuration'] = (isset($options['resizeDuration']) && in_array($options['resizeDuration'],$msArray))? $options['resizeDuration']:'400';
+	$options['resizeEasing'] = (isset($options['resizeEasing']) && in_array($options['resizeEasing'],$easingArray))? $options['resizeEasing']:'swing';
+	$options['imageFadeDuration'] = (isset($options['imageFadeDuration']) && in_array($options['imageFadeDuration'],$msArray))? $options['imageFadeDuration']:'400';
+	$options['captionAnimationDuration'] = (isset($options['captionAnimationDuration']) && in_array($options['captionAnimationDuration'],$msArray))? $options['captionAnimationDuration']:'400';
+	$options['initialWidth'] = (isset($options['initialWidth']) && is_int($options['initialWidth']))? $options['initialWidth']:'250';
+	$options['initialHeight'] = (isset($options['initialHeight']) && is_int($options['initialHeight']))? $options['initialHeight']:'250';
+	if(isset($options['caption'])) foreach ($options['caption'] as $key => $caption) $caption=(in_array($caption,$captions,true)?$caption:$captions[$key]);
+	else $options['caption'] = $captions;
+	$options['counterText'] = wp_filter_nohtml_kses( $options['counterText'] );
+	$closekeys = explode(',',$options['closeKeys']);
+	foreach($closekeys as $closeKey) $closeKey = is_int($closeKey)?$closeKey:'';
+	$options['closeKeys'] = implode(',',$closekeys);
+	$previousKeys = explode(',',$options['previousKeys']);
+	foreach($previousKeys as $previousKey) $previousKey = is_int($previousKey)?$previousKey:'';
+	$options['previousKeys'] = implode(',',$previousKeys);
+	$nextKeys = explode(',',$options['nextKeys']);
+	foreach($nextKeys as $nextKey) $nextKey = is_int($nextKey)?$nextKey:'';
+	$options['nextKeys'] = implode(',',$nextKeys);
+	$options['selector'] = isset($options['selector'])?wp_filter_nohtml_kses( $options['selector'] ):'div.entry-content, div.gallery, div.entry, div.post, div#page, body';
+//finish setting defaults, check color
+	return $options;
+}
+
 ?>

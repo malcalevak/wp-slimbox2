@@ -35,31 +35,39 @@ jQuery(document).ready(function($) {
 	function load_slimbox() {
 	jQuery(function($) {
 		var options = {
-					loop: slimbox2_options['loop'],
-					overlayOpacity: slimbox2_options['overlayOpacity'],
-					overlayFadeDuration: parseInt(slimbox2_options['overlayFadeDuration']),
-					resizeDuration: parseInt(slimbox2_options['resizeDuration']),
-					resizeEasing: slimbox2_options['resizeEasing'],
-					initialWidth: parseInt(slimbox2_options['initialWidth']),
-					initialHeight: parseInt(slimbox2_options['initialHeight']),
-					imageFadeDuration: parseInt(slimbox2_options['imageFadeDuration']),
-					captionAnimationDuration: parseInt(slimbox2_options['captionAnimationDuration']),
-					counterText: slimbox2_options['counterText'],
-					closeKeys: closeKeys,
-					previousKeys: previousKeys,
-					nextKeys: nextKeys
-				}
+			loop: slimbox2_options['loop'],
+			overlayOpacity: slimbox2_options['overlayOpacity'],
+			overlayFadeDuration: parseInt(slimbox2_options['overlayFadeDuration']),
+			resizeDuration: parseInt(slimbox2_options['resizeDuration']),
+			resizeEasing: slimbox2_options['resizeEasing'],
+			initialWidth: parseInt(slimbox2_options['initialWidth']),
+			initialHeight: parseInt(slimbox2_options['initialHeight']),
+			imageFadeDuration: parseInt(slimbox2_options['imageFadeDuration']),
+			captionAnimationDuration: parseInt(slimbox2_options['captionAnimationDuration']),
+			counterText: slimbox2_options['counterText'],
+			closeKeys: closeKeys,
+			previousKeys: previousKeys,
+			nextKeys: nextKeys
+		}
+		var uri = encodeURI(el.href);
+		var caption = eval(slimbox2_options['caption']);
+		t = caption.split('/*');
+		if(t.length > 1) t = t.split('*/');
+		if (t.length > 1) {
+			URI = test2[0];
+			caption = test2[1]
+		}
 		if(slimbox2_options['autoload']) {
-			$("a[href]").filter(function() {
+			$("a[href]").not("[rel^='nolightbox']").filter(function() {
 					return /\.(jpeg|bmp|jpg|png|gif)(\?[\d\w=&]*)?$/i.test(this.href);
 				}).unbind("click").slimbox(options, function(el) {
-						return [encodeURI(el.href), (slimbox2_options['url'])?'<a href="' + encodeURI(el.href) + '">'+eval(slimbox2_options['caption'])+'</a>':eval(slimbox2_options['caption'])];
+						return [encodeURI(el.href), (slimbox2_options['url'])?'<a href="' + uri + '">'+caption+'</a>':eval(slimbox2_options['caption'])];
 					}, function(el) {
 						return (this == el) || ($(this).closest(slimbox2_options['selector'])[0] && ($(this).closest(slimbox2_options['selector'])[0] == $(el).closest(slimbox2_options['selector'])[0]));
 				});
 		} else {
-			$("a[rel^='lightbox']").unbind("click").slimbox(options, function(el) {
-						return [encodeURI(el.href), (slimbox2_options['url'])?'<a href="' + encodeURI(el.href) + '">'+eval(slimbox2_options['caption'])+'</a>':eval(slimbox2_options['caption'])];
+			$("a[rel^='lightbox']").not("[rel^='nolightbox']").unbind("click").slimbox(options, function(el) {
+						return [encodeURI(el.href), (slimbox2_options['url'])?'<a href="' + uri + '">'+caption+'</a>':eval(slimbox2_options['caption'])];
 					}, function(el) {
 				return (this == el) || ((this.rel.length > 8) && (this.rel == el.rel));
 			});
