@@ -3,9 +3,9 @@ Contributors: malcalevak
 Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.8
-Stable Tag: 1.0.3.2
+Stable Tag: 1.0.3.3
 
-An WordPress implementation of the Slimbox2 javascript.
+A WordPress implementation of the Slimbox2 javascript.
 
 == Description ==
 
@@ -15,66 +15,65 @@ Almost, if not all, options are configurable from the administration panel. For 
 
 Support forums are generously hosted by Ryan Hellyer of PixoPoint, <a href="http://pixopoint.com/forum/index.php?board=6.0">here</a>.
 
-Recent Changes in Dev:<br />
-1.  Several Minor Fixes to eliminate PHP notices.<br /><br />
-2.  Removal of encodeURI to eliminate issues with images having spaces.<br /><br />
-3.  Ability to use <code>rel="nolightbox"</code> to exclude an image.<br /><br />
-4.  Ability to customize image link URLs by simply placing '/*DESIRED URL*/' in front of the caption.<br /><br />
-5.	Combined grouping of flickr, picasa and other images, autoload groups by selector, lightbox groups by rel.
-6.	Removal of WPlize in favor of built in option arrays.
-7.	Fixes for settings initialization issues.
-8.	Addition of Brazilian Portuguese/Português brasileiro Translation.
-9.	Addition of Italian/Italiano Translation.
+Version 1.0.4 is a complete rewrite with additional features and should be out soon!
+
+Recent Changes in v1.0.3.3:
+1. Addition of Brazilian Portuguese/Portugu&#234;s brasileiro translation
+2. Addition of Italian/Italiano 
+3. Addition of Lithuanian/Lietuvi&#154;kai translation
+4. Addition of Japanese/&#26085;&#26412;&#35486; translation
+5. Removal of encodeURI to eliminate issues with images having spaces
+
 
 == Installation ==
 
 After you've downloaded and extracted the files:
 
-1. Upload the complete `WP-Slimbox2` folder to the `/wp-content/plugins/` directory<br />
-2. Activate the plugin through the 'Plugins' menu in WordPress<br />
-3. Visit the "WP-Slimbox2" page in your WordPress options menu to configure any advanced settings.<br />
-5. Manually add the <code>rel="lightbox"</code> attribute to any link tag to activate the lightbox or <code>rel="lightbox-imagesetname"</code> for an image set, using the title attribute to store a caption. Alternatively you may use the autoload option to automatically prepare links to images and additionally enable picasaweb and flickr integration to easily utilize their albums.<br />
+1. Upload the complete `WP-Slimbox2` folder to the `/wp-content/plugins/` directory
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Visit the "WP-Slimbox2" page in your WordPress options menu to configure any advanced settings.
+5. Manually add the <code>rel="lightbox"</code> attribute to any link tag to activate the lightbox or <code>rel="lightbox-imagesetname"</code> for an image set, using the title attribute to store a caption. Alternatively you may use the autoload option to automatically prepare links to images and additionally enable picasaweb and flickr integration to easily utilize their albums.
 
 == Frequently Asked Questions ==
 
-= Does Slimbox2 support the resizing of images? =
-
-No. As stated in the script creator's FAQ, Slimbox was designed to display images only, resizing images is the user's responsibility.. <br />
-
 = Does Slimbox2 support the lightbox effect on pages and videos? =
 
-No. As stated in the script creator's FAQ, Slimbox was designed to display images only, to be simple and to have the smallest code. <br />
+No. As stated in the script creators FAQ, Slimbox was designed to display images only, to be simple and to have the smallest code.
 
 = What kind of grouping does autoload utilize? =
 Autoload has been modified to group all images in a Wordpress post if the theme places posts inside a div with class="post". If the images are instead on a page they will all be grouped together. If you want individual group sets it is recommend you instead manually insert 'rel="lightbox-groupname"' inside your hyperlinks to specify your groups.
 
 = Why do I need WordPress 2.8+? =
 
-The Javascript requires jQuery 1.3+ which wasn't included in WordPress until 2.8. If you're using something to override the included jQuery with a newer version (a feature I may add at a later date) it should be compatible from 2.1+ since I believe that was when wp_enqueue_script() was implemented.<br />
+The Javascript requires jQuery 1.3+ which wasn't included in WordPress until 2.8. If you're using something to override the included jQuery with a newer version (a feature I may add at a later date) it should be compatible from 2.1+ since I believe that was when wp_enqueue_script() was implemented.
 
 = Why can't the plugin do X, Y or Z? =
 
-Either the Javascript doesn't support it, or I haven't gotten around to adding it.<br />
+Either the Javascript doesn't support it, or I haven't gotten around to adding it.
+
+= Why can't the plugin resize images? =
+
+Please see this <a href="http://code.google.com/p/slimbox/wiki/FAQ#Can_Slimbox_automatically_resize_my_images_when_they_are_too_lar">excerpt</a> from the FAQ by the creator of Slimbox, Christophe Beyls
 
 = Why isn't the plugin in my language? Could I contribute a translation? =
 
-I only know English, but as of v.0.9.4 the plugin supports localization using PO and MO files, just like WordPress.<br />
-A copy of the POT file to use in your translations can be found in the languages directory as wp-slimbox2.pot.<br />
-If you're willing to provide a translation I'd be more than happy to include it. The NEXT, PREV, and Close buttons can be translated as well.<br />
-If you've translated the plugin or would like to find out more please let me know by posting on our <a href="http://pixopoint.com/forum/index.php?topic=1383.0">support forums</a>.<br />
+I only know English, but as of v.0.9.4 the plugin supports localization using PO and MO files, just like WordPress.
+A copy of the POT file to use in your translations can be found in the languages directory as wp-slimbox2.pot.
+If you're willing to provide a translation I'd be more than happy to include it. The NEXT, PREV, and Close buttons can be translated as well.
+If you've translated the plugin or would like to find out more please let me know by posting on our <a href="http://pixopoint.com/forum/index.php?topic=1383.0">support forums</a>.
 
 = Why should I use this plugin? =
 
-You want Lightbox or Slimbox effects using the jQuery library, and don't want any sort of "ad".<br />
-You want complete control over all the javascript settings from the admin page.<br />
+You want Lightbox or Slimbox effects using the jQuery library, and don't want any sort of "ad".
+You want complete control over all the javascript settings from the admin page.
 
 = What is Localization Tracking? =
 
-To satisfy my own curiosity regarding how many people are using a non-English version of the plugin I've written a small script, statTrack.php. During activiation of the plugin it submits the localization of the WordPress install to my server for recording. It will only do this once, and no other information is transmitted. To disable it, you can safely delete statTrack.php and the plugin should function normally.<br />
+To satisfy my own curiosity regarding how many people are using a non-English version of the plugin I've written a small script, statTrack.php. During activiation of the plugin it submits the localization of the WordPress install to my server for recording. It will only do this once, and no other information is transmitted. To disable it, you can safely delete statTrack.php and the plugin should function normally.
 
 = What if I have other questions that haven't been answered? =
 
-Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support forums</a>, and read the Slimbox creators <a href="http://code.google.com/p/slimbox/wiki/FAQ">FAQ</a>.<br />
+Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support forums</a>, and read the Slimbox creator's <a href="http://code.google.com/p/slimbox/wiki/FAQ">FAQ</a>.
 
 == Screenshots ==
 
@@ -82,11 +81,12 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 2. Overlay effect.
 
 == Changelog ==
-= 1.0.4 - Development =
-* Several Minor Fixes to eliminate PHP notices.
-* Removal of encodeURI to eliminate issues with images having spaces.
-* Ability to use <code>rel="nolightbox"</code> to exclude an image.
-* Ability to customize image link URLs by simply placing '/*DESIRED URL*/' in front of the caption.
+= 1.0.3.3 - Dec-18-2011 =
+* Addition of Brazilian Portuguese/Portugu&#234;s brasileiro translation.
+* Addition of Italian/Italiano translation.
+* Addition of Lithuanian/Lietuvi&#154;kai translation.
+* Addition of Japanese/&#26085;&#26412;&#35486; translation.
+* Removal of encodeURI() to eliminate issues with images having spaces.
 = 1.0.3.2 - May-04-2010 =
 * Fix for defaults in new installs.
 = 1.0.3.1 - May-03-2010 =
@@ -152,20 +152,23 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 
 = Credits =
 
-Thanks to the following for help with the development of this plugin:<br />
+Thanks to the following for help with the development of this plugin:
 
-* <a href="http://www.digitalia.be/software/slimbox2">Christophe Beyls</a> - Creator of the Slimbox2 Javascript<br />
-* <a href="http://gsgd.co.uk/sandbox/jquery/easing/">George McGinley Smith</a> - Creator of the jQuery Easing Plugin Javascript<br />
-* <a href="http://acko.net/dev/farbtastic/">Steven Wittens</a> - Creator of the jQuery Farbtastic colorpicker Javascript<br />
-* <a href="http://pixopoint.com">Ryan Hellyer</a> - For spurring my interest in WordPress plugins by welcoming my assistance on his <a href="http://pixopoint.com/multi-level-navigation/">Multi-level Navigation plugin</a> and for hosting our <a href="http://pixopoint.com/forum/index.php?board=6.0">support forums</a>.<br />
-* Spi for code suggestion to autogroup items by post.<br />
-* <a href="http://nv1962.net/">nv1962</a> - Suggestion to implement localization and Spanish/Espa&#241;ol and Dutch/Nederlandse translations.<br />
-* Laws for German/Deutsch localization.<br />
-* monodistortion  for CSS tweaks to prevent tiling of images.<br />
+* <a href="http://www.digitalia.be/software/slimbox2">Christophe Beyls</a> - Creator of the Slimbox2 Javascript
+* <a href="http://gsgd.co.uk/sandbox/jquery/easing/">George McGinley Smith</a> - Creator of the jQuery Easing Plugin Javascript
+* <a href="http://acko.net/dev/farbtastic/">Steven Wittens</a> - Creator of the jQuery Farbtastic colorpicker Javascript
+* <a href="http://pixopoint.com">Ryan Hellyer</a> - For spurring my interest in WordPress plugins by welcoming my assistance on his <a href="http://pixopoint.com/multi-level-navigation/">Multi-level Navigation plugin</a> and for hosting our <a href="http://pixopoint.com/forum/index.php?board=6.0">support forums</a>.
+* Spi for code suggestion to autogroup items by post.
+* <a href="http://nv1962.net/">nv1962</a> - Suggestion to implement localization and Spanish/Espa&#241;ol and Dutch/Nederlandse translations.
+* Laws for German/Deutsch localization.
+* monodistortion  for CSS tweaks to prevent tiling of images.
 * Jandry for the French/Fran&ccedil;ais translation.
 * <a href="http://www.serhatyolacan.com">Serhat Yola&ccedil;an</a> for the Turkish/T&uuml;rk&ccedil;e translation.
 * <a href="http://pc.de">Marcis G.</a> for the Belarusian/&#1041;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1110; translation.
 * <a href="http://www.easespot.com">easespot</a> for the Chinese/&#20013;&#25991; translation and FunDo for additional assistance.
-* <a href="http://www.easespot.com">easespot</a> for the Brazilian Portuguese/Português brasileiro translation.
-* <a href="http://www.easespot.com">easespot</a> for the Italian/Italiano translation.
-* Anyone else I forgot to mention who's made a suggestion or provided me with ideas.<br />
+* <a href="http://www.techload.com.br/">Marcelo</a> for the Brazilian Portuguese/Portugu&#234;s brasileiro translation.
+* <a href="http://www.Behumandesign.com">Giacomo</a> for the Italian/Italiano translation.
+* Nata Strazda of <a href="http://www.webhostinghub.com">Web Hub</a> for the Lithuanian/Lietuvi&#154;kai translation.
+* ackie00h for the Japanese/&#26085;&#26412;&#35486; translation.
+* Zareiff, for various Next/Previous/Close translation images when not provided by translators.
+* Anyone else I forgot to mention who's made a suggestion or provided me with ideas.
