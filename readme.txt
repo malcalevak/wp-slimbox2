@@ -3,7 +3,7 @@ Contributors: malcalevak
 Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.8
-Stable Tag: 1.0.3.3
+Stable Tag: 1.0.3.4
 
 A WordPress implementation of the Slimbox2 javascript.
 
@@ -17,12 +17,8 @@ Support forums are generously hosted by Ryan Hellyer of PixoPoint, <a href="http
 
 Version 1.0.4 is a complete rewrite with additional features and should be out soon!
 
-Recent Changes in v1.0.3.3:
-1. Addition of Brazilian Portuguese/Portugu&#234;s brasileiro translation
-2. Addition of Italian/Italiano 
-3. Addition of Lithuanian/Lietuvi&#154;kai translation
-4. Addition of Japanese/&#26085;&#26412;&#35486; translation
-5. Removal of encodeURI to eliminate issues with images having spaces
+Recent Changes in v1.0.3.4:
+1. Addition of Russian/&#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; &#1103;&#1079;&#1099;&#1082; translation.
 
 
 == Installation ==
@@ -32,7 +28,7 @@ After you've downloaded and extracted the files:
 1. Upload the complete `WP-Slimbox2` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Visit the "WP-Slimbox2" page in your WordPress options menu to configure any advanced settings.
-5. Manually add the <code>rel="lightbox"</code> attribute to any link tag to activate the lightbox or <code>rel="lightbox-imagesetname"</code> for an image set, using the title attribute to store a caption. Alternatively you may use the autoload option to automatically prepare links to images and additionally enable picasaweb and flickr integration to easily utilize their albums.
+4. Manually add the <code>rel="lightbox"</code> attribute to any link tag to activate the lightbox or <code>rel="lightbox-imagesetname"</code> for an image set, using the title attribute to store a caption. Alternatively you may use the autoload option to automatically prepare links to images and additionally enable picasaweb and flickr integration to easily utilize their albums.
 
 == Frequently Asked Questions ==
 
@@ -81,6 +77,8 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 2. Overlay effect.
 
 == Changelog ==
+= 1.0.3.4 - Jan-25-2012 =
+* Addition of Russian/&#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; &#1103;&#1079;&#1099;&#1082; translation.
 = 1.0.3.3 - Dec-18-2011 =
 * Addition of Brazilian Portuguese/Portugu&#234;s brasileiro translation.
 * Addition of Italian/Italiano translation.
@@ -150,7 +148,7 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 * Addition of option to enable automatically applying to all image links (png,jpg,gif)
 = 0.9 Beta: Intial release - Jan-05-2008 =
 
-= Credits =
+== Credits ==
 
 Thanks to the following for help with the development of this plugin:
 
@@ -170,5 +168,6 @@ Thanks to the following for help with the development of this plugin:
 * <a href="http://www.Behumandesign.com">Giacomo</a> for the Italian/Italiano translation.
 * Nata Strazda of <a href="http://www.webhostinghub.com">Web Hub</a> for the Lithuanian/Lietuvi&#154;kai translation.
 * ackie00h for the Japanese/&#26085;&#26412;&#35486; translation.
+* nafanyabr for the Russian/&#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; &#1103;&#1079;&#1099;&#1082; translation.
 * Zareiff, for various Next/Previous/Close translation images when not provided by translators.
 * Anyone else I forgot to mention who's made a suggestion or provided me with ideas.
