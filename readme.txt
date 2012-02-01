@@ -3,7 +3,7 @@ Contributors: malcalevak
 Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.8
-Stable Tag: 1.0.3.4
+Stable Tag: 1.1
 
 A WordPress implementation of the Slimbox2 javascript.
 
@@ -15,11 +15,15 @@ Almost, if not all, options are configurable from the administration panel. For 
 
 Support forums are generously hosted by Ryan Hellyer of PixoPoint, <a href="http://pixopoint.com/forum/index.php?board=6.0">here</a>.
 
-Version 1.0.4 is a complete rewrite with additional features and should be out soon!
-
-Recent Changes in v1.0.3.4:
-1. Addition of Russian/&#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; &#1103;&#1079;&#1099;&#1082; translation.
-
+Recent Changes in v1.1:<br />
+1.	Extensive re-write including several minor fixes to eliminate PHP warnings and errors.<br /><br />
+2.	Ability to use <code>rel="nolightbox"</code> to exclude an image.<br /><br />
+3.	Ability to customize image link URLs by simply placing '/*DESIRED URL*/' in front of the caption.<br /><br />
+4.	Grouping of Flickr, Picasa and other images combined. Autoload groups by selector, lightbox groups by rel.<br /><br />
+5.	Removal of WPlize in favor of built in option arrays.<br /><br />
+6.	Fix for settings initialization issues.<br /><br />
+7.	Option sanitization.<br /><br />
+8.	Addition of Traditional Chinese/&#32321;&#39636;&#20013;&#25991; translation.
 
 == Installation ==
 
@@ -77,6 +81,15 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 2. Overlay effect.
 
 == Changelog ==
+= 1.1 - Jan-31-2012 =
+* Extensive re-write including several minor fixes to eliminate PHP warnings and errors.
+* Ability to use <code>rel="nolightbox"</code> to exclude an image.
+* Ability to customize image link URLs by simply placing '/*DESIRED URL*/' in front of the caption.
+* Grouping of Flickr, Picasa and other images combined. Autoload groups by selector, lightbox groups by rel.
+* Removal of WPlize in favor of built in option arrays.
+* Fix for settings initialization issues.
+* Option sanitization.
+* Addition of Traditional Chinese/&#32321;&#39636;&#20013;&#25991; translation.
 = 1.0.3.4 - Jan-25-2012 =
 * Addition of Russian/&#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; &#1103;&#1079;&#1099;&#1082; translation.
 = 1.0.3.3 - Dec-18-2011 =
@@ -169,5 +182,6 @@ Thanks to the following for help with the development of this plugin:
 * Nata Strazda of <a href="http://www.webhostinghub.com">Web Hub</a> for the Lithuanian/Lietuvi&#154;kai translation.
 * ackie00h for the Japanese/&#26085;&#26412;&#35486; translation.
 * nafanyabr for the Russian/&#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; &#1103;&#1079;&#1099;&#1082; translation.
+* <a href="http://shachi.tw">shachi</a> for the Traditional Chinese/&#32321;&#39636;&#20013;&#25991; translation.
 * Zareiff, for various Next/Previous/Close translation images when not provided by translators.
 * Anyone else I forgot to mention who's made a suggestion or provided me with ideas.

@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: wp-slimbox2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-slimbox2\n"
 "POT-Creation-Date: 2010-01-19 20:46+0000\n"
-"PO-Revision-Date: 2011-04-12 17:28+0100\n"
-"Last-Translator: Pier Paolo <pier@behumandesign.com>\n"
+"PO-Revision-Date: 2011-12-18 21:10-0500\n"
+"Last-Translator: \n"
 "Language-Team: Be Human Design <info@behumandesign.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -66,145 +66,145 @@ msgstr "Usa le opzioni sovrastanti per controllare le impostazioni avanzate del 
 msgid "Autoload?"
 msgstr "Autocarica?"
 
-#: adminpage.php:75
-msgid "This option allows the user to automatically activate Slimbox on all links pointing to \".jpg\", \".jpeg\", \".png\", \".bmp\" or \".gif\". All image links will automatically be grouped together in a gallery according to the selector chosen below. If this isn't activated you will need to manually add 'rel=\"lightbox\"' for individual images or 'rel=\"lightbox-imagesetname\"' for groups on all links you wish to use the Slimbox effect. Default is DISABLED."
-msgstr "Quest'opzione permette all'utente di attivare Slimbox per tutti i link che puntano a \".jpg\", \".jpeg\", \".png\", \".bmp\" or \".gif\". Tutti i link saranno automaticamente raggruppati in gallerie a seconda del selettore scelto. Se l'opzione non è attivata bisognerà aggiungere manualmente 'rel=\"lightbox\"' per immagini singole o 'rel=\"lightbox-imagesetname\"' per gruppi su tutti i link dove vorrai usare l'effetto Slimbox. Default è disabilitato."
+#: adminpage.php:74
+msgid "This option allows the user to automatically activate Slimbox on all links pointing to \".jpg\", \".jpeg\", \".png\", \".bmp\" or \".gif\". All image links will automatically be grouped together in a gallery according to the selector chosen below. If this isn't activated you will need to manually add <b><code>rel=\"lightbox\"</code></b> for individual images or <b><code>rel=\"lightbox-imagesetname\"</code></b> for groups on all links you wish to use the Slimbox effect. <b>Default is Disabled.</b>"
+msgstr "Quest'opzione permette all'utente di attivare Slimbox per tutti i link che puntano a \".jpg\", \".jpeg\", \".png\", \".bmp\" or \".gif\". Tutti i link saranno automaticamente raggruppati in gallerie a seconda del selettore scelto. Se l'opzione non è attivata bisognerà aggiungere manualmente 'rel=\"lightbox\"' per immagini singole o <b><code>rel=\"lightbox-imagesetname\"</code></b> per gruppi su tutti i link dove vorrai usare l'effetto Slimbox. <b>Default è disabilitato.</b>"
 
 #: adminpage.php:80
 msgid "Enable Picasaweb Integration?"
 msgstr "Abilitare integrazione con Picasaweb?"
 
 #: adminpage.php:85
-msgid "This option allows the user to automatically add the Slimbox effect to Picasaweb links when provided an appropriate url (this is separate from the autoload script which only functions on direct image links). Default is DISABLED."
-msgstr "Quest'opzione permette all'utente di aggiungere automaticamente l'effetto Slimbox ai link di Picasaweb quando viene fornito un url appropriato (questo è separato dall'autoload script che funziona unicamente su immagini con link diretti). Default è disabilitato."
+msgid "This option allows the user to automatically add the Slimbox effect to Picasaweb links when provided an appropriate url (this is separate from the autoload script which only functions on direct image links). <b>Default is Disabled.</b>"
+msgstr "Quest'opzione permette all'utente di aggiungere automaticamente l'effetto Slimbox ai link di Picasaweb quando viene fornito un url appropriato (questo è separato dall'autoload script che funziona unicamente su immagini con link diretti). <b>Default è disabilitato.</b>"
 
 #: adminpage.php:90
 msgid "Enable Flickr Integration?"
 msgstr "Abilitare integrazione con Flickr?"
 
 #: adminpage.php:95
-msgid "This option allows the user to automatically add the Slimbox effect to Flickr links when provided an appropriate url (this is separate from the autoload script which only functions on direct image links). Default is DISABLED."
-msgstr "Quest'opzione permette all'utente di aggiungere l'effetto Slimbox a Flickr quando viene fornito un url appropriato (questo è separato dall'autoload script che funziona unicamente su immagini con link diretti). Default è disabilitato."
+msgid "This option allows the user to automatically add the Slimbox effect to Flickr links when provided an appropriate url (this is separate from the autoload script which only functions on direct image links). <b>Default is Disabled.</b>"
+msgstr "Quest'opzione permette all'utente di aggiungere l'effetto Slimbox a Flickr quando viene fornito un url appropriato (questo è separato dall'autoload script che funziona unicamente su immagini con link diretti). <b>Default è disabilitato.</b>"
 
 #: adminpage.php:100
 msgid "Loop?"
 msgstr "Loop?"
 
 #: adminpage.php:105
-msgid "This option allows the user to navigate between the first and last images of a Slimbox gallery group when there is more than one image to display. Default is DISABLED."
-msgstr "Quest'opzione permette all'utente di  navigare tra la prima e l'ultima immagine di un gruppo di gallerie Slimbox quando c'è più di un'immagine da visualizzare. Default è disabilitato."
+msgid "This option allows the user to navigate between the first and last images of a Slimbox gallery group when there is more than one image to display. <b>Default is Disabled.</b>"
+msgstr "Quest'opzione permette all'utente di  navigare tra la prima e l'ultima immagine di un gruppo di gallerie Slimbox quando c'è più di un'immagine da visualizzare. <b>Default è disabilitato.</b>"
 
 #: adminpage.php:110
 msgid "Overlay Opacity"
 msgstr "Sovrapposizione Opacità "
 
 #: adminpage.php:117
-msgid "This option allows the user to adjust the opacity of the background overlay. 1 is completely opaque, 0 is completely transparent. Default is 0.8."
-msgstr "Quest'opzione permette all'utente di regolare l'opacità di uno sfondo sovrapposto. 1 è totalmente opaco, 0 è completamente trasparente. Default è 0.8."
+msgid "This option allows the user to adjust the opacity of the background overlay. 1 is completely opaque, 0 is completely transparent. <b>Default is 0.8.</b>"
+msgstr "Quest'opzione permette all'utente di regolare l'opacità di uno sfondo sovrapposto. 1 è totalmente opaco, 0 è completamente trasparente. <b>Default è 0.8.</b>"
 
 #: adminpage.php:122
 msgid "Overlay Color"
 msgstr "Sovrapposizione Colore"
 
 #: adminpage.php:128
-msgid "This option allows the user to set the color of the overlay by selecting your hue from the circle and color gradient from the square. Alternatively you may manually enter a valid HTML color code. The color of the entry field will change to reflect your selected color. Default is #000000."
-msgstr "Quest'opzione permette all'utente di impostare il colore della sovrapposizione selezionando il colore dal cerchio e il gradiente colore dal quadrato. In alternativa puoi inserire un codice colore HTML. Il colore nel campo cambierà nel colore selezionato. Default è #000000."
+msgid "This option allows the user to set the color of the overlay by selecting your hue from the circle and color gradient from the square. Alternatively you may manually enter a valid HTML color code. The color of the entry field will change to reflect your selected color. <b>Default is #000000.</b>"
+msgstr "Quest'opzione permette all'utente di impostare il colore della sovrapposizione selezionando il colore dal cerchio e il gradiente colore dal quadrato. In alternativa puoi inserire un codice colore HTML. Il colore nel campo cambierà nel colore selezionato. <b>Default è #000000.</b>"
 
 #: adminpage.php:133
 msgid "Overlay Fade Duration"
 msgstr "Durata sovrapposizione a dissolvenza"
 
 #: adminpage.php:140
-msgid "This option allows the user to adjust the duration of the overlay fade-in and fade-out animations, in milliseconds. Default is 400."
-msgstr "Quest'opzione permette all'utente di impostare la durata della dissolvenza in entrata ed in uscita, in millisecondi. Default è 400."
+msgid "This option allows the user to adjust the duration of the overlay fade-in and fade-out animations, in milliseconds. <b>Default is 400.</b>"
+msgstr "Quest'opzione permette all'utente di impostare la durata della dissolvenza in entrata ed in uscita, in millisecondi. <b>Default è 400.</b>"
 
 #: adminpage.php:145
 msgid "Resize Duration"
 msgstr "Durata Ridimensionamento"
 
 #: adminpage.php:152
-msgid "This option allows the user to adjust the duration of the resize animation for width and height, in milliseconds. Default is 400."
-msgstr "Quest'opzione permette all'utente di impostare la durata dell'animazione di ridimensionamento per altezza e larghezza, in millisecondi. Default è 400."
+msgid "This option allows the user to adjust the duration of the resize animation for width and height, in milliseconds. <b>Default is 400.</b>"
+msgstr "Quest'opzione permette all'utente di impostare la durata dell'animazione di ridimensionamento per altezza e larghezza, in millisecondi. <b>Default è 400.</b>"
 
 #: adminpage.php:157
 msgid "Resize Easing"
 msgstr "Ridimensionamento Facilitato"
 
 #: adminpage.php:164
-msgid "This option allows the user to adjust the easing effect that you want to use for the resize animation (easings other than swing load an additional jQuery Easing Plugin). Many easings require a longer execution time to look good, so you should adjust the resizeDuration option above as well. Default is swing."
-msgstr "Quest'opzione permette all'utente di regolare l'effetto facilitato che vuoi usare per il ridimensionamento dell'animazione (effetti facilitati diversi dallo swing caricano un plugin aggiuntivo jQuery Easing Plugin). Alcuni effetti facilitati richiedono un'esecuzione poiù lunga per apparire belli, perciò dovresti anche modificare l'opzione della durata del ridimensionamento. Default è swing."
+msgid "This option allows the user to adjust the easing effect that you want to use for the resize animation (easings other than swing load an additional jQuery Easing Plugin). Many easings require a longer execution time to look good, so you should adjust the resizeDuration option above as well. <b>Default is swing.</b>"
+msgstr "Quest'opzione permette all'utente di regolare l'effetto facilitato che vuoi usare per il ridimensionamento dell'animazione (effetti facilitati diversi dallo swing caricano un plugin aggiuntivo jQuery Easing Plugin). Alcuni effetti facilitati richiedono un'esecuzione poiù lunga per apparire belli, perciò dovresti anche modificare l'opzione della durata del ridimensionamento. <b>Default è swing</b>."
 
 #: adminpage.php:169
 msgid "Initial Width"
 msgstr "Larghezza Iniziale"
 
 #: adminpage.php:174
-msgid "This option allows the user to adjust the initial width of the box, in pixels. Default is 250."
-msgstr "Quest'opzione permette all'utente di impostare la larghezza iniziale del box in pixel. Default è 250."
+msgid "This option allows the user to adjust the initial width of the box, in pixels. <b>Default is 250.</b>"
+msgstr "Quest'opzione permette all'utente di impostare la larghezza iniziale del box in pixel. <b>Default è 250.</b>"
 
 #: adminpage.php:179
 msgid "Initial Height"
 msgstr "Altezza Iniziale"
 
 #: adminpage.php:184
-msgid "This option allows the user to adjust the initial height of the box, in pixels. Default is 250."
-msgstr "Quest'opzione permette all'utente di impostare l'altezza iniziale del box in pixel. Default è 250."
+msgid "This option allows the user to adjust the initial height of the box, in pixels. <b>Default is 250.</b>"
+msgstr "Quest'opzione permette all'utente di impostare l'altezza iniziale del box in pixel. <b>Default è 250.</b>"
 
 #: adminpage.php:188
 msgid "Image Fade Duration"
 msgstr "Durata dissolvenza immagine"
 
 #: adminpage.php:195
-msgid "This option allows the user to adjust the duration of the image fade-in animation, in milliseconds. Disabling this effect will make the image appear instantly. Default is 400."
-msgstr "Quest'opzione permette all'utente di impostare la durata della dissolvenza dell'immagine, in millisecondi. Disabilitando quest'effetto l'immagine comparirà istantaneamente. Default è 400."
+msgid "This option allows the user to adjust the duration of the image fade-in animation, in milliseconds. Disabling this effect will make the image appear instantly. <b>Default is 400.</b>"
+msgstr "Quest'opzione permette all'utente di impostare la durata della dissolvenza dell'immagine, in millisecondi. Disabilitando quest'effetto l'immagine comparirà istantaneamente. <b>Default è 400.</b>"
 
 #: adminpage.php:200
 msgid "Caption Animation Duration"
 msgstr "Didascalia Durata Animazione "
 
 #: adminpage.php:207
-msgid "This option allows the user to adjust the duration of the caption animation, in milliseconds. Disabling this effect will make the caption appear instantly. Default is 400."
-msgstr "Quest'opzione permette all'utente di impostare la durata del titolo dell'animazione, in millisecondi. Disabilitando quest'effetto l'immagine comparirà istantaneamente. Default è 400."
+msgid "This option allows the user to adjust the duration of the caption animation, in milliseconds. Disabling this effect will make the caption appear instantly. <b>Default is 400.</b>"
+msgstr "Quest'opzione permette all'utente di impostare la durata del titolo dell'animazione, in millisecondi. Disabilitando quest'effetto l'immagine comparirà istantaneamente. <b>Default è 400.</b>"
 
 #: adminpage.php:211
 msgid "Image Caption Source Order"
 msgstr "Ordine Sorgente Didascalia immagine "
 
 #: adminpage.php:227
-msgid "This option allows the user to select the order in which to search various locations for the caption text. If you'd like no caption just select \"None\" in the first block. You can also leave out an option by replacing it with \"None\", but be sure to place any option you'd like to search in front of it. If a caption can't be found, and \"None\" wasn\\t selected, it will default to the URL (\"href\"). Default is \"a-title\", followed by \"img-alt\", \"img-title\", and \"href\"."
-msgstr "Quest'opzione permette all'utente di selezionare l'ordine in cui ricercare varie posizioni per le didascalia. Se non ti piace avere una didascalia basta selezionare \"None\" nel primo blocco. Puoi anche tralasciare un'opzione sostituendola con \"None\", ma devi assicurarti di posizionare qualsiasi opzione che desideri in ordine prioritario. Se non si riesce a trovare una didascalia, e \"None\" non è selezionato, sarà l'URL per default(\"href\").Default è \"a-title\", seguito da \"img-alt\", \"img-title\", e \"href\"."
+msgid "This option allows the user to select the order in which to search various locations for the caption text. If you'd like no caption just select \"None\" in the first block. You can also leave out an option by replacing it with \"None\", but be sure to place any option you'd like to search in front of it. If a caption can't be found, and \"None\" wasn't selected, it will default to the URL (\"href\"). <b>Default is \"a-title\", followed by \"img-alt\", \"img-title\", and \"href\".</b>"
+msgstr "Quest'opzione permette all'utente di selezionare l'ordine in cui ricercare varie posizioni per le didascalia. Se non ti piace avere una didascalia basta selezionare \"None\" nel primo blocco. Puoi anche tralasciare un'opzione sostituendola con \"None\", ma devi assicurarti di posizionare qualsiasi opzione che desideri in ordine prioritario. Se non si riesce a trovare una didascalia, e \"None\" non è selezionato, sarà l'URL per default(\"href\"). <b>Default è \"a-title\", seguito da \"img-alt\", \"img-title\", e \"href\".</b>"
 
 #: adminpage.php:232
 msgid "Caption is URL"
 msgstr "La didascalia è l'URL"
 
 #: adminpage.php:237
-msgid "This option will render the caption as a hyperlink.  Default is Enabled."
-msgstr "Quest'opzione farà diventare la didascalia un ipertesto. Abilitato di default."
+msgid "This option will render the caption as a hyperlink.  <b>Default is Enabled.</b>"
+msgstr "Quest'opzione farà diventare la didascalia un ipertesto. <b>Abilitato di default.</b>"
 
 #: adminpage.php:241
 msgid "Autoload Selector"
 msgstr "Selettore Autoload"
 
 #: adminpage.php:246
-msgid "This option allows the user to change how images are grouped when autoload is enabled. It uses jQuery selectors, as described <a href=\"http://api.jquery.com/category/selectors/\">here</a>. Default is \"div.entry-content, div.gallery, div.entry, div.post, div#page, body\", which works in most themes by searching for a common post, gallery, or page that contains the images."
-msgstr "Quest'opzione permette all'utente di cambiare il modo in cui le immagini sono raggruppate quando l'autoload è attivo. L'opzione usa dei selettori  jQuery, come descritti <a href=\"http://api.jquery.com/category/selectors/\">qui</a>. Default è \"div.entry-content, div.gallery, div.entry, div.post, div#page, body\", che funziona sulla maggior parte dei temi cercando in un post, una galleria o una pagina che contiene immagini."
+msgid "This option allows the user to change how images are grouped when autoload is enabled. It uses jQuery selectors, as described <a href=\"http://api.jquery.com/category/selectors/\">here</a>. <b>Default is \"div.entry-content, div.gallery, div.entry, div.post, div#page, body\".</b>"
+msgstr "Quest'opzione permette all'utente di cambiare il modo in cui le immagini sono raggruppate quando l'autoload è attivo. L'opzione usa dei selettori  jQuery, come descritti <a href=\"http://api.jquery.com/category/selectors/\">qui</a>. <b>Default è \"div.entry-content, div.gallery, div.entry, div.post, div#page, body\", che funziona sulla maggior parte dei temi cercando in un post, una galleria o una pagina che contiene immagini.</b>"
 
 #: adminpage.php:251
 msgid "Counter Text"
 msgstr "Contatore di Testo"
 
 #: adminpage.php:256
-msgid "This option allows the user to customize, translate or disable the counter text which appears in the captions when multiple images are shown. Inside the text, {x} will be replaced by the current image index, and {y} will be replaced by the total number of images in the group. Set it to false (boolean value, without quotes) or \"\" to disable the counter display. Default is \"Image {x} of {y}\"."
-msgstr "Quest'opzione permette all'utente di personalizzare o disabilitare il contatore di testo che appare nella didascalia quando si vedono immagini multiple. Nel testo, {x} sarà sostituito dall'indice corrente, e {y} sarà sostituito da tutte le immagini del gruppo. Inserisci false (valore booleano, senza virgolette) o \"\"  per disabilitare la visualizzazione del contatore. Default è \"Immagine {x} of {y}\"."
+msgid "This option allows the user to customize, translate or disable the counter text which appears in the captions when multiple images are shown. Inside the text, {x} will be replaced by the current image index, and {y} will be replaced by the total number of images in the group. Set it to false (boolean value, without quotes) or \"\" to disable the counter display. <b>Default is \"Image {x} of {y}\".</b>"
+msgstr "Quest'opzione permette all'utente di personalizzare o disabilitare il contatore di testo che appare nella didascalia quando si vedono immagini multiple. Nel testo, {x} sarà sostituito dall'indice corrente, e {y} sarà sostituito da tutte le immagini del gruppo. Inserisci false (valore booleano, senza virgolette) o \"\"  per disabilitare la visualizzazione del contatore. <b>Default è \"Immagine {x} of {y}\".</b>"
 
 #: adminpage.php:260
 msgid "Close Keys"
 msgstr "Close Keys"
 
 #: adminpage.php:265
-msgid "These options allow the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> representing the keys to press to close or navigate to the next or previous images.</p><p>Just select the corresponding text box and press the keys you would like to use. Alternately check the box below to manually enter or clear key codes.</p><p>Default close values are [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67).</p><p>Default previous values are [37, 80] which means Left arrow (37) and \"p\" (80).</p><p>Default next values are [39, 78] which means Right arrow (39) and \"n\" (78)."
-msgstr "Queste opzioni permettono all'utente di specificare un elenco di <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">tasti di scelta rapida</a> ovvero i tasti da premere per chiudere o navigare all'immagine precedente o successiva.</p><p>Basta selezionare la casella di testo corrispondente e premere i tasti desiderati. In alternativa si può spuntare il box sottostante per inserire o rimuovere manualmente i tasti di scelta rapida.</p><p>I valori predefiniti per chiudere sono [27, 88, 67] cioè Esc (27), \"x\" (88) e \"c\" (67).</p><p>I valori predefiniti per \"precedente\" sono [37, 80] che significa freccia Sinistra (37) e \"p\" (80).</p><p>I valori predefiniti per \"Prossimo\" sono [39, 78] che significa freccia Destra (39) e \"n\" (78)."
+msgid "These options allow the user to specify an array of <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">key codes</a> representing the keys to press to close or navigate to the next or previous images.</p><p>Just select the corresponding text box and press the keys you would like to use. Alternately check the box below to manually enter or clear key codes.</p><b><p>Default close values are [27, 88, 67] which means Esc (27), \"x\" (88) and \"c\" (67).</p><p>Default previous values are [37, 80] which means Left arrow (37) and \"p\" (80).</p><p>Default next values are [39, 78] which means Right arrow (39) and \"n\" (78)."
+msgstr "Queste opzioni permettono all'utente di specificare un elenco di <a href=\"http://www.webonweboff.com/tips/js/event_key_codes.aspx\" TARGET=\"_blank\">tasti di scelta rapida</a> ovvero i tasti da premere per chiudere o navigare all'immagine precedente o successiva.</p><p>Basta selezionare la casella di testo corrispondente e premere i tasti desiderati. In alternativa si può spuntare il box sottostante per inserire o rimuovere manualmente i tasti di scelta rapida.</p><b><p>I valori predefiniti per chiudere sono [27, 88, 67] cioè Esc (27), \"x\" (88) e \"c\" (67).</p><p>I valori predefiniti per \"precedente\" sono [37, 80] che significa freccia Sinistra (37) e \"p\" (80).</p><p>I valori predefiniti per \"Prossimo\" sono [39, 78] che significa freccia Destra (39) e \"n\" (78)."
 
 #: adminpage.php:266
 msgid "Enable Manual Key Code Entry?"
@@ -227,16 +227,16 @@ msgid "Enable on mobiles?"
 msgstr "Abilita su telefonini?"
 
 #: adminpage.php:287
-msgid "This option enables Slimbox on mobile phones. By default this feature is disabled."
-msgstr "Quest'opzione abilita Slimbox sui telefonini. Disabilitato per default."
+msgid "This option enables Slimbox on mobile phones. <b>Default is Disabled.</b>"
+msgstr "Quest'opzione abilita Slimbox sui telefonini. <b>Disabilitato per default.</b>"
 
 #: adminpage.php:291
 msgid "Maintenance mode"
 msgstr "Modalità di mantenimento"
 
 #: adminpage.php:296
-msgid "This option enables a maintenance mode for testing purposes. When enabled slimbox will be disabled until you enable it by appending ?slimbox=on to a url. It will then remain on until you disable it by appending ?slimbox=off to a url, you clear your cookies, or in certain cases you clear your browser cache. This setting only impacts things at an individual vistor level, not a site wide level. Default is Disabled."
-msgstr "Quest'opzione abilita una modalità di mantenimento per il testing. Quando abilitata, Slimbox sarà disabilitato fino a quando verrà nuovamente abilitato aggiungendo ?slimbox=on ad un url. Rimarrà invariato finché non verrà disabilitato ?slimbox=off ad un url, eliminati i cookies, o in certi casi si svuoti la cache. Questi settaggi hanno efetto a livello di interazione individuale, non a livello del sito intero. Disabilitato di default."
+msgid "This option enables a maintenance mode for testing purposes. When enabled slimbox will be disabled until you enable it by appending <b><code>?slimbox=on</code></b> to a url. It will then remain on until you disable it by appending <b><code>?slimbox=off</code></b> to a url, you clear your cookies, or in certain cases you clear your browser cache. This setting only impacts things at an individual vistor level, not a site wide level. <b>Default is Disabled.</b>"
+msgstr "Quest'opzione abilita una modalità di mantenimento per il testing. Quando abilitata, Slimbox sarà disabilitato fino a quando verrà nuovamente abilitato aggiungendo ?slimbox=on ad un url. Rimarrà invariato finché non verrà disabilitato ?slimbox=off ad un url, eliminati i cookies, o in certi casi si svuoti la cache. Questi settaggi hanno efetto a livello di interazione individuale, non a livello del sito intero. <b>Disabilitato di default.</b>"
 
 #: adminpage.php:304
 msgid "Update Options"
@@ -246,19 +246,17 @@ msgstr "Aggiorna Opzioni"
 msgid "Notes"
 msgstr "Note"
 
+#: adminpage.php:324
+msgid "11145898"
+msgstr "72RVF48F6AT92"
+
 #: adminpage.php:325
-msgid ""
-"11145898\">\r\n"
-"\t\t\t<input type=\"image\" src=\"https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">\r\n"
-"\t\t\t<img alt=\"\" border=\"0\" src=\"https://www.paypal.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">\r\n"
-"\t\t</form>\r\n"
-"        <p><b style=\"font-size:11px;\">Support this plugin!"
-msgstr ""
-"11145898\">\r\n"
-"\t\t\t<input type=\"image\" src=\"https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - Il modo più facile e sicuro per pagare online!\">\r\n"
-"\t\t\t<img alt=\"\" border=\"0\" src=\"https://www.paypal.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">\r\n"
-"\t\t</form>\r\n"
-"        <p><b style=\"font-size:11px;\">Supporta questo plugin!"
+msgid "en_US"
+msgstr "it_IT/IT"
+
+#: adminpage.php:325
+msgid "The safer, easier way to pay online!"
+msgstr "Il sistema di pagamento online più facile e sicuro!"
 
 #: index.php:95
 #: index.php:132
