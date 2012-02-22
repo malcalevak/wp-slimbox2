@@ -3,7 +3,7 @@ Contributors: malcalevak
 Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.8
-Stable Tag: 1.1
+Stable Tag: 1.1.1
 
 A WordPress implementation of the Slimbox2 javascript.
 
@@ -15,15 +15,8 @@ Almost, if not all, options are configurable from the administration panel. For 
 
 Support forums are generously hosted by Ryan Hellyer of PixoPoint, <a href="http://pixopoint.com/forum/index.php?board=6.0">here</a>.
 
-Recent Changes in v1.1:<br />
-1.	Extensive re-write including several minor fixes to eliminate PHP warnings and errors.<br /><br />
-2.	Ability to use <code>rel="nolightbox"</code> to exclude an image.<br /><br />
-3.	Ability to customize image link URLs by simply placing '/*DESIRED URL*/' in front of the caption.<br /><br />
-4.	Grouping of Flickr, Picasa and other images combined. Autoload groups by selector, lightbox groups by rel.<br /><br />
-5.	Removal of WPlize in favor of built in option arrays.<br /><br />
-6.	Fix for settings initialization issues.<br /><br />
-7.	Option sanitization.<br /><br />
-8.	Addition of Traditional Chinese/&#32321;&#39636;&#20013;&#25991; translation.
+Recent Changes in v1.1.1:<br />
+1.	Fix to resolve failures experienced by some users in v1.1.
 
 == Installation ==
 
@@ -67,10 +60,6 @@ If you've translated the plugin or would like to find out more please let me kno
 You want Lightbox or Slimbox effects using the jQuery library, and don't want any sort of "ad".
 You want complete control over all the javascript settings from the admin page.
 
-= What is Localization Tracking? =
-
-To satisfy my own curiosity regarding how many people are using a non-English version of the plugin I've written a small script, statTrack.php. During activiation of the plugin it submits the localization of the WordPress install to my server for recording. It will only do this once, and no other information is transmitted. To disable it, you can safely delete statTrack.php and the plugin should function normally.
-
 = What if I have other questions that haven't been answered? =
 
 Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support forums</a>, and read the Slimbox creator's <a href="http://code.google.com/p/slimbox/wiki/FAQ">FAQ</a>.
@@ -81,6 +70,8 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 2. Overlay effect.
 
 == Changelog ==
+= 1.1.1 - Feb-22-2012 =
+* Fix to resolve failures experienced by some users in v1.1.
 = 1.1 - Jan-31-2012 =
 * Extensive re-write including several minor fixes to eliminate PHP warnings and errors.
 * Ability to use <code>rel="nolightbox"</code> to exclude an image.
@@ -90,6 +81,7 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 * Fix for settings initialization issues.
 * Option sanitization.
 * Addition of Traditional Chinese/&#32321;&#39636;&#20013;&#25991; translation.
+* Removed localization tracking.
 = 1.0.3.4 - Jan-25-2012 =
 * Addition of Russian/&#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; &#1103;&#1079;&#1099;&#1082; translation.
 = 1.0.3.3 - Dec-18-2011 =

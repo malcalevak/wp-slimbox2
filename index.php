@@ -4,7 +4,7 @@ Plugin Name: WP-Slimbox2
 Plugin URI: http://transientmonkey.com/wp-slimbox2
 Description: A Wordpress implementation of the Slimbox2 javascript, utilizing jQuery, originally written by Christophe Beyls. Requires WP 2.8+
 Author: Greg Yingling (malcalevak)
-Version: 1.1
+Version: 1.1.1
 Author URI: http://transientmonkey.com/
 
 Copyright 2010 Transient Monkey, LLC
@@ -25,14 +25,31 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 load_plugin_textdomain ('wp-slimbox2', WP_PLUGIN_DIR.'/wp-slimbox2/languages', '/wp-slimbox2/languages');
 
-$options = wp_slimbox_validate(get_option('wp_slimbox',wp_slimbox_initialize()));
-
 add_action('wp_print_scripts', 'wp_slimbox_scripts');
 add_action('wp_print_styles', 'wp_slimbox_styles');
 
 function wp_slimbox_initialize() {
-	require('initialize.php');
-	return wp_slimbox_initialize_variables();
+	$options = array(
+		'autoload'   => 'on',
+		'overlayOpacity'   => '0.8',
+		'overlayColor' => '#000000',
+		'overlayFadeDuration'   => '400',
+		'resizeDuration' => '400',
+		'resizeEasing'   => 'swing',
+		'initialWidth' => '250',
+		'initialHeight'   => '250',
+		'imageFadeDuration' => '400',
+		'captionAnimationDuration'   => '400',
+		'caption' => array('a-title','img-alt','img-title','href'),
+		'url' => 'on',
+		'selector' => 'div.entry-content, div.gallery, div.entry, div.post, div#page, body',
+		'counterText' => __('Image {x} of {y}', 'wp-slimbox2'),
+		'closeKeys'   => __('27,88,67', 'wp-slimbox2'),
+		'previousKeys' => __('37,80', 'wp-slimbox2'),
+		'nextKeys'   =>  __('39,78', 'wp-slimbox2')
+	);
+	add_option('wp_slimbox',$options);
+	return $options;
 }
 
 function wp_slimbox_styles() {
@@ -50,7 +67,7 @@ function wp_slimbox_styles() {
 function wp_slimbox_scripts() {
 	if (!is_admin())
 	{
-		global $options;
+		$options = wp_slimbox_validate(get_option('wp_slimbox',wp_slimbox_initialize()));
 		if(isset($options['maintenance'])) {
 			if (isset($_REQUEST['slimbox'])) $_SESSION['slimboxC']=$_REQUEST['slimbox'];
 			else if(!isset($_SESSION['slimboxC'])) $_SESSION['slimboxC']='off';
@@ -119,6 +136,7 @@ function show_slimbox_options() {
 }
 
 function slimbox_options() {
+	$options = wp_slimbox_validate(get_option('wp_slimbox',wp_slimbox_initialize()));
 	require('adminpage.php');
 }
 
