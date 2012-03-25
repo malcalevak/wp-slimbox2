@@ -4,10 +4,10 @@ Plugin Name: WP-Slimbox2
 Plugin URI: http://transientmonkey.com/wp-slimbox2
 Description: A Wordpress implementation of the Slimbox2 javascript, utilizing jQuery, originally written by Christophe Beyls. Requires WP 2.8+
 Author: Greg Yingling (malcalevak)
-Version: 1.1.1
+Version: 1.1.2
 Author URI: http://transientmonkey.com/
 
-Copyright 2010 Transient Monkey, LLC
+Copyright 2012 Transient Monkey, LLC
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -53,10 +53,10 @@ function wp_slimbox_initialize() {
 }
 
 function wp_slimbox_styles() {
-	wp_register_style('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/slimbox2.css','','1.1','screen');
+	wp_register_style('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/css/slimbox2.css','','1.1','screen');
 	wp_enqueue_style('slimbox2');
 	if(__('LTR', 'wp-slimbox2')=='RTL') {
-		wp_register_style('slimbox2-RTL', WP_PLUGIN_URL.'/wp-slimbox2/slimbox2-rtl.css','','1.0','screen');
+		wp_register_style('slimbox2-RTL', WP_PLUGIN_URL.'/wp-slimbox2/css/slimbox2-rtl.css','','1.0','screen');
 		wp_enqueue_style('slimbox2-RTL');
 	}
 	wp_register_script('slimbox2', WP_PLUGIN_URL.'/wp-slimbox2/javascript/slimbox2.js',array('jquery'), '2.04');
@@ -141,10 +141,7 @@ function slimbox_options() {
 }
 
 function slimbox_admin_init() {
-	wp_register_style('farbtastic', WP_PLUGIN_URL.'/wp-slimbox2/javascript/farbtastic/farbtastic.css','','1.0','screen');
-	wp_register_script('jquery_farbtastic', WP_PLUGIN_URL.'/wp-slimbox2/javascript/farbtastic/farbtastic.js',array('jquery'), '1.2');
-	wp_register_script('load_farbtastic', WP_PLUGIN_URL.'/wp-slimbox2/javascript/farbtastic/load_farbtastic.js',array('jquery_farbtastic'), '1.0');
-	wp_register_script('load_keypress', WP_PLUGIN_URL.'/wp-slimbox2/javascript/keypress.js',array('jquery'), '1.1');
+	wp_register_script('load_admin', WP_PLUGIN_URL.'/wp-slimbox2/javascript/admin.js',array('farbtastic'), '1.0');
 	register_setting( 'wp_slimbox_options', 'wp_slimbox', 'wp_slimbox_validate');
 }
 
@@ -153,8 +150,7 @@ function slimbox_admin_styles() {
 }
 
 function slimbox_adminhead() {
-	wp_enqueue_script('load_farbtastic');
-	wp_enqueue_script('load_keypress');
+	wp_enqueue_script('load_admin');
 }
 
 function wp_slimbox_validate($options) {

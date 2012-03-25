@@ -1,4 +1,4 @@
-var store = '';
+﻿var store = '';
 jQuery(function($) {
 	$(".keys").keyup(function (e) {
 		if(!$("#wp_slimbox_manual_key").is(':checked')) {
@@ -17,4 +17,5 @@ jQuery(function($) {
 			return false;
 		}
 	});
-})
+	$('#picker').farbtastic('#wp_slimbox_overlayColor');
+});
