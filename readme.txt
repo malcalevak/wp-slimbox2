@@ -3,7 +3,7 @@ Contributors: malcalevak
 Donate link: http://transientmonkey.com/wp-slimbox2
 Tags: slimbox, slimbox2, lightbox, jQuery, picture, photo, image, overlay, display, lightbox2
 Requires at least: 2.8
-Stable Tag: 1.1.2
+Stable Tag: 1.1.3
 
 A WordPress implementation of the Slimbox2 javascript.
 
@@ -15,10 +15,9 @@ Almost, if not all, options are configurable from the administration panel. For 
 
 Support forums are generously hosted by Ryan Hellyer of PixoPoint, <a href="http://pixopoint.com/forum/index.php?board=6.0">here</a>.
 
-Recent Changes in v1.1.2:<br />
-1.	Utilizes built in Farbtastic javascripts.
-2.	Consolidated load_farbtastic and keypress.js
-3.	Moved css files to css folder.
+Recent Changes in v1.1.3:<br />
+1.	Updated to Slimbox 2.05 to support WordPress 3.6
+2.	Removed unnecessary xfarbtastic.css
 
 == Installation ==
 
@@ -72,6 +71,9 @@ Please try our <a href="http://pixopoint.com/forum/index.php?board=6.0">support 
 2. Overlay effect.
 
 == Changelog ==
+= 1.1.3 - Aug-24-2013 =
+* Updated to Slimbox 2.05 to support WordPress 3.6
+* Removed unnecessary xfarbtastic.css
 = 1.1.2 - Mar-24-2012 =
 * Utilizes built in Farbtastic javascripts.
 * Consolidated load_farbtastic and keypress.js

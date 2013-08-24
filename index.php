@@ -1,13 +1,13 @@
-<?php
+﻿<?php
 /*
 Plugin Name: WP-Slimbox2
 Plugin URI: http://transientmonkey.com/wp-slimbox2
 Description: A Wordpress implementation of the Slimbox2 javascript, utilizing jQuery, originally written by Christophe Beyls. Requires WP 2.8+
 Author: Greg Yingling (malcalevak)
-Version: 1.1.2
+Version: 1.1.3
 Author URI: http://transientmonkey.com/
 
-Copyright 2012 Transient Monkey, LLC
+Copyright 2013 Transient Monkey
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
